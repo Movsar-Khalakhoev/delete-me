@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 13</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 13</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Хамзы Анаса ибн Малика, да будет доволен им Аллах, который был слугой посланника Аллаха, да благословит его Аллах и приветствует, что посланник, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Не уверует никто из вас (полноценной верой) до тех пор, пока не станет желать своему брату (в Исламе) того же, чего желает самому себе».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл аль-Бухари (13) и Муслим (45)</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Не уверует никто из вас…»</em></strong> </span>— данная фраза указывает на обязательность того, о чём говорится после неё.</span></p>
+	<p style="text-align: left;"><span>Шейх уль-Ислям ибн Теймия, да помилует его Аллах, сказал: <em>«(В данном хадисе) имеется в виду отрицание полноценной верой»<strong>. — </strong></em><span style="font-size: small;">[См. «Маджму‘ аль-Фатауа», 7/257-258].</span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Не уверует никто из вас до тех пор, пока не станет желать своему брату (в Исламе) того же, чего желает самому себе»</em></strong></span> — эти слова указывают на то, что человек обязан желать своему брату того же, чего желает себе самому. Если человек оставил нечто желательное, то, говоря о нём, не отрицают наличие у него веры. А в хадисе сказано: <em>«Не уверует…»</em>, — а это указывают на то, что упомянутое вслед является обязательным.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Не уверует никто из вас…»</em></strong></span> — следовательно, эта фраза означает: не уверует никто из вас <u>полноценной верой</u>.</span></p>
+	<p style="text-align: left;"><span>Фраза <em>«…не уверует…»</em> часто приходит в сунне. Например, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«</em></strong><strong><em><u>Не уверует никто из вас</u>, пока не станет любить меня больше, чем любит своего отца, и своих детей, и всех людей вообще»<strong>.&nbsp;—</strong></em></strong><span style="font-size: small;"> [аль-Бухари, 15;&nbsp; Муслим, 44].</span></span></p>
+	<p style="text-align: left;"><span>Также, однажды, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Клянусь Аллахом, </em></strong><strong><em><u>не уверует</u>, клянусь Аллахом, <u>не уверует</u>, клянусь Аллахом, <u>не уверует</u>!» </em></strong>Его спросили:<strong><em> «Кто, о посланник Аллаха?» </em></strong>Он сказал:<strong><em> «Тот (человек), сосед которого не находится в безопасности от его зла»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 6016].</span></span></p>
+	<p style="text-align: left;"><span>Во всех этих хадисах под фразой <em>«…не уверует…»</em> имеется в виду: не уверует полноценной верой.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…желать своему брату того же, чего желает самому себе»</em></strong></span> — то есть: не станет желать своему брату всех праведных слов, деяний и убеждений. Человек должен желать своему брату таких же прекрасных убеждений, какие есть у него самого. Это – обязательно <em>(уаджиб)</em>. Человек должен желать своему брату, чтобы тот всегда совершал молитву. Если же человек желает своему брату заблуждения, то тем самым он совершает запретное и не считается полноценно верующим. Если человек желает своему брату, чтобы тот отклонился от правильных убеждений, которые соответствуют сунне, то этот человек также не является полноценно верующим. То же самое касается всех остальных видов поклонения. То же самое касается и оставления грехов. Если человек перестал брать взятки, но желает своему брату того, чтобы тот брал взятки, то такой человек не является полноценно верующим.</span></p>
+	<p style="text-align: left;"><span>В другой версии данного хадиса сказано: <strong><em>«Не уверует никто из вас до тех пор, пока не станет желать своему брату (в Исламе) того же, чего желает самому себе </em></strong><strong><em>из блага</span>»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[ан-Насаи в «аль-Кубра», 6/534;&nbsp; Ахмад, 3/206;&nbsp; ибн Хиббан, 1/471;&nbsp; Абу Йа‘ля, 5/268;&nbsp; ибн Мандах в «аль-Иман», 1/441].</span></span></p>
+	<p style="text-align: left;"><span>Что касается желания своему брату какого-либо блага, касающегося мирской жизни, то это желательно <em>(мустахабб)</em>. Например, человек желает быть обладателем достатка в имуществе, и ему желательно желать того же самого своему брату. Например, человек желает быть почитаемым в обществе, и ему желательно желать того же самого своему брату. Но если человек не желает своему брату какого-либо блага, <u>касающегося мирской жизни</u>, то этот человек не считается тем, у кого отрицается наличие полноценной веры. Ведь, в данном случае все вышеперечисленное желательно, а не обязательно.</span></p>
+	<p style="text-align: left;"><span>Следовательно, всё вышеперечисленное можно разделить на две группы:</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>1 —</strong> Если человек желает себе чего-то, что <strong><u>связано с религией</u></strong>, то <strong><u>он обязан</u></strong> желать своим братьям того же самого.</span> В противном случае, человек считается тем, кто не обладает полноценной верой. Человек обязан желать своему брату того, чтобы тот выполнял обязательные и желательные религиозные предписания, а также оставлял всё запрещенное Аллахом.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>2 —</strong> Если человек желает себе блага, которое <strong><u>связано с мирской жизнью</u></strong>, то ему <strong><u>желательно</u></strong> <em>(мустахабб)</em> желать своим братьям того же самого</span>. Например, желательно желать своему брату того, чтобы тот имел изобилие в пропитании. Например, желательно желать своему брату того, чтобы тот обладал почётом, имуществом или полезными книгами, и так далее. Всё это является желательным.</span></p>
+	<p style="text-align: left;"><span style="color: #008000;"><strong>Важный момент:</strong></span></p>
+	<p style="text-align: left;"><span>Существует такое понятие как <strong>″исар″</strong> — <span style="font-size: 14pt; color: #800000;">( إيثَارٌ ) </span>— <em>″готовность жертвовать для других своими личными интересами″</em>.</span> Он бывает двух видов:</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>1-ый вид —</strong> <strong>″исар″ </strong>в вопросах поклонения </span>— в вопросах поклонения нежелательно <em>(макрух)</em> жертвовать личными интересами для других. Это противоречит тому, что нам велено – нам велено опережать друг друга в благих деяниях. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;سَابِقُوا إِلَى مَغْفِرَةٍ مِّن رَّبِّكُمْ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Стремитесь </strong><em>(опережая друг друга)</em></span><strong> к прощению от вашего Господа»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=57&aya=21"><small>[Сура аль-Хадид, аят 21]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَسَارِعُواْ إِلَى مَغْفِرَةٍ مِّن رَّبِّكُمْ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«И стремитесь к прощению вашего Господа»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=3&aya=133"><small>[Сура али ‘Имран, аят 133]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Следовательно, мусульманин должен стараться опередить другого мусульманина во всех видах благах. Как сказал Аллах Всевышний:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَفِي ذَلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Пусть же ради этого </strong><em>(ради вечной благодати)</em></span><strong> состязаются состязающиеся!»</span><strong></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=83&aya=26"><small>[Сура аль-Мутаффифин, аят 26]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Например, человек увидел свободное место в первом ряду молящихся, но не встал на это место и сказал своему брату: <em>«Становись!», </em>а тот ответил ему: <em>«Нет, давай лучше ты!» </em>Поступать так нежелательно! Человек должен стараться опережать другого человека в вопросах поклонения, а в данном случае, известно о достоинстве совершения молитвы в первом ряду.</span></p>
+	<p style="text-align: left;"><span>Или, например, к людям явился человек, нуждающийся в определенной сумме денег, которая покрыла бы его потребности. Например, ты можешь помочь этому человеку деньгами, но говоришь своему брату: <em>«Помоги ему! Я предоставлю тебе эту возможность совершить благодеяние!» </em>А он отвечает: <em>«Нет, давай лучше ты! Я бы хотел, чтобы ты заработал награду». </em>Иначе говоря, каждый из вас обоих старается отдать предпочтение друг другу. Это является нежелательным! Человек обязан стремиться опережать других людей в совершении благих деяний. <em>&nbsp;</em></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>2-ой вид —</strong> <strong>″исар″ </strong>в мирских вопросах</span> — например, жертвование своему брату еды, одежды, транспорта, и тому подобных вещей, забывая о своих личных интересах. Всё это желательно <em>(мустахабб)</em>. Аллах Всевышний сказал, описывая особых верующих:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَيُؤْثِرُونَ عَلَى أَنفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌ وَمَن يُوقَ شُحَّ نَفْسِهِ فَأُوْلَئِكَ هُمُ الْمُفْلِحُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Они </strong><em>(особые верующие)</em><strong> отдают им </strong><em>(другим верующим)</em></span><strong> предпочтение перед собой, даже если сами нуждаются. А уберегшиеся от собственной алчности являются преуспевшими»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=59&aya=9"><small>[Сура аль-Хашр, аят 9]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Этот аят указывает на качество верующих людей – они готовы были жертвовать для других своими личными интересами, когда дело касалось мирских вопросов.</span></p>
+	<p style="text-align: left;"></div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

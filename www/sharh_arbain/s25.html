@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 25</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 25</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Зарра, да будет доволен им Аллах, который сказал: <em>«Однажды люди из числа сподвижников пророка, да благословит его Аллах и приветствует, сказали пророку, да благословит его Аллах и приветствует:<br><br> ″О посланник Аллаха, тем, кто обладает большими богатствами, достанутся все награды, ведь молятся они так же, как и мы, и постятся так же, как и мы, но они ещё и дают милостыню из излишков своего достояния!″<br><br> В ответ им пророк, да благословит его Аллах и приветствует, сказал: </em><strong><em>″А разве не определил Аллах и вам того, из чего вы могли бы давать милостыню? Поистине, каждое произнесение слов «Пречист Аллах» </em><em>(Субхана Ллах)</em><em> есть милостыня, и каждое произнесение слов «Аллах велик» </em><em>(Аллаху акбар)</em><em> есть милостыня, и каждое произнесение слов «Хвала Аллаху» </em><em>(Аль-хамду ли-Ллях)</em><em> есть милостыня, и каждое произнесение слов «Нет божества, достойного поклонения, кроме Аллаха» </em><em>(Ля иляха илля Ллах)</em><em> есть милостыня, и побуждение к совершению того, что одобряется </em>[шари‘атом]<em>, есть милостыня, и удержание от порицаемого </em>[шари‘атом]<em> есть милостыня, и даже совершение любым из вас полового сношения с женой есть милостыня!″</em></strong><em><br><br> Они стали спрашивать: </em><em>″О посланник Аллаха, разве и за то, что кто-нибудь из нас удовлетворит своё желание, он получит награду?!″</em><em><br><br> В ответ им пророк, да благословит его Аллах и приветствует, сказал: </em><strong><em>″Скажите мне, разве не совершит грех тот, кто удовлетворит своё желание запретным образом?! Так же и с этим — если человек удовлетворит своё желание дозволенным образом, ему достанется награда!″</em></strong><em>»<strong></strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл Муслим (1006)</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>Эти люди из числа сподвижников пророка, да благословит его Аллах и приветствует, пожаловались пророку, да благословит его Аллах и приветствует, на то, что богатые люди молятся и постятся подобно бедным, но помимо этого они еще могут раздавать милостыню. Эти богатые люди опередили бедняков посредством награды за раздачу милостыни. Но пророк, да благословит его Аллах и приветствует, разъяснил, что милостыня есть нечто более обширное, чем просто раздача денег.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«А разве не определил Аллах и вам того, из чего вы могли бы давать милостыню?» </em></strong></span>— в этих словах содержится побуждение, адресованное ко всем мусульманам, дабы они выслушали, что именно является милостыней.</span></p>
+	<p style="text-align: left;"><span>Милостыня в шари‘ате – это не только раздача имущества. Раздача имущества – это всего лишь один из видов милостыни. Милостыня – это принесение людям добра и пользы. Поэтому Аллах Всевышний описан тем, что Он даёт милостыню Своим рабам (приносит им добро и пользу).</span></p>
+	<p style="text-align: left;"><span>Передают, что Я’ля ибн Умайя сказал: — Однажды, разговаривая с ‘Умаром ибн аль-Хаттабом, да будет доволен им Аллах, я прочитал аят, в котором говорится: <strong>«Если же, странствуя по земле, вы убоитесь, что те, которые не веруют, подвергнут вас испытанию&nbsp;<a href="#_ftn1" name="_ftnref1"><strong>[1]</strong></a> и будете сокращать молитву, то не понесёте бремя греха»<strong></strong></strong><span style="font-size: small;"></span><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=101"><small>[Сура ан-Ниса, аят 101]</small></a></span><strong>, </strong>и сказал ему: <em>«Но ведь сейчас люди находятся в безопасности!»</em> В ответ мне он сказал: <em>«Когда-то и я удивился тому же, что удивило тебя, и спросил об этом посланника Аллаха, да благословит его Аллах и приветствует, на что он сказал: <strong>″Это&nbsp;</strong></em><a href="#_ftn2" name="_ftnref2">[2]</a><em><strong> — милостыня, которую подал вам Аллах, так примите же Его милостыню!»</strong>»<strong>.&nbsp;— </strong></em><span style="font-size: small;">[Муслим, 686].</span></span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний подаёт милостыню Своим рабам, иначе говоря, доводит до них благо и то, что несёт им пользу. Поэтому милостыня – это доведение блага до человека.</span></p>
+	<p style="text-align: left;"><span>Иногда раб Аллаха делает добро своей душе и считается подающим милостыню. А иногда раб Аллаха делает добро людям и также считается подающим милостыню. Милостыня есть нечто широкое, а раздача имущества – это одна из частей милости.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Поистине, каждое произнесение слов «Пречист Аллах» (Субхана Ллах) есть милостыня, и каждое произнесение слов «Аллах велик» (Аллаху акбар) есть милостыня, и каждое произнесение слов «Хвала Аллаху» (Аль-хамду ли-Ллях) есть милостыня, и каждое произнесение слов «Нет божества, достойного поклонения, кроме Аллаха» (Ля иляха илля Ллах) есть милостыня…» </em></strong></span>— пророк, да благословит его Аллах и приветствует, упомянул эти четыре фразы, которые относятся к поминанию Аллаха языком. Другие виды поминания Аллаха также являются милостыней, а эти четыре фразы, упомянутые в хадисе, являются наилучшим видом поминания Аллаха <em>(зикра)</em>.</span></p>
+	<p style="text-align: left;"><span>Сообщается, что посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong><em>«Есть четыре слова, которые Аллах Всевышний любит больше всего, − “Пречист Аллах” </em></strong><em>(Субхана Ллах)<strong>, “Хвала Аллаху” </strong>(аль-Хамду ли Ллях)<strong>, “Нет божества, достойного поклонения, кроме Аллаха” </strong>(Ля иляха илля-Ллах)<strong> и “Аллах велик“ </strong>(Аллаху акбар)<strong>»<strong>.&nbsp;— </strong></strong></em><span style="font-size: small;">[Муслим, 2137].</span></span></p>
+	<p style="text-align: left;"><span>Эти четыре фразы – наиболее любимые для Аллаха Всевышнего. Эти четыре фразы – больше всех остальных видов поминания Аллаха приближают тебя к Аллаху. Произнося эти фразы, ты подаёшь милостыню своей душе. Они несут в себе великое вознаграждение.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и побуждение к совершению того, что одобряется [шари‘атом], есть милостыня, и удержание от порицаемого [шари‘атом] есть милостыня…» </em></strong>—</span> это виды милостыни, польза которых касается общества, а не только самого человека.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Одобряемое</strong> <em>(ма‘руф)</em></span> – это то, благость чего известна в шари‘ате.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Порицаемое</strong> <em>(мункар)</em></span> – это то, зло и вред чего известны из шари‘ата.</span></p>
+	<p style="text-align: left;"><span>Если человек велит совершать то, что в шари‘ате является благом, то он считается повелевающим одобряемое. Самое великое одобряемое – это единобожие <em>(таухид)</em>.</span></p>
+	<p style="text-align: left;"><span>Если же человек запрещает совершать то, что в шари‘ате считается злом, то он считается удерживающим от порицаемого. Самое великое порицаемое – это многобожие <em>(ширк)</em>.</span></p>
+	<p style="text-align: left;"><span>Всякий раз, когда человек велит совершать одобряемое, он является подающим милостыню. Всякий раз, когда человек удерживает от порицаемого, он является подающим милостыню. Сюда же относится обучение других полезному знанию. Это также является одним из видов милостыни. Поэтому, если человек постоянно находится со знанием (либо приобретая его сам, либо обучая других), то он считается подающим милостыню ежесекундно и своей душе, и остальным людям. Именно поэтому обладатели знания получают самую большую награду среди всех людей, если их намерение является праведным.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и даже совершение любым из вас полового сношения с женой есть милостыня…» </em></strong></span>— если человек удовлетворяет свою страсть, которая является испытанием от Аллаха, дозволенным путём, то он получает за это награду.</span></p>
+	<p style="text-align: left;"><span>Относительно этого вопроса у обладателей знания было разногласие на два мнения:&nbsp;— <span style="font-size: small;">[См. «Джами‘ аль-‘Улюм уа-ль-Хикам», стр. 237;&nbsp; «Фатх уль-Бари», 1/14-15;&nbsp; «‘Умдату-ль-Къарий», 1/319;&nbsp; «Файд уль-Кадир», 3/341].</span></span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Некоторые обладатели знания сказали, что человек получает награду за половую близость с женой даже тогда, когда не имеет намерения заработать эту награду. </em></span></li>
+	<li><span><em>Другие обладатели знания сказали, что человек получает награду за половую близость с женой только тогда, когда имеет намерение заработать эту награду.</em></span></li>
+	</ul>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>1-ое мнение</strong></span> — если раб Аллаха (мусульманин) удовлетворяет свою страсть дозволенным образом, то он получает награду даже тогда, когда не имеет намерения получить награду. Это мнение извлекается из явного смысла данного хадиса.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>2-ое мнение</strong></span> — человек получает награду за половую близость со своей супругой только тогда, когда он имел намерение получить за это награду. Если человек намеренно ради Аллаха оставил прелюбодеяние и удовлетворил свою страсть дозволенным образом, то он получает награду. Ведь, другие аяты и хадисы указывают на то, что человек получает награду только за то, что он совершал ради Лика Аллаха. Сообщается, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Если человек расходует (средства) на свою семью, </em></strong><strong><em><u>надеясь только на награду Аллаха</u>, это становится для него милостыней»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 56;&nbsp; Муслим, 1628].</span></span></p>
+	<p style="text-align: left;"><span>А Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَّا خَيْرَ فِي كَثِيرٍ مِّن نَّجْوَاهُمْ إِلَّا مَنْ أَمَرَ بِصَدَقَةٍ أَوْ مَعْرُوفٍ أَوْ إِصْلَاحٍ بَيْنَ النَّاسِ وَمَن يَفْعَلْ ذَلِكَ ابْتَغَاءَ مَرْضَاتِ اللَّهِ فَسَوْفَ نُؤْتِيهِ أَجْرًا عَظِيمًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Многие из их тайных бесед не приносят добра, если только они не призывают раздавать милостыню, совершать одобряемое или примирять людей. <span style="color: #008000;">Тому, кто поступает таким образом, стремясь к довольству Аллаха</span>, Мы даруем великую награду»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=114"><small>[Сура ан-Ниса, аят 114]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Этот аят указывает на то, что условием получения награды является стремление к довольству Аллаха. А предшествующий хадис указывает на то, что награду получит только тот, кто расходовал средства на семью, надеясь на награду Аллаха.</span></p>
+	<p style="text-align: left;"><span>Поэтому, если человек удовлетворяет свою страсть дозволенным образом, намеренно отдаляясь от прелюбодеяния и имея намерение получить за это награду, то он получает награду. Поистине, дела оцениваются только по намерениям.</span></p>
+	<p style="text-align: center;"><strong><span style="font-size: 14pt;">ПРИМЕЧАНИЯ:</span></strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp; В данном случае имеется в виду угроза нападения.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a>&nbsp; Имеется в виду разрешение сокращать молитвы, если человек находится в пути.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

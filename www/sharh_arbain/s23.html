@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 23</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 23</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Малика аль-Хариса ибн ‘Асыма аль-Аш‘ари, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <strong><em>«Очищение – это половина веры. Слова «Хвала Аллаху» </em><em>(аль-Хамду ли-Ллях)</em><em> заполнят собой весы. Слова ″Пречист Аллах и хвала Аллаху» </em><em>(Субхана Ллахи уа-ль-хамду ли-Ллях)</em><em> заполнят собой пространство между небом и землёй. Молитва — это свет, милостыня </em><em>(садака)</em></strong><em><strong> — это луч, терпение — это сияние, а Коран — аргумент за тебя или против тебя. Все люди отправляются утром по своим делам, и продающий душу свою либо освобождает её, либо губит».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл Муслим (223)</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>Это – очень великий хадис, в котором содержатся лаконичные выражения избранного пророка, да благословит его Аллах и приветствует. Этот хадис оказывает положительное влияние на людские души и западает в сердца. Он смягчает сердца и побуждает людские души к покорности Аллаху. Этот хадис вобрал в себя множество шари‘атских законоположений и великих наставлений.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Очищение – это половина веры…»</em></strong></span> ― относительно этой фразы учёные высказали два мнения.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Первое мнение:</strong></span> имеется в виду очищение от скверны, загрязняющей сердца, души и самого человека. Иначе говоря, очищение от многобожия <em>(ширка)</em>, от совершения деяний напоказ <em>(рия)</em>, от совершения запретного и оставления обязательных предписаний религии. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَثِيَابَكَ فَطَهِّرْ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Одежды свои очищай!»</span><strong></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=74&aya=4"><small>[Сура аль-Муддассир, аят 4]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Некоторые учёные сказали&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a>, что слова <strong>«…одежды свои очищай…» </strong>означают следующее: очищайся от многобожия <em>(ширка).&nbsp;</em><a href="#_ftn2" name="_ftnref2">[2]</a></span></p>
+	<p style="text-align: left;"><span>Также Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;إِنَّهُمْ أُنَاسٌ يَتَطَهَّرُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Воистину, эти люди хотят очиститься </strong><em>(от грехов)</em></span><strong>!»</span></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=7&aya=82"><small>[Сура аль-А‘раф, аят 82]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Некоторые учёные сказали, что речь идёт о людях, которые не хотят совершать мерзкие поступки.&nbsp;— <span style="font-size: small;">[См. «Тафсир ат-Табари», 8/235;&nbsp; «Зад уль-Масир», 3/227;&nbsp; «Тафсир аль-Куртуби», 13/219;&nbsp; «Тафсир ибн Касир», 2/231;&nbsp; «ад-Дурр аль-Мансур», 3/496].</span></span></p>
+	<p style="text-align: left;"><span>И это мнение кажется более явным. Под очищением в данном хадисе имеется в виду очищение сердца, языка и органов от совершения запретных поступков и оставления обязательных предписаний. Именно это очищение является половиной веры, так как под очищением подразумевается оставление грехов. А вера <em>(иман)</em> состоит из двух вещей: совершение чего-то и оставление чего-то. Ведь, человек либо что-то делает, либо что-то оставляет. Если ты очистил своё сердце и свои органы тела от того, что запретил Аллах, то ты обрёл половину веры. После этого очищения тебе осталось обрести вторую половину веры, а это – совершение благодеяний.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Второе мнение:</strong> </span>имеется в виду очищение водой <em>(омовение)</em> или землей <em>(таяммум)&nbsp;</em><a href="#_ftn3" name="_ftnref3">[3]</a>. Очищение бывает двух видов:</span></p>
+	<ul style="text-align: left;">
+	<li><span><strong><u>Полное омовение</u></strong><em> (совершается, например, после полового осквернения, или после того, как женщина очистится от менструаций или послеродовых кровотечений). </em></span></li>
+	<li><span><strong><u>Малое омовение.</u></strong></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Именно это очищение является половиной веры. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَمَا كَانَ اللَّهُ لِيُضِيعَ إِيمَانَكُمْ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Аллах никогда не даст пропасть вашей вере»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=143"><small>[Сура аль-Бакара, аят 143]</small></a></span></span></p>
+	<p style="text-align: left;"><span><strong>«…вашей вере…» </strong></span>― то есть: вашим молитвам.</span></p>
+	<p style="text-align: left;"><span>Когда Аллах Всевышний повелел мусульманам совершать молитвы в сторону Каабы, хотя раньше они совершали молитвы в сторону Иерусалима, некоторые из мусульман сказали: <em>«А что же будет с нашими братьями, которые скончались до этого, ведь, они молились только в сторону Иерусалима?» </em>Тогда Аллах Всевышний ниспослал аят, в котором сказано: <strong>«Аллах никогда не даст пропасть вашей вере </strong><em>(то есть: вашим молитвам)</em><strong>». </strong></span></p>
+	<p style="text-align: left;"><span>Следовательно, молитва названа верой. Очищение же является ключом к молитве, ибо молитва недействительна без очищения. Именно по этой причине очищение названо половиной веры.</span></p>
+	<p style="text-align: left;"><span>Среди обладателей знания есть и другие разъяснения данной фразы, но два вышеприведенных мнения являются самыми известными.</span></p>
+	<p style="text-align: center;"><span style="font-size: 14pt;"><span>Разъяснение фразы:&nbsp;</span><strong><em><span style="font-family: 'book antiqua', palatino, serif; color: #008000;">«Слова «Хвала Аллаху» (аль-Хамду ли-Ллях) заполнят собой весы».</span></em></strong></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Хвала</strong> <em>(хамд)</em></span> ― <span style="font-size: 14pt; color: #800000;">( الحمد )</span> ― это восхваление кого-либо за те совершенные качества, которыми он описан.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…хвала Аллаху…»</em></strong></span> ― <span style="color: #800000; font-size: 14pt;">( الحمد لله )</span> ― то есть: только Аллах Всевышний заслуживает всех видов хвалы, ибо только Он описан всеми совершенными качествами.</span></p>
+	<p style="text-align: left;"><span>Поистине, Аллаха Всевышнего восхваляют за неисчислимое множество совершенных качеств, среди которых учёные выделяли пять основных:</span></p>
+	<p style="text-align: left;"><strong>1 ―</strong> Восхваление Аллаха за то, что Он является Единственным Господом.</p>
+	<p style="text-align: left;"><span>Нет иного господа, помимо Него, который бы владел этим бытием, управлял и распоряжался им. Поэтому Аллаха Всевышнего восхваляют за то, что Он является Единственным Господом. Творения Аллаха восхваляют Его за то, что Он сотворил их и наделил их уделом. Только Аллах оживляет и умерщвляет. Только Аллах управляет всеми делами. Творения Аллаха восхваляют Его за всё, что происходит на небесах и на земле, иначе говоря, восхваляют Его во всех ситуациях.</span></p>
+	<p style="text-align: left;"><strong>2 ―</strong> Восхваление Аллаха за то, что Он является Единственным, Кто достоин поклонения рабов.</p>
+	<p style="text-align: left;"><span>Аллах – Истинный Бог! Нет никого, кому бы поклонялись люди по праву, кроме Него. Только Ему поклоняются по праву на небесах и на земле. А любой иной объект поклонения, помимо Него, не заслуживает этого поклонения. Всем остальным ложным божествам поклоняются, совершая несправедливость и переходя границы дозволенного. Аллах – это Единственный, Кто заслуживает поклонения, и нет такого права ни у кого другого. Поэтому Аллаха Всевышнего восхваляют за то, что Он является Единственным, Кто достоин поклонения рабов.</span></p>
+	<p style="text-align: left;"><strong>3 ―</strong> Восхваление Аллаха за Его совершенные имена и атрибуты.&nbsp;</p>
+	<p style="text-align: left;"><span>У Аллаха Всевышнего есть прекрасные имена и величественные атрибуты. У Аллаха Всевышнего прекрасные имена и никто не подобен Ему в этих именах. Аллах Всевышний описан совершенными атрибутами, которыми никто не описан так, как Он. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;هَلْ تَعْلَمُ لَهُ سَمِيًّا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Разве ты знаешь Ему соименного </strong><em>(у кого были бы такие же имена и особенности)</em></span><strong>?»</span><strong></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=19&aya=65"><small>[Сура Марьям, аят 65]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«И нет никого, равного </strong><em>(и подобного)</em></span><strong> Ему»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=112&aya=4"><small>[Сура аль-Ихляс, аят 4]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Нет никого подобного Ему в совершенных атрибутах величия и красоты. Поэтому Аллаха Всевышнего восхваляют за то, что Он обладает прекрасными именами и величественными атрибутами. Поэтому Аллаха Всевышнего восхваляют за каждое Его имя и за каждый Его атрибут.</span></p>
+	<p style="text-align: left;"><strong>4 ―</strong> Восхваление Аллаха за Его законоположения (шари‛ат) и повеления.&nbsp;</p>
+	<p style="text-align: left;"><span>Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;أَلَا لَهُ الْخَلْقُ وَالأَمْرُ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Несомненно, Он творит и повелевает»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=7&aya=54"><small>[Сура аль-А‘раф, аят 54]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;الْحَمْدُ لِلَّهِ الَّذِي أَنزَلَ عَلَى عَبْدِهِ الْكِتَابَ وَلَمْ يَجْعَل لَّهُ عِوَجَا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«</strong><em>(Вся) </em><strong>Хвала Аллаху, Который ниспослал Своему рабу </strong><em>(пророку Мухаммаду)</em><strong> Писание </strong><em>(Коран)</em><strong> и не допустил в нём </strong><em>(никакого) </em></span><strong>искажения»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=18&aya=1"><small>[Сура аль-Кахф, аят 1]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Поэтому Аллаха восхваляют за Его шари‛ат и за Его повеления, восхваляют за дарованную им религию Ислам. Его восхваляют за шари‛ат, ниспосланный Мухаммаду, да благословит его Аллах и приветствует. Его восхваляют за Писание, которое Он ниспослал людям. Аллах Всевышний сказал об этом: <strong>«</strong><em>(Вся) </em><strong>Хвала Аллаху, Который ниспослал Своему рабу </strong><em>(пророку Мухаммаду ﷺ)</em><strong> Писание </strong><em>(Коран)</em><strong> и не допустил в нём </strong><em>(никакого) </em><strong>искажения»</strong>.</span> Его восхваляют за те повеления и запреты, о которых Он сообщил в Своём Писании и в сунне Своего посланника, да благословит его Аллах и приветствует.</span></p>
+	<p style="text-align: left;"><span>Всё это, без сомнения, пробуждает сердца верующих людей, взращивает в них любовь к этой религии и к этому шари‛ату. Обладатели знания восхваляют Аллаха за каждое законоположение, которое они изучили. Обладатели знания восхваляют Аллаха за каждый вопрос, связанный со знанием, который они поняли. Обладатели знания больше всех остальных людей восхваляют Аллаха, ибо они больше всех остальных людей знают о Нём.</span></p>
+	<p style="text-align: left;"><strong>5 ―</strong> Восхваление Аллаха за Его творение и предопределение.&nbsp;</p>
+	<p style="text-align: left;"><span>Аллах Всевышний управляет этим бытием и Он предопределил всякую вещь. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Воистину, Мы сотворили каждую вещь согласно предопределению»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=54&aya=49"><small>[Сура аль-Камар, аят 49]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний дарует милости тому, кому Он пожелает. Аллах Всевышний посылает испытания тому, кого желает испытать. Его восхваляют за Его творение и предопределение.</span></p>
+	<p style="text-align: left;"><span>Восхваляя Аллаха, обладатели знания восхваляют его за всё вышеперечисленное. Пророк, да благословит его Аллах и приветствует, восхвалял Аллаха и во время благоденствия, и в периоды тяжести. Пророк, да благословит его Аллах и приветствует, восхвалял Аллаха и за дарованные Им блага, и тогда, когда случалось то, что его не радовало. Пророк, да благословит его Аллах и приветствует, восхвалял Аллаха за то, что именно Он является Единственным Господом. Пророк, да благословит его Аллах и приветствует, восхвалял Аллаха за то, что только Он заслуживает поклонения рабов. Человек, восхваляя Аллаха, должен стараться вспоминать всё вышеперечисленное.</span></p>
+	<p style="text-align: left;"><span>Следовательно, слова <u>«хвала Аллаху»</u> (аль-Хамду ли Ллях) означают: всей хвалы заслуживает только Аллах Всевышний.</span></p>
+	<p style="text-align: left;"><span>Вот эти слова <u>«хвала Аллаху»</u> (аль-Хамду ли Ллях) заполняют собою Весы. Если раб Аллаха говорит: <em>«Хвала Аллаху»</em>, то эти слова заполняют собою Весы.</span></p>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Хурейры, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong><em>«Есть два слова&nbsp;</em></strong><a href="#_ftn4" name="_ftnref4">[4]</a><strong><em>, которые любит Милостивый, и они легки для языка, а на Весах они будут тяжелы. Это слова “Пречист Аллах и хвала Ему, пречист Аллах Великий!”»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 7563;&nbsp; Муслим, 2694].</span></span></p>
+	<p style="text-align: left;"><div class="arabic">
+	<span style="color: #800000;">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ</span>
+	</div><p></p>
+	<p style="text-align: center;"><em>(Субхана-Ллахи ва би-хамди-хи, субхана-Ллахи-ль-‘Азым!)</em></p>
+	<p style="text-align: left;"><span>Иначе говоря, в День Суда эти слова заполнят собою Весы. Ведь, известно, что в Судный День все деяния и слова людей будут взвешены на Весах.</span></p>
+	<p style="text-align: center;"><span style="font-size: 14pt;"><span>Разъяснение фразы:&nbsp;</span><em><strong><span style="font-family: 'book antiqua', palatino, serif; color: #008000;">«Пречист Аллах (Субхана Ллах)»</span></strong></em></span></p>
+	<p style="text-align: left;"><span>Вера <em>(иман)</em> состоит из двух частей:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Очищение Господа от недостатков (танзих);</em></span></li>
+	<li><span><em>Утверждение совершенных атрибутов (исбат). </em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Слова <u>«пречист Аллах»</u> (субхана Ллах) означают: Аллах пречист от всякого недостатка в Его господстве, в Его божественности, в Его именах и атрибутах. Следовательно, смысл слов <u>«пречист Аллах»</u> (субхана Ллах) отличается от смысла слов <u>«хвала Аллаху»</u> (аль-Хамду ли Ллях).</span></p>
+	<p style="text-align: left;"><span>В шари‘атских текстах часто встречается фраза <u>«пречист Аллах»</u> (субхана Ллах), которая указывает на отрицание наличия у Аллаха каких-либо недостатков в Его господстве, в Его божественности, в Его именах и атрибутах, в Его предопределении, в Его шари‘ате, и так далее. После отрицания наличия у Аллаха недостатков человек утверждает наличие у Него совершенных атрибутов.</span></p>
+	<p style="text-align: left;"><span>Если бы раб Аллаха понял всё это, то произнесение слов <strong><em>“Пречист Аллах и хвала Ему, пречист Аллах Великий!” </em></strong>было бы важнее для него, чем всё остальное, что отвлекает его от произнесения этих слов. Это – легкие для языка слова, но на Весах они будут тяжелыми, ибо в них заключены верные убеждения относительно Аллаха Всевышнего.</span></p>
+	<p style="text-align: center;"><span style="font-size: 14pt;"><span>Разъяснение фразы:&nbsp;</span><strong><span style="font-family: 'book antiqua', palatino, serif; color: #008000;">«<em>Слова ″Пречист Аллах и хвала Аллаху» </em><em>(Субхана Ллахи уа-ль-хамду ли-Ллях)</em><em> заполнят собой пространство между небом и землёй</em>».</span></strong></span></p>
+	<p style="text-align: left;"><span>Под словом <em>«небо</em>» <span style="font-size: 14pt; color: #800000;">( السماء )</span> здесь имеется в виду первое небо.&nbsp;<a href="#_ftn5" name="_ftnref5">[5]</a>&nbsp;А иногда в шари‘атских текстах приходит слово <em>«небо</em>» <span style="color: #800000; font-size: 14pt;">( السماء )</span> и имеется в виду высота. Например, Аллах сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;أَلَمْ تَرَ كَيْفَ ضَرَبَ اللَّهُ مَثَلاً كَلِمَةً طَيِّبَةً كَشَجَرةٍ طَيِّبَةٍ أَصْلُهَا ثَابِتٌ وَفَرْعُهَا فِي السَّمَاءِ ۝ تُؤْتِي أُكُلَهَا كُلَّ حِينٍ بِإِذْنِ رَبِّهَا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Разве ты не видишь, как Аллах приводит притчи? Прекрасное слово подобно прекрасному дереву, корни которого прочны, <span style="color: #008000;">а ветви его в небе.</span> Оно плодоносит каждый миг с дозволения своего Господа»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=14&aya=24"><small>[Сура Ибрахим, аят 24-25]</small></a></span></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>«…а ветви его в небе…» </strong></span>― то есть: уходят ввысь.</span></p>
+	<p style="text-align: left;"><span>Также, например, слова Всевышнего:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;أَأَمِنتُم مَّن فِي السَّمَاءِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Разве вы </strong><em>(находитесь)</em><strong> в безопасности от Того, Кто в небе </strong><em>(то есть: от Аллаха)</em></span><strong>?!»</span></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=67&aya=16"><small>[Сура аль-Мульк, аят 16]</small></a></span></span></p>
+	<p style="text-align: left;"><span><strong>«…от Того, Кто в небе…» </strong></span>― то есть: в высоте, возвышен над всем сущим.</span></p>
+	<p style="text-align: left;"><span>Также, например, слова Всевышнего:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَيُنَزِّلُ مِنَ السَّمَاءِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«И низводит Он с неба…»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=24&aya=43"><small>[Сура ан-Нур, аят 43]</small></a></span></span></p>
+	<p style="text-align: left;"><span><strong>«И низводит Он с неба…» </strong></span>― то есть: с высоты (сверху).</span></p>
+	<p style="text-align: left;"><span>Следовательно, под словом <em>«небо</em>» <span style="color: #800000; font-size: 14pt;">( السماء )</span>&nbsp; может иметься в виду либо высота, либо ближнее небо. Если слово <em>«небо</em>» <span style="color: #800000; font-size: 14pt;">( السماء )</span>&nbsp;упоминается в тексте вместе со словом <em>«земля»</em> <span style="font-size: 14pt; color: #800000;">( الأرض )</span> , то чаще всего имеется в виду именно ближнее небо.</span></p>
+	<p style="text-align: left;"><span>Следовательно, слова <strong><em>″Пречист Аллах и хвала Аллаху»</em></strong> <em>(Субхана Ллахи уа-ль-хамду ли-Ллях)</em> заполняют собой огромное пространство между ближним небом и землёй. И это по причине величия этой фразы, по причине того, что Аллах любит эту фразу.</span></p>
+	<p style="text-align: center;"><span style="font-size: 14pt;"><span>Разъяснение фразы:&nbsp;</span><em><strong><span style="font-family: 'book antiqua', palatino, serif; color: #008000;">«Молитва — это свет (нур), милостыня (садака) — это луч (бурхан), терпение — это сияние (дыя)».</span></strong></em></span></p>
+	<p style="text-align: left;"><span>Здесь пророк, да благословит его Аллах и приветствует, упомянул три вещи: молитву, милостыню и терпение, ― и связал их с тремя видами света.</span></p>
+	<p style="text-align: left;"><span>Человеческий глаз постигает три вида света:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Самый слабый вид света называют словом </em><span style="color: #800000; font-size: 14pt;">( النور )</span> ― «нур».</span></li>
+	<li><span><em>Затем следует свет, который называют словом </em><span style="font-size: 14pt; color: #800000;">( البرهان )</span> ― «бурхан».</span></li>
+	<li><span><em>Затем следует свет, который называют словом </em><span style="font-size: 14pt; color: #800000;">( الضياء )</span> ― «дыя».</span></li>
+	</ul>
+	<p style="text-align: left;"><span>Например, луну описывают словом <span style="color: #800000; font-size: 14pt;">( النور )</span> ― «нур». Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَجَعَلَ الْقَمَرَ فِيهِنَّ نُورًا وَجَعَلَ الشَّمْسَ سِرَاجًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Он </strong>(Аллах) <strong>сделал луну светом </strong><em>(нуром)</em></span><strong>, а солнце сделал светильником»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=71&aya=16"><small>[Сура ан-Нух, аят 16]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَالْقَمَرَ نُورًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«</strong>(Аллах) <strong>сделал луну – светом </strong><em>(нуром)</em></span><strong>»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=10&aya=5"><small>[Сура Йунус, аят 5]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Луна описывается словом <strong><u>«нур»</u>,</strong> ибо она испускает свет без ощутимых лучей.</span></p>
+	<p style="text-align: left;"><span>Что же касается слова <span style="color: #800000; font-size: 14pt;">( البرهان )</span> ― <span style="color: #800000;">«бурхан»</span>, то этим словом называют такой свет, который испускает лучи, но не даёт тепла.</span></p>
+	<p style="text-align: left;"><span>Следовательно, слово «бурхан» ― это нечто большее, чем просто «нур».</span></p>
+	<p style="text-align: left;"><span>Что же касается слова <span style="color: #800000; font-size: 14pt;">( الضياء )</span> ― <span style="color: #800000;">«дыя»</span>, то этим словом называют ярчайший свет, который даёт тепло.</span></p>
+	<p style="text-align: left;"><span>Это – три вида света, а пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Молитва — это ″нур″, милостыня — это ″бурхан″, терпение — это ″дыя″».</em></strong></span></p>
+	<p style="text-align: left;"><span>Молитва является более первостепенной вещью, чем милостыня, поэтому она описана словом <em>«нур»</em>, а милостыня описана словом <em>«бурхан»</em>. Что же касается терпения, то человек нуждается в нём и во время молитвы, и во время милостыни, и во время всех остальных благих деяний. Но терпение тяжело дается человеку и сжигает его, подобно ярчайшему свету, выделяющему жар. Ведь, «дыя» ― это сильный свет, дающий тепло и иногда сжигающий вещи. Именно поэтому терпение названо словом «дыя».</span></p>
+	<p style="text-align: left;"><span>А молитва названа словом «нур», ибо раб Аллаха, совершая молитву, находится в спокойствии и умиротворении.</span></p>
+	<p style="text-align: left;"><span>Что же касается милостыни, то она описана словом «бурхан», так как «бурхан» ― это лучи, бьющие в глаза человека, ибо милостыня нуждается в большем усердии, чем молитва. Ведь, милостыня – это раздача имущества, любимого для человека, а это нуждается в приложении усилий.</span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний описал словом «нур» также и Коран, сказав:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;قَدْ جَاءَكُم مِّنَ اللَّهِ نُورٌ وَكِتَابٌ مُّبِينٌ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Явились к вам от Аллаха свет </strong><em>(Коран)</em></span><strong> и ясное Писание»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=5&aya=15"><small>[Сура аль-Маида, аят 15]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Что же касается Торы, то Аллах описал её словом «дыя», сказав:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَلَقَدْ آتَيْنَا مُوسَى وَهَارُونَ الْفُرْقَانَ وَضِيَاءً وَذِكْرًا لِّلْمُتَّقِينَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Мы даровали Мусе </strong><em>(Моисею)</em><strong> и Харуну </strong><em>(Аарону)</em><strong> различение, яркое сияние </strong><em>(Тору)</em></span><strong> и напоминание для богобоязненных»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=21&aya=48"><small>[Сура ан-Анбийа, аят 48]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Толкователи Корана сказали, что в Торе содержались тяжелые и обременяющие предписания, адресованные сынам Исраиля, поэтому Аллах Всевышний назвал её словом «дыя».</span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;فَبِظُلْمٍ مِّنَ الَّذِينَ هَادُواْ حَرَّمْنَا عَلَيْهِمْ طَيِّبَاتٍ أُحِلَّتْ لَهُمْ وَبِصَدِّهِمْ عَن سَبِيلِ اللَّهِ كَثِيرًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«За то, что иудеи поступали несправедливо и многих сбивали с пути Аллаха, Мы <span style="color: #008000;">запретили им блага, которые были дозволены им</span>»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=21&aya=48"><small>[Сура аль-Анбийа, аят 48]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Точно также и терпение <em>(сабр)</em> было названо словом «дыя», ибо человек, переносящий тягости терпения, подобен тому, кто смотрит на ярчайший свет, выделяющий жар.</span></p>
+	<p style="text-align: left;"><span>Раб Аллаха будет сильно нуждаться в День Суда и в молитве, и в милостыне, и в терпении, ибо перед Мостом <em>(сыратом)</em>, раскинутым над Адом, будет жуткий мрак. Тот День будет днём тяжелым и внушающим страх. В Тот День человеку пригодятся молитва, милостыня и терпение, ибо они будут освещать ему путь, когда он будет идти по нему. Пусть Аллах поможет нам преодолеть тяжести Судного Дня!</span></p>
+	<p style="text-align: left;"><span>Посредством этого разъяснения становится понятным величие слов избранного пророка, да благословит его Аллах и приветствует, и красота его лаконичных выражений.</span></p>
+	<p style="text-align: left;"><span>Известно, что терпение <em>(сабр)</em> бывает трёх видов:</span></p>
+	<ul style="text-align: left;">
+	<li><em>Терпение при подчинении Аллаху;</em></li>
+	<li><em>Терпение при отстранении от того, что запретил Аллах. </em></li>
+	<li><em>Терпение перед трудностями того, что предопределил Аллах. </em></li>
+	</ul>
+	<p style="text-align: left;"><span>А вообще, терпение – это удержание <em>(хабс)</em>. Значит, терпение проявляется в трёх вещах:</span></p>
+	<ul style="text-align: left;">
+	<li><em>Удержание сердца и органов в подчинении Аллаху;</em></li>
+	<li><em>Удержание сердца и органов от того, что запретил Аллах. </em></li>
+	<li><em>Удержание сердца и органов от недовольства тем, что предопределил Аллах. </em></li>
+	</ul>
+	<p style="text-align: center;"><span style="font-size: 14pt;"><span>Разъяснение фразы:&nbsp;</span><span style="color: #008000;"><strong><em><span>«Коран — аргумент за тебя или против тебя».</span></em></strong></span></span></p>
+	<p style="text-align: left;"><span>Коран будет аргументом за тебя, если ты читал его должным образом, уверовал в него, действовал в соответствии с ним, считал разрешенным то, что разрешено в Коране, и считал запретным то, что запрещено в нём. Коран будет аргументом против тебя, если ты читал его, но противоречил его велениям. Следовательно, Коран либо за тебя, либо против тебя! Как же прекрасно положение того, в пользу кого будет аргументировать Коран.</span></p>
+	<p style="text-align: left;"><span>Пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Читайте Коран, ибо, поистине, в День Воскресения он явится&nbsp; как заступник за тех, кто его читал. Читайте две прекрасные суры «аль-Бакару» и «али ‘Имран», ибо, поистине, в День Воскрешения они явятся, словно два облака (или две тени), или две стаи птиц, выстроившихся рядами, и будут заступаться за тех, кто их читал»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Муслим, 804].</span></span></p>
+	<p style="text-align: center;"><span style="font-size: 14pt;"><span>Разъяснение фразы:&nbsp;</span><span style="color: #008000;"><strong><span>«<em>Все люди отправляются утром по своим делам, и продающий душу свою либо освобождает её, либо губит</em>».</span></strong></span></span></p>
+	<p style="text-align: left;"><span>Все люди отправляются утром по своим делам. И человек либо освобождает свою душу, продавая её Аллаху, не давая страсти овладеть ею, не делая её рабом шайтана. Наоборот, такой человек посвящает свою душу тому, что любит Аллах, и тому, чем Он доволен. Либо человек губит свою душу, выходя утром и совершая деяния, которыми Аллах недоволен.</span></p>
+	<p style="text-align: center;"><span style="font-size: 14pt; color: #000080;"><strong>ПРИМЕЧАНИЯ:</strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a> См. «Тафсир ат-Табари», 29/144-147;&nbsp; «Тафсир аль-Багъауи», 4/413;&nbsp; «Тафсир аль-Куртуби», 19/65;&nbsp; «Тафсир ибн Касир», 4/442;&nbsp; «ад-Дурр аль-Мансур», 8/325-327.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a> Согласно этому мнению под одеждами подразумеваются человеческие деяния, очистить которые можно только искренне совершая их во имя Аллаха и исправно выполняя Его повеления. Верующий должен очищать свои деяния от злых умыслов, показухи, лицемерия, тщеславия, высокомерия, небрежности и всех недостатков, которые могут сделать его деяния тщетными либо уменьшить награду за них. Всевышний повелел Своим рабам избегать всего этого.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref3" name="_ftn3">[3]</a> Таяммум — очищение песком, пылью или чистой землёй, совершение которого допускается в том случае, когда у человека нет возможности совершить малое или полное омовение водой.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref4" name="_ftn4">[4]</a> Имеются в виду фразы.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref5" name="_ftn5">[5]</a> Известно, что небес всего семь, как сказал Всевышний: <strong>«Аллах — Тот, Кто сотворил семь небес».</strong></span>&nbsp;<a href="sura-activity://list_quran?sura=65&aya=12"><small>[Сура ат-Талякъ, аят 12]</small></a></span></p>
+	<p style="text-align: left;"><span>А также: <strong>«Скажи: «Кто Господь семи небес и Господь великого Трона?»»</span></strong>&nbsp;<a href="sura-activity://list_quran?sura=23&aya=86"><small>[Сура аль-Му’минун, аят 86]</small></a></span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

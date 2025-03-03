@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 37</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 37</h4>
+	<p style="text-align: left;"><span>Сообщается со слов ибн ‘Аббаса, да будет доволен Аллах им и его отцом, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Поистине, Аллах записал добрые и дурные дела, после чего разъяснил это: “За тем, кто решит совершить доброе дело, но не совершит его, Аллах запишет у Себя (совершение) целого доброго дела; если (человек) решит (совершить доброе дело) и совершит его, Аллах запишет за ним у Себя (совершение) от десяти до семисот и многим более добрых дел; за тем, кто решит совершить дурное дело, но не совершит его, Аллах запишет у Себя (совершение) целого доброго дела, а если он решит (совершить дурное дело), и совершит его, Аллах запишет (за ним) одно дурное дело”».</strong></em><span style="font-size: small;"><br><br>&nbsp&nbsp&nbsp<small>Хадис привели аль-Бухари (6491) и Муслим (131) в своих «сахихах» в точно таком виде.</span></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Поистине, Аллах записал добрые и дурные дела, после чего разъяснил это…»</em></strong></span> ― то есть: записал добрые и дурные дела у Себя, а затем разъяснил их в Коране. Он разъяснил, какие именно деяния будут записаны среди добрых дел человека, а какие – среди дурных.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«За тем, кто решит совершить доброе дело, но не совершит его, Аллах запишет у Себя (совершение) целого доброго дела…»</em></strong></span> ― некоторые ученые использовали эту фразу в качестве довода на то, что ангелы, записывающие деяния человека, знают о тех намерениях, которые у него в сердце. Ангелы знают о намерениях человека, ибо Аллах даровал им такую возможность.</span></p>
+	<p style="text-align: left;"><span>Также и некоторые пророки иногда знали о том, что в сердцах тех людей, которые стоят пред ними. Например, наш пророк, да благословит его Аллах и приветствует, однажды сообщил человеку о том, что у того в душе, как об этом уже говорилось в хадисе Уабисы ибн Ма‘бада, да будет доволен им Аллах.&nbsp;— [См. хадис № 27 в данной книге].</span></span></p>
+	<p style="text-align: left;"><span>Сообщается, что Уабиса ибн Ма‘бад, да будет доволен им Аллах, сказал: <em>«Однажды, я пришёл к посланнику Аллаха, да благословит его Аллах и приветствует, и он спросил: <strong>“Ты пришёл, чтобы спросить о благочестии?”</strong>»<strong>.&nbsp;— </strong></em><span style="font-size: small;">[Ахмад, 4/227;&nbsp; ад-Дарими, 2/246].</span></span></p>
+	<p style="text-align: left;"><span>То же самое случалось и с другими пророками. Это – сокровенное знание, которое Аллах Всевышний открывает тем из Своих рабов, кому пожелает. Именно так Аллах Всевышний открыл знание о намерениях людей ангелам, которые записывают деяния. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;عَالِمُ الْغَيْبِ فَلَا يُظْهِرُ عَلَى غَيْبِهِ أَحَدًا ۝ إِلَّا مَنِ ارْتَضَى مِن رَّسُولٍ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Он — Ведающий сокровенное, и Он не открывает Своего сокровенного никому, кроме тех посланников, которыми Он доволен»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=72&aya=26"><small>[Сура аль-Джинн, аяты 26-27]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А посланник может быть как из числа ангелов, так и из числа людей.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«За тем, кто решит совершить доброе дело, но не совершит его, Аллах запишет у Себя (совершение) целого доброго дела…»</em></strong></span> ― ведь, само желание совершить доброе деяние – это уже проявление покорности Аллаху. Аллах Всевышний по Своей милости и щедрости записывает такому человеку совершение целого доброго деяния.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…если (человек) решит (совершить доброе дело) и совершит его, Аллах запишет за ним у Себя (совершение) от десяти до семисот и многим более добрых дел…»</em></strong></span> ― если человек решит совершить доброе дело и совершит его, то, как минимум, ему будет записано совершение десяти благодеяний. А иногда за совершение одного доброго деяния человеку может быть записано целых семьсот добрых деяний.</span></p>
+	<p style="text-align: left;"><span>Поистине, мусульмане получают разную награду за совершение доброго деяния. Среди них есть такие, кому за совершение доброго деяния записывается десятикратная награда. Среди них есть такие, кому за совершение доброго деяния записывается двухсоткратная награда. Среди них есть такие, кому за совершение доброго деяния записывается семисоткратная награда, и даже больше этого.</span></p>
+	<p style="text-align: left;"><span>Награда бывает разной в зависимости от знаний человека, от почитания им Аллаха, от стремления к Последней жизни. Именно поэтому сподвижники, да будет доволен ими Аллах, получают самую большую награду среди всех членов исламской общины. Сообщается, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Клянусь Тем в Чьей длани моя душа, даже если любой из вас потратит (столько) золота, (сколько весит гора) Ухуд, (это не сравнится) ни с муддом&nbsp;<a href="#_ftn1" name="_ftnref1"><strong>[1]</strong></a>, ни с половиной мудда, (пожертвованного) любым из сподвижников!»<strong> — </strong></em></strong><span style="font-size: small;">[аль-Бухари, 3673;&nbsp; Муслим, 2541].</span></span></p>
+	<p style="text-align: left;"><span>Сподвижники, принявшие Ислам до завоевания Мекки, получают более великую награду, чем сподвижники, принявшие Ислам после завоевания Мекки, даже если первые раздали в качестве милостыни меньше, чем вторые. Что же сказать о тех людях, которые вообще не были сподвижниками?!</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…за тем, кто решит совершить дурное дело, но не совершит его, Аллах запишет у Себя (совершение) целого доброго дела…»</em></strong></span> ― эту фразу нужно разъяснить подробнее, так как возможны две ситуации:</span></p>
+	<p style="text-align: left;"><span>1 — Если человек оставил совершение дурного дела из-за страха пред Аллахом — именно в этом случае человеку записывается совершение целого доброго деяния. Именно об этом сказано в данном хадисе. Ведь, в другой версии этого хадиса сказано: <strong><em>— </em></strong><em>Аллах Всевышний сказал: <strong>«Если </strong>(человек)<strong> откажется от совершения дурного, запишите за ним совершение доброго дела, </strong></em><strong><em><u>ибо он отказался от этого ради Меня</u>».&nbsp;— </em></strong><span style="font-size: small;">[Муслим, 129].</span></span></p>
+	<p style="text-align: left;"><span>Ему записывается доброе деяние, ибо его дурное намерение изменилось на благое намерение, а за благое намерение полагается награда, о чём было сказано выше.</span></p>
+	<p style="text-align: left;"><span>2 — Если человек оставил совершение дурного дела из-за того, что просто не смог его совершить — в данном случае его душа по-прежнему желает совершить дурное деяние, даже если у человека этого не получилось. В данном случае ему не записывается совершение доброго деяния. Наоборот, если человек приложил все усилия, но не смог совершить дурное деяние по независящим от него причинам, то ему записывается совершение этого дурного деяния, ибо сообщается, что Абу Бакра&nbsp;[Нуфай’ ибн аль-Харис], да будет доволен им Аллах, сказал: <em>«Услышав, как посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong>“Если два мусульманина сойдутся (в бою, скрестив) свои мечи, </strong></em><strong><em><span style="color: #008000;">то и убивший, и убитый окажутся в Аду</span>”</em></strong><em>, я спросил: <strong>“О посланник Аллаха, (будет справедливо, если туда попадёт) убивший, но почему же и убитый?!”</strong> Он ответил: <strong>“</strong><strong><span style="color: #008000;">Ведь и он хотел убить своего товарища!</span>”</strong>».&nbsp;<strong>—</strong></em><span style="font-size: small;"> [аль-Бухари, 31;&nbsp; Муслим, 2888].</span></span></p>
+	<p style="text-align: left;"><span>Поэтому учёные, основываясь на этом хадисе, сказали: <em>«Если человек приложил усилия, чтобы совершить грех, но ему помешало что-то, независящее от него, то ему будет записано совершение дурного деяния и он будет спрошен за это»<strong>.&nbsp;— </strong></em><span style="font-size: small;">[См. «Тафсир ибн Касир», 2/198;&nbsp; «Шарх Сахих Муслим» (18/12) ан-Науауи;&nbsp; «Джами‘ аль-‘Улюм уа-ль-Хикам», стр. 354;&nbsp; «Фатх уль-Бари», 11/327;&nbsp; «‘Умдату-ль-Къарий», 1/212;&nbsp; «Нейлю-ль-Аутар», 7/201].</span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…а если он решит (совершить дурное дело), и совершит его, Аллах запишет (за ним) одно дурное дело…»</em></strong></span> ― это – великая милость Аллаха Всевышнего к Своим верующим рабам. Если они совершат дурное деяние, то им не запишется что-то большее, чем это. Что же касается совершения благих деяний, то награда за них увеличивается многократно.</span></p>
+	<p style="text-align: left;"><span>Именно поэтому в День Воскресения не погибнет никто, кроме погибшего! Дурных деяний будет больше, чем благих деяний, только у того, кто действительно погиб! Ведь, в День Воскресения Аллах Всевышний будет воздавать за благие деяния многократно. И даже если человек хотел совершить дурное деяние, но передумал, ему будет записано совершение одного благого деяния. А за совершение одного дурного деяния человеку записывается только одно дурное деяние. Поэтому дурных деяний будет больше, чем благих деяний, только у того, кто действительно потерпел убыток. Этот человек действительно совершал множество дурного и отдалялся от благого!</span></p>
+	<p style="text-align: center;"><span style="color: #000080; font-size: 14pt;"><strong>ПРИМЕЧАНИЕ:</strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a> Мудд — мера объёма и веса. Выполнение многих установлений Шари‛ата, например тех, которые имеют отношение к закяту или совершению омовения, требует знания некоторых мусульманских мер объёма и веса, и поэтому весьма важно дать им определение и указать, как они соотносятся с современными единицами измерения. Члены Комитета крупнейших ученых Саудовской Аравии считают, что вес мудда равен примерно 650 г. Палатой мер и весов Саудовской Аравии были проведены замеры объёма пригоршней у сорока человек среднего телосложения, которые показали, что объём мудда равен примерно 628 мл. А Аллах знает лучше!</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

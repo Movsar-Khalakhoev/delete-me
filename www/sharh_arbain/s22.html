@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 22</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 22</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу ‘Абдуллаха, Джабира ибн ‘Абдуллаха аль-Ансари, да будет доволен Аллах им и его отцом, что как-то раз один человек спросил посланника Аллаха, да благословит его Аллах и приветствует:<br><br> <strong><em>«Как ты считаешь, если я буду совершать предписанные молитвы, поститься в месяц Рамадан, буду считать дозволенное дозволенным, а запретное — запретным, ничего не добавляя к этому, войду ли я в Рай?»</em></strong><br><br> Он сказал: <em><strong>«Да».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл Муслим (15)</small></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong><em>«…буду считать дозволенное дозволенным…» </em></strong></span>― то есть: буду совершать его, считая его дозволенным.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong><em>«…а запретное — запретным…» </em></strong></span>― то есть: буду сторониться его.</span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>В этом хадисе упоминаются некоторые виды поклонения: молитва и пост, а также то, что человек считает дозволенное дозволенным, а запретное – запретным.</span></p>
+	<p style="text-align: left;"><span>В других хадисах сообщается, что как-то раз один из бедуинов пришёл к пророку, да благословит его Аллах и приветствует, и начал задавать ему вопросы, касающиеся Ислама. В частности, он спросил: <strong><em>«Сообщи мне, какие молитвы Аллах вменил мне в обязанность?!» </em></strong>На что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Ты должен совершать пять молитв,</em></strong> &nbsp;<strong><em>если только сам не пожелаешь совершить помимо этого дополнительную молитву». </em></strong>Тогда этот человек сказал: <strong><em>«Сообщи мне, что мне вменил в обязанность Аллах из постов?!» </em></strong>На что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Ты должен соблюдать пост только в течение Рамадана, если только сам не пожелаешь соблюдать помимо этого дополнительные посты». </em></strong>Тогда этот человек сказал: <strong><em>«Сообщи мне, что мне вменил в обязанность Аллах из закята?!» </em></strong>Тогда посланник Аллаха, да благословит его Аллах и приветствует, сказал ему о необходимости выплаты закята. Этот человек спросил: <strong><em>«А должен ли я выплачивать что-нибудь сверх этого?»</em></strong> Пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Нет, если только сам ты не пожелаешь этого». </em></strong>Тогда этот человек сказал: <strong><em>«Клянусь Аллахом, я ничего не добавлю к тому, чем меня обязал Аллах, и ничего не стану убавлять из этого!» </em></strong>Тогда посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong><em>«Он войдет в Рай, если говорит правду!»&nbsp;— </em></strong><span style="font-size: small;">[аль-Бухари, 1891].</span></span></p>
+	<p style="text-align: left;"><span>А в другой версии сказано: <strong><em>«Пусть посмотрит на этого (бедуина) тот, кому доставит радость взгляд на человека из числа обитателей Рая»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 1397;&nbsp; Муслим, 14].</span></span></p>
+	<p style="text-align: left;"><span>В других версиях этого хадиса сообщается, что пророк, да благословит его Аллах и приветствует, сообщил этому бедуину о молитве, посте, закяте и хадже.</span></p>
+	<p style="text-align: left;"><span>Эти хадисы указывают на то, что <strong><span style="color: #008000;">будет обитателем Рая человек</span></strong>, который:</span></p>
+	<ul style="text-align: left;">
+	<li>Выполнял обязательные предписания религии, желая приблизиться к Аллаху;</li>
+	<li>Совершал пять обязательных молитв, подчиняясь Аллаху;</li>
+	<li>Соблюдал пост, подчиняясь Аллаху;</li>
+	<li>Выплачивал закят, подчиняясь Аллаху;</li>
+	<li>Совершал хадж, подчиняясь Аллаху;</li>
+	<li>Считал дозволенное дозволенным, подчиняясь Аллаху;</li>
+	<li>Считал запретное запретным, подчиняясь Аллаху.</li>
+	</ul>
+	<p style="text-align: left;"><span>На эту тему пришло множество хадисов. В некоторых хадисах человеку обещан Рай за произнесение слов <em>″ля иляха илля Ллах″</em> <em>(нет божества, достойного поклонения, кроме Аллаха)</em>. В некоторых хадисах человеку обещан Рай за совершение молитвы. В некоторых хадисах человеку обещан Рай за соблюдение поста. Иначе говоря, подобные хадисы приходят в разнообразной форме.</span></p>
+	<p style="text-align: left;"><span>Суть в том, что в некоторых хадисах человеку бывает обещан Рай за совершение некоторых праведных деяний. Но человек получает Рай за совершение этого деяния только при наличии всех условий и при отсутствии препятствий, а также только тогда, когда человек исповедует единобожие. Следовательно:</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Во-первых</strong></span>, должны быть соблюдены все условия и отсутствовать препятствия;</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Во-вторых</strong></span>, человек должен исповедовать единобожие <em>(таухид)</em>, ибо молитва, закят, пост и все остальные деяния бывают действительными только при наличии единобожия <em>(таухида)</em>.</span></p>
+	<p style="text-align: left;"><span>Поэтому пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Он войдет в Рай, если говорит правду!»</em></strong></span></p>
+	<p style="text-align: center;"><span style="color: #008000;">Важное правило</span></p>
+	<p style="text-align: left;"><span>Когда в шари‘атских текстах говорится о том, что <span style="color: #008000;">человек, сделавший то-то и то-то, войдет в Рай</span>, то может иметься в виду две вещи:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Человек войдет в Рай сразу (изначально);</em></span></li>
+	<li><span><em>Человек когда-нибудь войдет Рай, иначе говоря, не останется в Аду навечно. </em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Если в шари‘атских текстах сказано: <em>«Сделавший то-то и то-то войдет в Рай»</em>, то возможны две ситуации:</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>1 ―</strong></span> Человек войдёт в Рай сразу и вообще не будет наказан. Аллах простит ему все его грехи и сразу введёт его в Рай.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>2 ―</strong></span> Человек войдёт в Рай когда-нибудь и не останется в Аду навечно.</span></p>
+	<p style="text-align: left;"><span>Например, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Любой раб (Аллаха), который скажет: “Нет божества, достойного поклонения, кроме Аллаха”, а потом умрёт, не отступившись от этого, обязательно войдёт в Рай»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 5827;&nbsp; Муслим, 94].</span></span></p>
+	<p style="text-align: left;"><span>А также: <strong><em>«Кто встретит Аллаха, ничего не придавая Ему в сотоварищи, тот войдет в Рай»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 129;&nbsp; Муслим, 32].</span></span></p>
+	<p style="text-align: left;"><span>А также: <strong><em>«Аллах предписал (Своим) рабам совершать пять молитв (в течение дня и ночи). Кто будет совершать их, ничего не упуская из-за небрежного отношения, у того есть договор с Аллахом о вхождении в Рай»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Абу Дауд, 1420;&nbsp; ибн Маджах, 1401;&nbsp; ан-Насаи в «аль-Кубра», 1/142;&nbsp; Ахмад, 5/315;&nbsp; ад-Дарими в «ас-Сунан», 1577;&nbsp; ибн Хиббан, 5/23;&nbsp; аль-Бейхаки в «аль-Кубра», 1/361].</span></span></p>
+	<p style="text-align: left;"><span>А также: <strong><em>«Людей постившихся призовут (в Рай) из врат, именуемых «ар-Райян»»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 1897;&nbsp; Муслим, 1027].</span></span></p>
+	<p style="text-align: left;"><span>Во всех этих хадисах могут иметься в виду две вещи:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Человек войдет в Рай сразу (изначально);</em></span></li>
+	<li><span><em>Человек когда-нибудь войдет Рай, иначе говоря, не останется в Аду навечно. </em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Если же в шари‘атских текстах сказано, что <strong><span style="color: #800000;">человек, сделавший то-то и то-то, не войдёт в Рай</span></strong>, то также могут иметься в виду две ситуации:</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong>1 ―</strong></span> Человек не войдет в Рай сразу (изначально), а сначала попадёт в Ад. Это касается единобожников, которые совершали грехи, и Аллах не простил им эти грехи и ввёл их в Ад на некоторое время.</span></p>
+	<p style="text-align: left;"><span>Например, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Сплетник не войдёт в Рай»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 6056;&nbsp; Муслим, 105].</span></span></p>
+	<p style="text-align: left;"><span>А также: <strong><em>«Не войдёт в Рай порывающий родственные связи»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 5984;&nbsp; Муслим, 2556].</span></span></p>
+	<p style="text-align: left;"><span>А также: <strong><em>«Не войдет в Рай клеветник»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Муслим, 105].</span></span></p>
+	<p style="text-align: left;"><span>Во всех этих хадисах имеется в виду, что такой человек не войдет в Рай сразу, а сначала окажется в Огне.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong>2 ―</strong></span> Человек никогда не войдет в Рай. Это касается неверующих, которые вообще никогда не окажутся в Раю. Их пристанищем станет Огонь, в котором они пребудут вечно. Например, Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَلَا يَدْخُلُونَ الْجَنَّةَ حَتَّى يَلِجَ الْجَمَلُ فِي سَمِّ الْخِيَاطِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Они не войдут в Рай, пока верблюд не пройдет сквозь игольное ушко»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=7&aya=40"><small>[Сура аль-А‘раф, аят 40]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;فَقَدْ حَرَّمَ اللَّهُ عَلَيهِ الْجَنَّةَ وَمَأْوَاهُ النَّارُ وَمَا لِلظَّالِمِينَ مِنْ أَنصَارٍ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Тому, </strong><em>(кто придаёт Аллаху сотоварищей),</em><strong> Он </strong><em>(Аллах)</em><strong> запретил Рай. Его пристанищем будет Геенна, и у беззаконников не будет помощников </strong><em>(которые спасли бы их от адского наказания)</em></span><strong>»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=5&aya=72"><small>[Сура аль-Маида, аят 72]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Это – важное правило, известное среди приверженцев сунны. Если в каком-либо аяте или хадисе говорится о том, что человек, сделавший определенное деяние, войдет в Рай, то имеются в виду две вещи:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Человек войдет в Рай сразу (изначально) и ему будут прощены все остальные грехи. </em></span></li>
+	<li><span><em>Человек когда-нибудь войдет Рай, иначе говоря, не останется в Аду навечно. </em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>То же самое касается аятов или хадисов, в которых сказано, что человек, сделавший определенное деяние, не войдет в Рай. Здесь также могут иметься в виду две вещи:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Человек не войдет в Рай сразу (изначально), а сначала попадёт в Ад. </em></span></li>
+	<li><span><em>Человек никогда не войдет в Рай. </em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Это – важное правило, известное среди приверженцев сунны. В этом приверженцам сунны противоречат заблудшие группы, в частности, хариджиты&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a> и му‘тазилиты&nbsp;<a href="#_ftn2" name="_ftnref2">[2]</a>.</span></p>
+	<p style="text-align: left;"><span><strong><span style="color: #008000;">Обрати внимание также на то</span></strong>, что в разбираемом нами хадисе сказано только о необходимости совершения молитвы и соблюдения поста, но ничего не сказано о закяте и хадже.&nbsp; А, ведь, у человека, не выплачивающего закят, есть вероятность попадания в Огонь. Также и у человека, не совершающего хадж, есть вероятность попадания в Огонь.</span></p>
+	<p style="text-align: left;"><span>Почему же тогда после упоминания молитвы и поста бедуин сказал: <em>«Войду ли я Рай, если ничего не добавлю к этому?», </em>а пророк, да благословит его Аллах и приветствует, ответил утвердительно?!</span></p>
+	<p style="text-align: center;"><strong><span style="color: #008000;">Разъяснение</span></strong></p>
+	<p style="text-align: left;"><span>Ответ пророка, да благословит его Аллах и приветствует, можно понять двояко:</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>1 ―</strong></span> Этот человек сказал пророку, да благословит его Аллах и приветствует: <strong><em>«Я буду считать запретное запретным»</em></strong><em>, </em>а оставление закята и хаджа – это запретный поступок <em>(харам)</em>. Если этот человек будет считать оставление закята и хаджа запретным поступком, то, значит, он будет совершать их. Исходя из этого, пророк, да благословит его Аллах и приветствует, сказал ему: <strong><em>«Да!»</em></strong></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>2 ―</strong></span> Такие хадисы следует понимать, не отрывая их от других хадисов на эту тему. В данном хадисе имеется в виду то, что этот человек войдет в Рай, но только при соблюдении всех условий и при отсутствии препятствий.</span></p>
+	<p style="text-align: left;"><span>Или же можно сказать, что такой человек когда-нибудь войдёт в Рай, после попадания в Огонь за оставление закята и хаджа. Если же он будет совершать молитву, поститься, выплачивать закят и совершать хадж и все остальные обязательные деяния, то он войдёт в Рай изначально, не попадая в Огонь.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…если я буду совершать предписанные молитвы…»</em></strong></span> ― он имел в виду: пять обязательных молитв в течение дня и ночи, не совершая ничего, помимо этих пяти молитв.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…поститься в месяц Рамадан…»</em></strong></span> ― он имел в виду: пост в месяц Рамадан, не соблюдая никаких постов, помимо этого.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…буду считать дозволенное дозволенным…»</em></strong></span> ― учёные разделились относительно этой фразы на два мнения:</span></p>
+	<p style="text-align: left;"><span><strong>Первое мнение:</strong></span> это – мнение, которое упомянул ан-Науауи, да помилует его Аллах, после приведения данного хадиса. Он сказал: <em>«<strong>″…буду считать дозволенное дозволенным…″ </strong>― то есть: </em><em><u>буду совершать его</u>, считая его дозволенным».</em></span></p>
+	<p style="text-align: left;"><span><strong>Второе мнение:</strong> </span>фразу следует понимать так: я буду убеждён в том, что всё разрешенное Аллахом является разрешенным для меня. В моём сердце не будет возражений относительно того, что дозволил Аллах, даже если я не смогу всего этого совершать.</span></p>
+	<p style="text-align: left;"><span>И второе мнение является более правильным на мой взгляд.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…буду считать запретное запретным…»</em></strong> </span>― это включает в себя две вещи:</span></p>
+	<p style="text-align: left;"><span><strong>Во-первых</strong>,</span> человек должен считать запретным то, что запретил Аллах.</span></p>
+	<p style="text-align: left;"><span><strong>Во-вторых</strong></span>,&nbsp; человек должен оставлять то, что считает запретным.</span></p>
+	<p style="text-align: left;"><span>Если человек знает, что определенная вещь запрещена, но все равно совершает её, то он является грешником.</span></p>
+	<p style="text-align: left;"><span>Если же человек не считает запретным то, что запретил Аллах, то он вообще является неверующим, ибо он не считает истиной то, о чем сообщил Аллах.</span></p>
+	<p style="text-align: center;"><strong><span style="color: #000080; font-size: 14pt;">ПРИМЕЧАНИЯ:</span></strong></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp;Хариджиты – это люди, вышедшие с оружием против правителя верующих ‘Али ибн Аби Талиба, да будет доволен им Аллах. Пророк, да благословит его Аллах и приветствует, сказал относительно них: <strong><em>«Поистине, среди потомков этого человека </em></strong><em>(имеется в виду Зуль-Хувейсира)<strong> появятся люди, которые станут читать Книгу Аллаха постоянно и легко, но дальше их глоток такое чтение распространяться не будет. Они отступятся от религии, подобно выпущенной из лука стреле, которая пронзает зверя насквозь и вылетает с другой стороны. Поистине, если я доживу до того времени, когда они появятся, то непременно буду убивать их, как убивали самудян!»» </strong></em>Передали аль-Бухари (3610) и Муслим (1064).</span></p>
+	<p style="text-align: left;"><span>Каждый человек, вышедший против законного правителя, вокруг которого объединились мусульмане, называется хариджитом.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a>&nbsp;Му’тазилиты – это одна из заблудших групп, убеждения которой противоречат убеждениям приверженцев сунны. Главой этой группы был Уасыль ибн ’Ата, который некоторое время посещал уроки Хасана аль-Басри. Затем он начал говорить, что человек, совершающий большие грехи, не является ни верующим, ни неверующим. Тогда Хасан аль-Басри прогнал его из своих собраний. Позже к Уасылю присоединился ’Амр ибн ’Убейд и они оба отделились от тех, кто учился у Хасана аль-Басри, поэтому их назвали ″му’тазилитами″ (отделившимися).</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

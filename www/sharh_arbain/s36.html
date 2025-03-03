@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 36</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 36</h4>
+	<p style="text-align: left;"><span>Сообщается со Абу Хурейры, да будет доволен им Аллах, что пророк, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Того, кто избавит верующего от одной из печалей мира этого, Аллах избавит от одной из печалей Дня Воскресения. Тому, кто облегчит положение попавшего в тяжелую ситуацию, Аллах облегчит положение его и в мире этом, и в мире ином. Того, кто покроет мусульманина, Аллах покроет и в мире этом, и в мире ином. Аллах будет оказывать помощь рабу, пока сам раб оказывает её брату своему. Вступившему на какой-нибудь путь в поисках знания Аллах за это облегчит путь в Рай. Когда люди собираются в одном из домов Аллаха, где они совместно читают и изучают Книгу Аллаха, обязательно нисходит на них спокойствие, и покрывает их милость, и окружают их ангелы и упоминает их Аллах среди тех, кто находится пред Ним. А тому, кого станут задерживать дела его, происхождение его не поможет двигаться быстрее».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл Муслим (2699).</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Того, кто избавит верующего от одной из печалей мира этого…»</em></strong></span> ― например, избавит верующего от одной из душевных печалей, или от одной из физических проблем, и так далее. Или, например, избавит человека от печали посредством благих слов, или посредством своего имущества, или посредством своего авторитета.</span></p>
+	<p style="text-align: left;"><span>Следовательно, речь идёт об избавлении верующего от любых видов печали любым возможным способом.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…Аллах избавит от одной из печалей Дня Воскресения…»</em></strong></span> ― если человек избавит верующего от печали, поможет ему избавиться от неё, избавит от тяжести и трудностей, то воздаянием будет то, что Аллах Всевышний избавит его от одной из печалей Дня Воскресения. Эта награда будет дарована человеку в День Воскресения, ибо в этот день он будет нуждаться в избавлении от печалей гораздо больше, чем нуждается в этом в мирской жизни.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Тому, кто облегчит положение попавшего в тяжелую ситуацию…»</em></strong></span> ― речь идёт о человеке, который что-то должен другим людям, но не может этого отдать. Такому человеку можно помочь разными способами. Например, можно дать ему денег, чтобы избавить его от крайней нужды в деньгах. А если, например, этот человек должен что-то тебе, то прости ему этот долг или хотя бы облегчи. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَإِن كَانَ ذُو عُسْرَةٍ فَنَظِرَةٌ إِلَى مَيْسَرَةٍ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Если должник находится в трудном положении, то дайте ему отсрочку, пока его положение не улучшится»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=280"><small>[Сура аль-Бакара, аят 280]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Желательно облегчать положение того, кто попал в тяжелую ситуацию. Это будет достойным поступком и великой милостыней.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…Аллах облегчит положение его и в мире этом, и в мире ином…»</em></strong></span> ― это будет соответствующим воздаянием тому, кто облегчил положение попавшего в тяжелую ситуацию. Награда за данный поступок будет дарована человеку и в мире этом, и в Последней жизни.</span></p>
+	<p style="text-align: left;"><span>Помогая мусульманам, человек может желать награды Аллаха Всевышнего, а также желать того, чтобы Аллах Всевышний облегчил его положение и в мире этом, и в Последней жизни. Это не противоречит искренности, о чём мы говорили, разбирая первый хадис.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Того, кто покроет мусульманина, Аллах покроет и в мире этом, и в мире ином»</em></strong></span> ― это касается всех мусульман – касается как покорного праведника, так и нечестивца. Поистине, сокрытие грехов мусульманина – это достойный поступок. А группа обладателей знания даже указала на обязательность этого.&nbsp;— <span style="font-size: small;">[См. «ат-Тамхид», (5/337)&nbsp; ибн ‘Абд уль-Барра; «аль-Мухалля», (11/145)&nbsp; ибн Хазма;&nbsp; «Файд уль-Кадир», 1/115-116. Также этот вопрос был разобран шейхом Мухаммадом ибн Салихом ибн ‘Усеймином в книге «Шарх аль-Арба‘ин ан-Науауия», стр. 360-361].</span></span></p>
+	<p style="text-align: left;"><span>Если человек неуполномочен государством велеть одобряемое и удерживать от порицаемого, то он должен покрывать грехи мусульманина. Если он знает, что определенный человек совершает грех, то он должен скрыть это от других людей. Если он знает, что определенный человек совершает нечто мерзкое, то он должен скрыть это от других людей, и самостоятельно давать ему советы, чтобы тот прекратил грешить.</span></p>
+	<p style="text-align: left;"><span>Если же человек специально уполномочен государством велеть одобряемое и удерживать от порицаемого, то он может сообщить о грехах определенного человека только своим коллегам. Но даже такому человеку недозволенно рассказывать другим людям о грехах мусульман, ибо он также обязан скрывать грехи мусульман.</span></p>
+	<p style="text-align: left;"><span>Мы специально обращаем на это внимание, так часто бывает, что эти люди много говорят о грешниках, о тех, кого они ловят совершающими грехи. Такие люди должны скрывать то, чем они занимаются. Они не должны рассказывать людям об этом, если только нет какой-либо шари‘атской нужды.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Аллах будет оказывать помощь рабу, пока сам раб оказывает её брату своему…»</em></strong></span> ― в этом содержится великое побуждение в адрес мусульман, дабы они помогали своим верующим братьям. Когда человек помогает своему верующему брату, Аллах Всевышний помогает этому человеку. Если ты помогаешь своему брату избавиться от нужд, то Аллах Всевышний поможет тебе избавиться от нужд. Это – величайшая награда от Всевышнего Аллаха!</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Вступившему на какой-нибудь путь в поисках знания Аллах за это облегчит путь в Рай…»</em></strong></span> ― в этой фразе содержится побуждение мусульман к тому, чтобы они вступали на путь приобретения знаний. На какой бы путь к знанию ты ни вступил, Аллах Всевышний посредством этого непременно облегчит тебе путь в Рай, если ты приобретал это знание искренне ради Него.</span></p>
+	<p style="text-align: left;"><span>Знание – это одна из дверей к Раю, ибо в Рай войдет только тот, кто знал о правах Аллаха.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Когда люди собираются…»</em></strong> </span>― этими людьми могут быть учёные, могут быть искатели знания, могут быть простые люди, могут быть люди, которые много поклоняются Аллаху, и многие другие. Каждый из них может собираться в мечети, чтобы читать Книгу Аллаха и изучать её. Какая бы группа людей ни собралась в мечети для чтения и изучения Книги Аллаха, им полагается великая награда, о которой сказано в хадисе. &nbsp;</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…в одном из домов Аллаха…»</em></strong></span> ― имеется в виду мечеть, ибо именно её называют домом Аллаха, чтобы указать на её почёт пред Аллахом. Мечеть названа домом Аллаха, ибо именно в ней люди ищут Его довольства.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…где они совместно читают Книгу Аллаха и изучают её…»</em></strong> </span>― то есть: один из них читает Книгу Аллаха, а все остальные слушают его чтение. Именно так поступали праведные предшественники. Что же касается чтения Корана всеми вместе в один голос, то это является нововведением. Сподвижники и их последователи выбирали одного чтеца, который бы читал им Коран, а затем слушали его чтение. Затем через некоторое время они могли назначить другого чтеца, и подобным образом изучали Книгу Аллаха.&nbsp;— <span style="font-size: small;">[Этот вопрос был разобран шейхом Мухаммадом ибн Салихом ибн ‘Усеймином в книге «Шарх аль-Арба‘ин ан-Науауия», стр. 364-365].</span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…обязательно нисходит на них спокойствие…»</em></strong></span> ― на этих людей обязательно нисходит спокойствие и милость от Аллаха Всевышнего.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и покрывает их милость…»</em></strong></span> ― милость становится для них покрывалом, окружая их со всех сторон. Шайтан не может взять над ними верх, пока они находятся в таком положении. Это – великая милость к ним от Аллаха Всевышнего.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и окружают их ангелы…»</em></strong></span> ― ангелы окружают этих людей со всех сторон, плотно смыкая свои ряды. Это – великая милость к ним от Аллаха Всевышнего. Шайтан не может взять над ними верх, пока они находятся в таком положении.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и упоминает их Аллах среди тех, кто находится пред Ним…»</em></strong></span> ― имеется в виду то, что Аллах Всевышний похвалит этих людей среди тех приближенных ангелов, которые находятся у Него. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَّن يَسْتَنكِفَ الْمَسِيحُ أَن يَكُونَ عَبْداً لِّلَّهِ وَلَا الْمَلآئِكَةُ الْمُقَرَّبُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Ни Мессия, <span style="color: #008000;">ни приближенные ангелы</span> никогда не посчитают для себя унизительным быть рабами Аллаха»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=172"><small>[Сура ан-Ниса, аят 172]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Приближенные ангелы – это ангелы, которые находятся у Аллаха Всевышнего. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَمَنْ عِندَهُ لَا يَسْتَكْبِرُونَ عَنْ عِبَادَتِهِ وَلَا يَسْتَحْسِرُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«А те, кто находится рядом с Ним, не превозносятся над поклонением Ему и не устают»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=21&aya=19"><small>[Сура аль-Анбийа, аят 19]</small></a></span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«А тому, кого станут задерживать дела его, происхождение его не поможет двигаться быстрее…»</em></strong></span> ― речь идёт о тех людях, которые гордятся своим происхождением, и думают, что происхождение поможет им добиться любви Аллаха. Шари‘ат указал на ложность таких утверждений. Поистине, человеку поможет только богобоязненность и его деяния. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَى وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О люди! Воистину, Мы создали вас из мужчины и женщины и сделали вас народами и племенами, чтобы вы узнавали друг друга, и самый почитаемый перед Аллахом среди вас — наиболее богобоязненный»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=49&aya=13"><small>[Сура аль-Худжурат, аят 13]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Богобоязненность <em>(такуа)</em> – это то, что даёт человеку превосходство над другими.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

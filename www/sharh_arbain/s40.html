@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 40</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 40</h4>
+	<p style="text-align: left;"><span>Сообщается, что ибн ‘Умар, да будет доволен Аллах им и его отцом, сказал: <em>«(Однажды) посланник Аллаха, да благословит его Аллах и приветствует, взял меня за плечи и сказал:<br><br> </em><strong><em>“Будь в этом мире (таким), будто ты чужеземец или путник, (проходящий мимо)”</em></strong><em>».</em></span></p>
+	<p style="text-align: left;"><span>А сам ибн ‘Умар, да будет доволен Аллах им и его отцом, часто говорил: <em><strong>«Если ты дожил до вечера, то не жди, что доживёшь и до утра, а если ты дожил до утра, то не жди, что доживёшь и до вечера, и бери у твоего здоровья то, что пригодится для твоей болезни, а у твоей жизни — то, что пригодится для твоей смерти».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл аль-Бухари (6416).</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>В этом хадисе содержится завещание пророка, да благословит его Аллах и приветствует, ибн ‘Умару, да будет доволен Аллах им и его отцом. После выполнения этого завета оживают людские сердца. Людям не следует обольщаться своей молодостью, своим здоровьем, своим жизненным сроком, и так далее.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><em>«(Однажды) посланник Аллаха, да благословит его Аллах и приветствует, взял меня за плечи…»</em></span> ― это указывает на заботу пророка, да благословит его Аллах и приветствует, об ибн ‘Умаре, да будет доволен Аллах им и его отцом. В то время ибн ‘Умар, да будет доволен Аллах им и его отцом, был еще молодым юношей, не достигшим возраста двадцати лет.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Будь в этом мире (таким), будто ты чужеземец или путник, (проходящий мимо)…»</em></strong></span> — это одно из величайших завещаний, наиболее соответствующих реальности. О если бы люди поняли это!</span></p>
+	<p style="text-align: left;"><span>Поистине, человек&nbsp;[то есть: Адам, мир ему]</span>&nbsp;начал свою жизнь в Раю, а затем был низведен на землю для испытания. Поэтому человек на этой земле подобен чужеземцу или путнику, проходящему мимо. Все люди живут на этой земле подобно чужеземцам. Родина Адама, мир ему, а также тех, кто последовал за ним в вере, богобоязненности, единобожии и искренности пред Аллахом ― это Рай. Адам был выведен из Рая для испытания в качестве воздаяния за ослушание Аллаха. Если покорный раб поразмышляет над этим, то начнёт приучать свою душу к тому, что его настоящее местопребывание – это Рай, а не мир этот. Мир этот является обителью испытаний, а человек здесь подобен&nbsp; чужеземцу или путнику, проходящему мимо.</span></p>
+	<p style="text-align: left;"><span>Как же прекрасны слова ибн уль-Каййима, да помилует его Аллах, когда он упоминал о том, как душа мусульманина тоскует о Рае, как она любит Рай, как она стремится к Раю. Всё это по той причине, что Рай – это первая обитель человека, который сейчас находится в плену у своего врага. Человеку пришлось покинуть свою родину по той причине, что Иблис пленил нашего праотца Адама, мир ему. Вернется ли человек на родину или нет?! Ибн уль-Каййим, да помилует его Аллах, сказал:</span></p>
+	<p style="direction: rtl; text-align: center;">
+		<div class="arabic">
+		<small>
+		<span style="color: #800000;">فَحَيَّ عَلى جَنّاتِ عَدْنٍ فَإنَّها … مَنازِلُكَ الأُولى وفِيها المُخَيَّمُ</span><br>
+		<span style="color: #800000;">ولَكِنَّنا سَبْيُ العَدُوِّ فَهَلْ تَرى … نَعُودُ إلى أوْطانِنا ونَسْلَمُ</span><br>
+		<span style="color: #800000;">وقَدْ زَعَمُوا أنَّ الغَرِيبَ إذا نَأى … وشَطَّتْ بِهِ أوْطانُهُ فَهُوَ مُغْرَمُ</span><br>
+		<span style="color: #800000;">وأيُّ اغْتِرابٍ فَوْقَ غُرْبَتِنا الَّتِي … لَها أضْحَتِ الأعْداءُ فِينا تَحَكَّمُ</span><br>
+		</small>
+		</div>
+	</p>
+	<p style="text-align: center;"><em>«Идём в высшие Сады, ибо, поистине они –</em></p>
+	<p style="text-align: center;"><em>Твоя первая обитель, а в ней дворцы.</em></p>
+	<p style="text-align: center;"><em>Но нынче мы в плену у врага. Как ты считаешь,</em></p>
+	<p style="text-align: center;"><em>Вернемся ли мы на родину, спасение обретя?!</em></p>
+	<p style="text-align: center;"><em>Некоторые посчитали, что чужеземец, отдалившись</em></p>
+	<p style="text-align: center;"><em>От своей родины, переживает.</em></p>
+	<p style="text-align: center;"><em>Какое же проживание вдали от родины хуже нашего,</em></p>
+	<p style="text-align: center;"><em>Когда мы живем под властью врагов наших?!»&nbsp;</em></p>
+	<p style="text-align: center;"><span>&nbsp;[См. «Хади аль-Аруах», стр. 7;&nbsp; «Мифтаху Дар ас-Са‘ада», 1/10;&nbsp; «Тарик аль-Хиджратайн», стр. 92].</span></p>
+	<p style="text-align: left;"><span>И как же прекрасны слова поэта:</span></p>
+	<p style="direction: rtl; text-align: center;">
+		<div class="arabic">
+		<small>
+		<span style="color: #800000;">نَقِّلْ فُؤادَكَ حَيْثُ شِئْتَ مِنَ الهَوى … ما الحُبُّ إلّا لِلْحَبِيبِ الأوَّلِ</span><br>
+		<span style="color: #800000;">كَم مَنزِلٍ في الأرضِ يَألَفُهُ الفَتى … وحَنينُهُ أبَدًا لأوَّلِ مَنزِلِ</span><br>
+		</small>
+		</div>
+	</p>
+	</div>
+	<p style="text-align: center;"><em>«Перенеси сердце своё туда, куда желают страсти.</em></p>
+	<p style="text-align: center;"><em>Но все равно нет любви, кроме любви к Первому Любимому.</em></p>
+	<p style="text-align: center;"><em>Сколько бы жилищ на земле не облюбовал юноша.</em></p>
+	<p style="text-align: center;"><em>Все равно его тоска всегда по первой родине». </em></p>
+	<p style="text-align: left;"><span>Первый Любимый – это Аллах Всевышний, а первая родина – это Райские Сады.</span></p>
+	<p style="text-align: left;"><span>Таково положение людей, которые постоянно возвращаются к покорности Аллаху, постоянно повинуются Ему. Их сердца связаны с Аллахом, ибо они любят только Его, стремятся только к Нему, трепещут только пред Ним, покоряются только Ему. Их сердца связаны с обителью почёта – Райскими Садами. Они живут так, будто видят Рай воочию. Они живут в мирской жизни подобно чужестранцам или путникам, проходящим мимо. Чужеземцы и путники, проходящие мимо, не привыкают к тому месту, где они остановились на время. Путник, проходящий мимо, старается быстро завершить все свои дела и вернуться домой. Такова сущность мирской жизни.</span></p>
+	<p style="text-align: left;"><span>Поистине, Нух, мир ему, прожил тысячу лет, девятьсот пятьдесят из которых жил среди своих соплеменников. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;فَلَبِثَ فِيهِمْ أَلْفَ سَنَةٍ إِلَّا خَمْسِينَ عَامًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«И он </strong><em>(Нух)</em></span><strong> пробыл среди них тысячу лет без пятидесяти годов»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=29&aya=14"><small>[Сура аль-‘Анкабут, аят 14]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Но эти годы всё равно прошли и его жизнь закончилась. Были люди, жившие сотни лет, но и они исчезли. Некоторые живут сто лет, некоторые – восемьдесят, некоторые – пятьдесят, некоторые – сорок. Как бы ни было, все эти люди подобны чужеземцам и путникам, проходящим мимо. Они прошли чрез мир этот и покинули его, а смерть ждёт человека утром и вечером. Человек должен быть внимателен к своей душе. Самое большое несчастье, постигающее человека – это небрежное отношение к истинной сущности мира этого.</span></p>
+	<p style="text-align: left;"><span>Если Аллах Всевышний окажет тебе милость, то ты поймешь истинную сущность мира этого, который является чужой землей, предназначенной для испытаний. Мир этот – обитель испытаний и переход в жизнь вечную, а не постоянное местопребывание. Если ты осознаешь это, твоё сердце очнётся, а иначе – твоё сердце будет поражено недугом. Пусть Аллах поможет нам и вам очнуться после забвения!</span></p>
+	<p style="text-align: left;"><span>Осознав пророческий завет, ибн ‘Умар, да будет доволен Аллах им и его отцом, сам завещал людям: <em>«Если ты дожил до вечера, то не жди, что доживёшь и до утра, а если ты дожил до утра, то не жди, что доживёшь и до вечера, и бери у твоего здоровья то, что пригодится для твоей болезни, а у твоей жизни — то, что пригодится для твоей смерти».</em></span></p>
+	<p style="text-align: left;"><span>&nbsp;Постоянно жди смерти и готовься к ней. Люди говорили о Хаммаде ибн Саляме&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a>, да помилует его Аллах: <em>«Если бы ему сказали: ″Ты умрешь завтра″, он бы не сумел добавить к своим делам ничего».&nbsp;— </em><span style="font-size: small;">[Абу Ну‘айм в «аль-Хилья», 6/250;&nbsp; аль-Миззи в «Тахзиб аль-Камаль», 7/265].</span></span></p>
+	<p style="text-align: left;"><span>Человек может достигнуть этого только тогда, когда будет постоянно помнить о правах Аллаха Всевышнего. Когда он поклоняется Аллаху, пусть помнит о своих обязанностях пред Аллахом и служит Ему искренне.</span></p>
+	<p style="text-align: left;"><span>Человек должен совершать каждое свое дело только на основе знания. Поэтому обладатели знания обрели такое достоинство, что каждый миг они помнят о постановлениях шари‘ата, что бы ни делали и куда бы ни шли. Если они совершат грех, то тут же попросят прощения у Господа, после чего станут жить даже лучше, чем прежде.</span></p>
+	<p style="text-align: center;"><span style="color: #000080;"><strong>ПРИМЕЧАНИЕ:</strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a> Абу Саляма, Хаммад ибн Саляма ибн Динар – имам жителей Басры, приверженец сунны и пути сподвижников. Скончался в 167 г.х.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 42</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 42</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Анаса, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал<em>:<br><br><strong>«Аллах Всевышний сказал: ″О сын Адама, когда бы ты ни воззвал ко Мне и не надеялся на Меня, Я буду прощать тебя, не обращая внимания на то, какие грехи ты совершил! О сын Адама, если совершишь ты столько грехов, что достигнут они туч небесных, а потом попросишь у Меня прощения, то Я прощу тебя! О сын Адама, поистине, если придёшь ты ко Мне с таким количеством грехов, что заполнят они собой чуть ли не всю землю, но встретишь Меня, не поклоняясь наряду со Мной ничему иному, Я обязательно дарую тебе прощение, которое покроет собой все эти грехи!″»</strong></em><span style="font-size: small;"><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл ат-Тирмизи (3540) [ат-Табарани в «аль-Аусат», 4/315,&nbsp; со слов Анаса, да будет доволен им Аллах. А также Ахмад, 5/148;&nbsp; ад-Дарими, 2788;&nbsp; аль-Баззар, 9/403;&nbsp; аль-Хаким в «аль-Мустадрак», 4/269,&nbsp; со слов Абу Зарра, да будет доволен им Аллах].</small></span></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«О сын Адама…»</em></strong></span> — речь идёт о том, кто покорился Аллаху и последовал за тем посланником, который был к нему послан. Это обращение адресовано и к тем, кто последовал за Мусой, мир ему, в его времена, и к тем, кто последовал за ‘Исой, мир ему, в его времена. А после послания Мухаммада, да благословит его Аллах и приветствует, это обращение адресовано только к тем, кто последовал за этим избранным пророком, признав то, что именно он является последним из пророков.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…когда бы ты ни воззвал ко Мне и не надеялся на Меня, Я буду прощать тебя, не обращая внимания на то, какие грехи ты совершил…»</em></strong></span> — эти слова соответствуют смыслу слов Всевышнего:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَى أَنفُسِهِمْ لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ إِنَّ اللَّهَ يَغْفِرُ الذُّنُوبَ جَمِيعًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Скажи Моим рабам, которые излишествовали во вред самим себе </strong>(долго продолжали совершать грехи)</span><strong>: «Не отчаивайтесь в милости Аллаха. Воистину, Аллах прощает все грехи»»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=39&aya=53"><small>[Сура аз-Зумар, аят 53]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Если раб Аллаха совершит грех, а затем устремится к покаянию <em>(таубе)</em>, попросит у Аллаха Всевышнего прощения, будет надеяться на Его награду, то посредством этого покаяния его грехи будут прощены, несмотря на их количество. Ведь, покаяние <em>(тауба)</em> удаляет то, что было до него. Пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Покаявшийся в грехе подобен тому, кто не совершал его вовсе»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[ибн Маджах, 4250;&nbsp; ат-Табарани в «аль-Кабир», 10281;&nbsp; аль-Бейхаки в «аль-Кубра», 10/154;&nbsp; Абу Ну‘айм в «аль-Хилья», 4/210].</span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…когда бы ты ни воззвал ко Мне и не надеялся на Меня…»</em></strong></span> — это указывает на то, что мольба <em>(ду‘а)</em> и надежда <em>(раджа)</em> являются причиной обретения прощения Аллаха. Ведь, есть люди, которые взывают к Господу, но слабо надеются на Него. Они не пытаются улучшить свои мысли о Господе. Передается, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Аллах Всевышний говорит: ″Я буду таким, каким считает Меня раб Мой, поэтому пусть думает обо Мне, как пожелает″»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Ахмад, 3/491;&nbsp; ад-Дарими в «Сунан», 2731;&nbsp; ибн Хиббан в «ас-Сахих», 2/401;&nbsp; ат-Табарани в «аль-Кабир», 210;&nbsp; аль-Хаким в «аль-Мустадрак», 4/268,&nbsp; со слов Уасиля ибн аль-Аска‘, да будет доволен им Аллах].</span></span></p>
+	<p style="text-align: left;"><span>Если раб Аллаха взывает к Аллаху, искренне прося у Него прощения и сильно надеясь на это прощение, помня о том, что милость Аллаха велика, то случится то, чего он просит. Ведь, этот человек хорошо думал об Аллахе и сильно стремился к Нему.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…Я буду прощать тебя…»</em></strong></span> — <span style="color: #008000;"><strong>прощение</strong> <em>(магъфира)</em></span> – это покрытие как самого греха, так и его последствий, которые могли бы проявиться в мире этом и в мире вечном.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>«Магъфира»</strong> <span style="font-size: 18pt;">( المغفرة )</span></span> не есть то же самое, что <span style="color: #008000;"><strong>«‘афв»</strong> <span style="font-size: 18pt;">( العفو )</span></span> и <span style="color: #008000;"><strong>«тауба»</strong> <span style="font-size: 18pt;">( التوبة )</span>.</span></span></p>
+	<p style="text-align: left;"><span>Ошибается тот, кто говорит, что все эти три понятия есть одно и то же. Между ними есть разница, хотя и присутствует нечто общее.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>«‘Афв»</strong> <span style="font-size: 18pt;">( العفو )</span>&nbsp; ― <em>(помилование)</em></span>&nbsp; ― это отсутствие наказания за грех (проступок).</span></p>
+	<p style="text-align: left;"><span>Если человек совершает грех, то этот грех влечёт за собой наказание. Если же наказания не будет, то это считается помилованием <strong>(‘афв).</strong></span></p>
+	<p style="text-align: left;"><span>А <span style="color: #008000;"><strong>«магъфира»</strong> <span style="font-size: 18pt;">( المغفرة )</span></span> ― это покрытие как самого греха, так и его последствий, которые могли бы проявиться в мире этом и в мире вечном. Это не есть то же самое, что и <strong>«‘афв».</strong></span></p>
+	<p style="text-align: left;"><span>Говоря о понятии <strong>«‘афв», </strong>мы затрагиваем вопросы наказания за грех, а, говоря о понятии <strong>«магъфира»,</strong> мы затрагиваем вопросы сокрытия греха.</span></p>
+	<p style="text-align: left;"><span>А <span style="color: #008000;"><strong>«тауба»</strong> <span style="font-size: 18pt;">( التوبة )</span> ― <em>(принятое покаяние)</em></span>&nbsp; ― это вообще удаление греха после того, как человека покаялся.</span></p>
+	<p style="text-align: left;"><span>И в соответствии с этим, у Аллаха Всевышнего есть три прекрасных имени:</span></p>
+	<ul style="text-align: left;">
+	<li><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;">Милующий;</span></li>
+	<li><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;">Прощающий;</span></li>
+	<li><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;">Принимающий покаяние. </span></li>
+	</ul>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…если совершишь ты столько грехов, что достигнут они туч небесных…»</em></strong></span> — то есть: из-за многочисленности грехов и их большого скопления они достигнут самых высоких облаков.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…а потом попросишь у Меня прощения, то Я прощу тебя…»</em></strong></span> — это взращивает в сердце кающегося раба величайшую любовь к своему Господу.</span></p>
+	<p style="text-align: left;"><span>Великий Аллах описывается атрибутами величия, красоты и совершенства. Ему принадлежит вся вселенная целиком. Он способен на всякую вещь и является Попечителем и Хранителем каждой вещи. Несмотря на Своё величие, Он проявляет Свою любовь к Своему рабу, прощая ему грехи. Осознание этого, безо всякого сомнения, помещает в сердце раба любовь к своему Господу. Осознавая всё это, человек полностью покоряется Аллаху и предпочитает именно Его довольство, а не довольство творений.</span></p>
+	<p style="text-align: left;"><span>В этом хадисе содержится побуждение, чтобы человек просил прощения у Аллаха. Если ты совершишь грех, то попроси у Аллаха прощения. Сообщается, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Не считается упорствующим на грехе тот, кто просит прощения (у Аллаха), даже если при этом возвращается к греху семьдесят раз». — </em></strong><span style="font-size: small;">[Абу Дауд, 1514;&nbsp; ат-Тирмизи, 3559;&nbsp; аль-Бейхаки в «аль-Кубра», 10/188,&nbsp; и другие. Хафиз ибн Касир и хафиз ибн Хаджар назвали хадис хорошим. См. «Тафсир ибн Касир», 1/408;&nbsp; «Фатх уль-Бари», 1/122].</span><strong><em>&nbsp;</em></strong>Когда человек просит прощения у Аллаха и сожалеет о своих грехах, Аллах Всевышний стирает эти прегрешения.</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #800000;"><strong><em>«О сын Адама, поистине, если придёшь ты ко Мне с таким количеством грехов, что заполнят они собой чуть ли не всю землю, но встретишь Меня, не поклоняясь наряду со Мной ничему иному, Я обязательно дарую тебе прощение, которое покроет собой все эти грехи!»</em></strong></span></p>
+	<p style="text-align: left;"><span>Речь идёт о человеке, который придёт в Судный День с грехами величиною с землю, но при этом встретит Аллаха Всевышнего, искренне исповедуя религию и ничего не придавая Ему в сотоварищи, не совершая ни малого, ни большого, ни скрытого многобожия. Этот человек придёт с сердцем, искренне предавшимся Аллаху, так, что в этом сердце не будет никого, кроме Аллаха. В его сердце будет стремление только к Аллаху и надежда только на Аллаха. Он ни в чем не придавал Аллаху сотоварищей. Поистине, Аллах Всевышний простит такому человеку все грехи. Такова величайшая милость Аллаха Всевышнего к Своим рабам.</span></p>
+	</div>
+	<h4>Заключение</h4>
+	<p style="text-align: left;"><span>Хвала Тебе, о Аллах, за Твои имена и атрибуты <em>(сыфаты)</em>. Хвала Тебе, о Аллах, за то, что Ты оказал нам милость, даровав исламский шари‘ат. Хвала Тебе, о Аллах, за то, что Ты оказал нам милость, послав Своего пророка Мухаммада, да благословит его Аллах и приветствует. Хвала Тебе, о Аллах, за то, что Ты оказал нам милость, даровав нам возможность следовать по пути наших праведных предшественников. Хвала Тебе, о Аллах, за то, что Ты оказал нам милость, прощая наши грехи. Хвала Тебе, о Аллах, за то, что Ты оказал нам милость, даровав нам возможность совершать благодеяния. Хвала Тебе, о Аллах, за то, что Ты оказал нам милость, стирая наши скверные деяния. Поистине, Ты пречист от всякого недостатка и достоин всякой хвалы. Хвала Тебе, которая заполняет небеса и землю, а также то, что между ними. Ты – Господь наш! Только на Тебя мы уповаем, только к Тебе мы возвращаемся после греха, и только к Тебе предстоит прибытие.</span></p>
+	<p style="text-align: left;"><span>О Аллах! Мы просим у Тебя прощения наших грехов и излишеств в делах наших. О Аллах! Мы просим Тебя, чтобы Ты сделал единобожие аргументом в нашу пользу, а не против нас. О Аллах! Мы просим Тебя, чтобы Ты повёл всех нас по самому верному пути. О Аллах! Мы просим Тебя, чтобы Ты сделал нас всех радующимися искреннему исповеданию религии пред Тобой. О Аллах! Мы просим Тебя, чтобы Ты сделал нас всех радующимися этому знанию – знанию о единобожии и правильном вероубеждении, ибо это и есть основа всех основ. О Аллах! Научи нас полезному знанию и заверши нашу жизнь, когда мы совершаем благодеяния. О Аллах! Прости нас всех, ибо, поистине, Ты – Щедрый.</span></p>
+	<p style="text-align: center;"><span style="color: #008000;"><span><strong><em>И пусть Аллах благословит, приветствует &nbsp;</em></strong></span><span><strong><em>и дарует благодать нашему пророку Мухаммаду!</em></strong></span></span></p>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

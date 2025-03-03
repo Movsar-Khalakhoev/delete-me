@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 39</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 39</h4>
+	<p style="text-align: left;"><span>Сообщается со слов ибн ‘Аббаса, да будет доволен Аллах им и его отцом, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Поистине, Аллах простил ради меня моей общине совершенное по ошибке, по забывчивости и то, к чему они были принуждены».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл ибн Маджах (2045), аль-Бейхаки в «аль-Кубра» (7/356) и другие (ат-Табарани в «аль-Кабир», 11274;&nbsp; аль-Хаким в «аль-Мустадрак», 2/216).</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>В этом хадисе указание на милость Аллаха к верующим людям.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Поистине, Аллах простил ради меня…»</em></strong> </span>— из этой фразы понимается, что речь пойдет о том, что было даровано только исламской общине.</span></p>
+	<p style="text-align: left;"><span>У исламской общины есть много особенностей, которые не были дарованы другим общинам. Например, если человек из других общин намеревался совершить что-то благое, но не совершал, ему не записывалось совершение одного благого деяния. Если же он намеревался совершить грех, но затем оставлял его из страха пред Аллахом, ему также не записывалось совершение одного благого деяния.&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a>&nbsp;Также членам исламской общины было прощено совершенное по ошибке и по забывчивости. Аллах Всевышний смилостивился над этой общиной ради её пророка, да благословит его Аллах и приветствует, и простил им совершенное по ошибке и по забывчивости.</span></p>
+	<p style="text-align: left;"><span>Когда Аллах Всевышний ниспослал аят, в котором сказано:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَإِن تُبْدُواْ مَا فِي أَنفُسِكُمْ أَوْ تُخْفُوهُ يُحَاسِبْكُم بِهِ اللَّهُ فَيَغْفِرُ لِمَن يَشَاءُ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Обнаружите ли вы то, что в ваших душах, или утаите, Аллах предъявит вам счет за это. Он прощает, кого пожелает»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=284"><small>[Сура аль-Бакара, аят 284]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Это показалось для сподвижников, да будет доволен ими Аллах, очень тяжелым, после чего был ниспослан другой аят, в котором сказано:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Аллах не возлагает на человека сверх его возможностей. </strong>[Аллах никого не обязывает делать то, что ему не под силу]</span><strong>. Ему достанется то, что он приобрел, и против него будет то, что он приобрел. Господь наш! Не наказывай нас, если мы позабыли или ошиблись»<strong>.</strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=286"><small>[Сура аль-Бакара, аят 286]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Сподвижники, да будет доволен ими Аллах, обращались к Аллаху с такой мольбой, и Аллах сообщил им о том, что уже прости их за совершенное по забывчивости и по ошибке.&nbsp;— <span style="font-size: small;">[Муслим, 125-126].</span></span></p>
+	<p style="text-align: left;"><span>Разбираемый нами хадис и упомянутый выше аят указывают на то, что человек, совершивший что-то по ошибке или по забывчивости, не получает греха, хотя в определенных случаях несёт ответственность. Если, например, человек убил верующего <u>по ошибке</u>, то он не получает греха, но должен выплатить ″дия″&nbsp;<a href="#_ftn2" name="_ftnref2">[2]</a>. То же самое касается человека, который, например, по ошибке присвоил себе имущество другого человека. В данном случае он не получает греха, но должен вернуть имущество, принадлежащее другому человеку.</span></p>
+	<p style="text-align: left;"><span>Следовательно, речь идёт только о том, что человек не получает греха за совершенное по ошибке и по забывчивости, потому что Аллах простил мусульманам это.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и то, к чему они были принуждены…»</em></strong></span> — Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;مَن كَفَرَ بِاللَّهِ مِن بَعْدِ إيمَانِهِ إِلَّا مَنْ أُكْرِهَ وَقَلْبُهُ مُطْمَئِنٌّ بِالإِيمَانِ وَلَكِن مَّن شَرَحَ بِالْكُفْرِ صَدْرًا فَعَلَيْهِمْ غَضَبٌ مِّنَ اللَّهِ وَلَهُمْ عَذَابٌ عَظِيمٌ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Кто станет неверующим в Аллаха после своей веры – <span style="color: #008000;">кроме </span></strong><span style="color: #008000;"><em>(лишь)</em><strong> того, кто был принуждён </strong></span><em>(сказать слова неверия)</em><strong>, а </strong><em>(в то время)</em><strong> сердце его </strong><em>(было)</em><strong> спокойным в вере – но, однако тот, кто открыл неверию </strong><em>(свою)</em><strong> грудь, на них </strong>[то есть: на сказавших слова неверия без принуждения]</span><strong> – гнев от Аллаха, и им – наказание великое»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=16&aya=106"><small>[Сура ан-Нахль, аят 106]</small></a></span></span></p>
+	<p style="text-align: center;"><strong><span>ПРИМЕЧАНИЯ:</span></strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a> Что же касается исламской общины, то уже разбирался хадис, в котором сказано: <strong><em>«Поистине, Аллах записал добрые и дурные дела, после чего разъяснил это: “За тем, кто решит совершить доброе дело, но не совершит его, Аллах запишет у Себя (совершение) целого доброго дела; если (человек) решит (совершить доброе дело) и совершит его, Аллах запишет за ним у Себя (совершение) от десяти до семисот и многим более добрых дел; за тем, кто решит совершить дурное дело, но не совершит его, Аллах запишет у Себя (совершение) целого доброго дела, а если он решит (совершить дурное дело), и совершит его, Аллах запишет (за ним) одно дурное дело”».</em></strong> См. хадис № 37 в данной книге.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a>&nbsp; Дия — компенсация за убийство или ранение, которую виновный выплачивает родственникам пострадавшего или ему самому.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

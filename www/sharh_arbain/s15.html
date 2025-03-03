@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 15</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 15</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Хурейры, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Пусть тот, кто верует в Аллаха и в Последний день, говорит благое или молчит, и пусть тот, кто верует в Аллаха и в Последний день, оказывает уважение своему соседу, и пусть тот, кто верует в Аллаха и в Последний день, оказывает уважение своему гостю».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл аль-Бухари (6018) и Муслим (47)</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>В этом хадисе указание на великие нормы благопристойности <em>(адаба)</em>. Этот хадис является ″родным братом″ хадиса: <strong><em>«Одним из признаков хорошего соблюдения человеком Ислама является оставление им того, что его не касается».&nbsp;— </em></strong><span style="font-size: small;">[ат-Тирмизи, 2317;&nbsp; ибн Маджах, 3976;&nbsp; ибн Хиббан, 1/466]</span>.<strong><em>&nbsp;</em></strong>Оба этих хадиса содержат в себе основные нормы благопристойности <em>(адаба)</em>.</span></p>
+	<p style="text-align: left;"><span>В этом хадисе указание на следующие качества верующего человека, который боится Аллаха и того, что случится в Последний День, и надеется спастись в Тот День:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Он либо говорит благое, либо молчит;</em></span></li>
+	<li><span><em>Он оказывает уважение своему соседу;</em></span></li>
+	<li><span><em>Он оказывает уважение своему гостю.</em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Хадис указывает на то, что у человека есть два вида обязанностей:</span></p>
+	<ul style="text-align: left;">
+	<li><strong>Обязанности человека перед Аллахом;</strong></li>
+	<li><strong>Обязанности человека перед рабами Аллаха. </strong></li>
+	</ul>
+	<p style="text-align: left;"><span>Человек, выполняя свои обязанности перед Аллахом, помнит о том, что Аллах наблюдает за ним. А сложнее всего чувствовать контроль Аллаха тогда, когда речь идёт о человеческом языке. Поэтому пророк, да благословит его Аллах и приветствует, обратил на это внимание, сказал: <strong><em>«Пусть тот, кто верует в Аллаха и в Последний день, говорит благое или молчит». </em></strong>Из всех обязанностей пред Аллахом тяжелее всего претворить в жизнь оберегание своего языка.</span></p>
+	<p style="text-align: left;"><span>Пророк, да благословит его Аллах и приветствует, повелел людям либо говорить благое, либо молчать. Это указывает на то, что молчание – это более низкая степень, чем произнесение благих речей.</span></p>
+	<p style="text-align: left;"><span><strong><u>Во-первых</u></strong></span>, пророк, да благословит его Аллах и приветствует, в первую очередь повелел говорить благое, а только затем упомянул молчание.</span></p>
+	<p style="text-align: left;"><span><strong><u>Во-вторых</u></strong></span>, к молчанию прибегают только тогда, когда нечего сказать из благих речей. Поистине, человек будет рассчитан за то, что он говорил. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَّا خَيْرَ فِي كَثِيرٍ مِّن نَّجْوَاهُمْ إِلَّا مَنْ أَمَرَ بِصَدَقَةٍ أَوْ مَعْرُوفٍ أَوْ إِصْلَاحٍ بَيْنَ النَّاسِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Многие из их тайных бесед не приносят добра, если только они не призывают раздавать милостыню, совершать одобряемое или примирять людей»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=114"><small>[Сура ан-Ниса, аят 114]</small></a></span></span></p>
+	<p style="text-align: left;"><span><strong>«…(призывают) совершать одобряемое </strong><em>(шари‘атом)</em><strong>…» </strong></span>— то есть: велят совершать все обязательные и желательные религиозные предписания, запрещают совершать все виды запретных и нежелательных деяний, обучают людей религии, и так далее.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Пусть тот, кто верует в Аллаха и в Последний день, говорит благое…»</em></strong></span> — то есть: пусть велит раздавать милостыню, пусть велит совершать все виды одобряемого, пусть говорит то, что примиряет людей. Во всех остальных беседах нет блага, хотя некоторые беседы могут и быть разрешенными шари‘атом. А иногда беседы могут быть и нежелательными. Поэтому лучше молчать, чем погружаться в такие беседы.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…говорит благое или молчит…»</em></strong></span> — человек должен беречь свой язык, либо произнося благое, либо храня молчание, и именно это является признаком веры в Аллаха и в Последний День.</span></p>
+	<p style="text-align: left;"><span>Тяжелее всего человеку даётся оберегание своего языка. Сообщается, что однажды пророк, да благословит его Аллах и приветствует, дотронулся до своего языка и сказал, обращаясь к Му‘азу: <strong><em>«Придерживай это».</em></strong> Му‘аз, да будет доволен им Аллах, удивился и спросил: <strong><em>«О, пророк Аллаха, неужели с нас взыщется за то, что мы говорим?»</em></strong> Пророк, да благословит его Аллах и приветствует, ответил: <span style="font-size: small;"><strong><em><span style="font-size: 12pt;">«Да лишится тебя твоя мать! А разве будут ввергать людей лицами в огонь за что-нибудь ещё, кроме их клеветнических речей?!»</span>&nbsp;— </em></strong>[ат-Тирмизи, 2616;&nbsp; ан-Насаи в «аль-Кубра», 6/428;&nbsp; ибн Маджах, 3973;&nbsp; Ахмад, 5/231;&nbsp; ‘Абду-р-Разакъ в своём мусаннафе, 11/194;&nbsp; ибн Аби Шейба в своём мусаннафе, 5/320;&nbsp; ат-Табарани в «аль-Кабир», 116;&nbsp; аль-Хаким в «аль-Мустадрак», 2/447;&nbsp; аль-Бейхаки в «Шу‘аб аль-Иман», 3/39].</span></span></p>
+	<p style="text-align: left;"><span>Это указывает на то, что опасно шевелить языком, произнося то, что не является благом, ибо это будет доводом против тебя, а не за тебя. Если человек много говорит о дозволенных вещах, то это постепенно приведёт его к тому, что он начнёт вести нежелательные и запретные разговоры. Именно так и происходит в действительности. Люди, которые говорят слишком много о том, что не является благом, постепенно приходят к запретным речам. Например, они постепенно начинают обсуждать человека в его отсутствии, начинают сплетничать, возводить клевету, чрезмерно льстить кому-то, и так далее.</span></p>
+	<p style="text-align: left;"><span>Следовательно, вера в Аллаха и в Последний День побуждает человека беречь свой язык, и тем более все остальные органы тела. Сообщается, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Тому, кто поручится мне за то, что находится между его челюстей и между его ног, я поручусь за (то, что он войдёт в) Рай»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 6474].</span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и пусть тот, кто верует в Аллаха и в Последний день, оказывает уважение своему соседу…»</em></strong></span> — иначе говоря, пусть стремится относиться к своему соседу наилучшим образом. Пусть говорит ему прекрасные слова, пусть не преступает границы в отношении его семьи и его чести, пусть не заглядывает без разрешения в его дом, пусть не занимает место, на которое сосед обычно ставит свою машину, пусть не относится враждебно к его детям, и так далее. Пусть делится с соседом своей едой и одеждой. Если у человека есть еда, пусть накормит ею своего соседа.</span></p>
+	<p style="text-align: left;"><span>Сообщается, что ‘Абдуллах ибн ‘Амр, да будет доволен Аллах им и его отцом, зарезал однажды овцу и повелел накормить своего соседа, который был иудеем. — <span style="font-size: small;">[ат-Тирмизи, 1943, и другие].</span>&nbsp;Следовательно, уважение оказывается даже соседу, который является неверующим. Поэтому группа обладателей знания, среди которых имам Ахмад (как это передается в одной из версий от него), посчитала, что хадис о соседе общий и касается как мусульманина, так и неверующего. — <span style="font-size: small;">[См. «И‘лям аль-Мувакы‘ин ‘ан Робби-ль-‘Алямин», 2/143;&nbsp; «Джами‘ аль-‘Улюм уа-ль-Хикам», стр. 140;&nbsp; «Фатх уль-Бари», 10/442;&nbsp; «Субулю-с-Салям», 4/165].</span></span></p>
+	<p style="text-align: left;"><span>Следовательно, уважение к соседу – это:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Выполнение всех его прав;</em></span></li>
+	<li><span><em>Отказ от нанесения ему обид;</em></span></li>
+	<li><span><em>Помощь ему едой и тем, в чём он нуждается. </em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Аллах Всевышний также сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;الَّذِينَ هُمْ يُرَاؤُونَ ۝ وَيَمْنَعُونَ الْمَاعُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«</strong><em>(Горе же тем,) </em><strong>которые делают </strong><em>(свои благие дела)</em><strong> напоказ </strong><em>(перед людьми)</em></span><strong> и отказывают даже в мелочи!»</span></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=107&aya=6"><small>[Сура аль-Ма‘ун, аяты 6-7]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Они отказывают мусульманам даже в том, что те просят у них во временное пользование.</span></p>
+	<p style="text-align: left;"><span>Если сосед нуждается в какой-то посуде или в чём-то из мебели, то окажи ему уважение и поделись этим. Если же он пытается забрать твои вещи недозволенным образом и уничтожает твоё имущество, то ты не обязан проявлять ему такое уважение.</span></p>
+	<p style="text-align: left;"><span>Соседи, перед которыми у тебя есть определенные обязанности, бывают следующих категорий:</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>1 — Самый близкий сосед </strong>(у него большего всего прав на тебя)<strong>.</strong></span></p>
+	<p style="text-align: left;"><span>Относительно желательности хорошего добрососедства имеется много хадисов. В частности, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Джибриль не прекращал давать мне наставления о необходимости хорошего отношения к соседу (так долго), что я даже подумал, что он включит его и в число наследников»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 6014, 6015;&nbsp; Муслим, 2624, 2625].</span></span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>2 — Далекий сосед.</strong></span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَالْجَارِ ذِي الْقُرْبَى وَالْجَارِ الْجُنُبِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«</strong><em>(Делайте добро) </em></span><strong>соседям близким и соседям далёким»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=36"><small>[Сура ан-Ниса, аят 36]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Некоторые праведные предшественники сказали, что имеются в виду соседи, живущие в ближайших семи домах от тебя. Другие сказали, что имеются в виду соседи, живущие в ближайших сорока домах от тебя. Относительно этого пришёл хадис, но он является слабым.&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a></span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>3 — Сосед, живущий с тобой в одном городе. </strong></span></p>
+	<p style="text-align: left;"><span>Имеются в виду люди, живущие с тобой в одном городе, даже если вы живете на его разных концах. Такие люди тоже называются соседями, как сказал Всевышний:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;ثُمَّ لَا يُجَاوِرُونَكَ فِيهَا إِلَّا قَلِيلًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«И тогда они </strong><em>(лицемеры)</em><strong> будут соседствовать с тобой </strong><em>(о пророк)</em><strong> здесь </strong><em>(в Медине)</em></span><strong> совсем недолго»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=33&aya=60"><small>[Сура аль-Ахзаб, аят 60]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Поэтому человек, живущий с тобой в одном городе, также считается соседом, и он тоже заслуживает хорошего отношения.</span></p>
+	<p style="text-align: left;"><span>Следует заметить, что сосед, являющийся мусульманином и твоим родственником, имеет над тобой три права: право соседства, право Ислама и право родственных уз. Если же твой сосед является мусульманином, но не является тебе родственником, то у него есть над тобой два права: право соседства и право Ислама. Если же твой сосед не является твоим родственником и не является мусульманином, то у него над тобой только одно право – право соседства. Поэтому пророк, да благословит его Аллах и приветствует, навещал своих соседей, которые были иудеями, и посылал им что-то из еды.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong><em>«…и пусть тот, кто верует в Аллаха и в Последний день, оказывает уважение своему гостю…»</em></strong></span> — то есть: пусть относится к нему наилучшим образом. Пусть встречает его с улыбкой на лице, пусть говорит ему прекрасные слова, пусть накормит его. Именно это имеется в виду в данном хадисе.</span></p>
+	<p style="text-align: center;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #800000;"><strong><em>«Пусть тот, кто верует в Аллаха и в Последний день, <u>говорит благое или молчит</u>, и пусть тот, кто верует в Аллаха и в Последний день, <u>оказывает уважение своему соседу</u>, и пусть тот, кто верует в Аллаха и в Последний день, <u>оказывает уважение своему гостю</u>».</em></strong></span></p>
+	<p style="text-align: left;"><span>Всё это – повеления посланника Аллаха, да благословит его Аллах и приветствует, поэтому обязательно нужно претворить их в жизнь.</span></p>
+	<p style="text-align: left;"><span>Например, человек обязан оказывать уважение своему гостю. Хадисы указывают на то, что человек обязательно должен кормить своего гостя в течение одного дня и одной ночи. Пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Нужно кормить гостя один день и одну ночь, а гостеприимство оказывается три дня, а всё, что сверх этого, запишется человеку как милостыня»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 6135;&nbsp; Муслим, 48].</span></span></p>
+	<p style="text-align: left;"><span>Ученые сказали, что речь идёт о гостях в таких поселениях, где невозможно арендовать никакого жилья.&nbsp;— <span style="font-size: small;">[См. «Джами‘ аль-‘Улюм уа-ль-Хикам», стр 142;&nbsp; «Шарх Сахих Муслим» (12/30-31)&nbsp; имама ан-Науауи; «Фатх уль-Бари», 10/533;&nbsp; «‘Умдату-ль-Къари», 22/111;&nbsp; «Тухфату-ль-Ахуази», 6/87].</span>&nbsp;Что же касается больших городов, в которых есть постоялые дворы и гостиницы, то ты не обязан в таком случае оставлять гостей у себя на ночь. Оставлять гостей на ночь нужно только тогда, когда им негде переночевать. Если же речь идёт о большом городе, то это уже желательно, а не обязательно.</span></p>
+	<p style="text-align: left;"><span>Также человек должен накормить гостя тем, что обычно кушает сам со своей семьей. Он не обязан обременять себя, угощая гостя огромным количеством еды и тому подобного. Обязательно лишь накормить его тем, что ты ешь сам, чтобы исчез его голод.</span></p>
+	<p style="text-align: center;"><span style="color: #000080;"><strong>ПРИМЕЧАНИЕ:</strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp; Сообщается со слов ‘Аишы, да будет доволен ею Аллах, что однажды она спросила пророка, да благословит его Аллах и приветствует: <strong><em>«Кто являются соседями?!» </em></strong>А он ответил: <strong><em>«(Люди, живущие в ближайших) сорока домах». </em></strong>Передал аль-Бейхаки в «аль-Кубра», 6/276.</span></p>
+	<p style="text-align: left;"><span>А в другой версии сказано: <strong><em>«Джибриль, мир ему, завещал мне хорошо относиться к соседям, живущим в ближайших сорока домах».</em></strong></span></p>
+	<p style="text-align: left;"><span>Сказал аль-Бейхаки: <em>«В цепочках передатчиков этих обоих хадисов есть слабость». </em></span></p>
+	<p style="text-align: left;"><span>Нечто подобное передает Абу Йа‘ля в «Муснад» (10/385)&nbsp; со слов Абу Хурейры, да будет доволен им Аллах. А Абу Дауд в книге «аль-Марасиль» (стр. 257) передает от ибн Шихаба аз-Зухри, который сообщил со слов пророка, да благословит его Аллах и приветствует, не упоминая имени сподвижника, от которого он это услышал, следующее: <strong><em>«Живущий в ближайших сорока домах является соседом». </em></strong>А когда у ибн Шихаба спросили: <em>«Что значит ″сорок домов″?», </em>― он ответил: <em>«Сорок домов справа, сорок домов слева, сорок домов сзади и сорок домов спереди». </em></span></p>
+	<p style="text-align: left;"><span>См. «ат-Талхыс аль-Хабир», 3/93.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

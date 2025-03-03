@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 2</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+	<script>
+        /*restore last scroll position*/
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        window.addEventListener('scroll', function(e) {
+            try {
+                if ($(window).scrollTop() > 20) {
+                    scrollTop = $(window).scrollTop();
+                    EasyCache.set("sharh_arbain_book_s2_4.scrollTop", $(window).scrollTop());
+                }
+            } catch (error) {}
+        });
+        window.addEventListener('pageshow', function () {
+            try {
+                scrollTop = parseInt(EasyCache.get("sharh_arbain_book_s2_4.scrollTop"));
+                if (scrollTop != 0) {
+                    delay(500).then(() => zenscroll.toY(scrollTop, 800));
+                }
+            } catch (error) {
+                
+            }
+        }), false;
+    </script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<p style="text-align: center;"><span style="font-size: 14pt;"><strong><span style="font-family: 'book antiqua', palatino, serif; color: #000080;">Ихсан</span></strong></span></p>
+	<p style="text-align: left;"><span style="color: #800000;"><strong><span><em>(Потом) он сказал: </em><em>«Поведай мне об ихсане».</em><em> Посланник Аллаха, да благословит его Аллах и приветствует, сказал: </em><em>«Суть ихсана в том, чтобы ты поклонялся Аллаху так, будто видишь Его, а если ты Его не видишь, тo, (помня о том, что) Он, поистине, видит тебя». </em></span></strong></span></p>
+	<p style="text-align: left;"><span>Ученые сказали: <em>«У ихсана только один столп»<b>. —</b></em><span style="font-size: small;"> [См. «Салясат аль-Усуль уа адиллятуха», 2-ая основа].</span></span></p>
+	<p style="text-align: left;"><span>Слово <em>″ихсан″</em> иногда приходит в Коране вместе со словом <em>″такуа″</em> <em>(богобоязненность)</em>, а иногда – в сочетании с праведными деяниями, а иногда – в сочетании с другими вещами. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;إِنَّ اللَّهَ مَعَ الَّذِينَ اتَّقَواْ وَّالَّذِينَ هُم مُّحْسِنُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Воистину, Аллах — с теми, кто <u>богобоязнен</u> и кто <u>придерживается ″ихсана″</u>»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=16&aya=128"><small>[Сура ан-Нахль, аят 128]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَيْسَ عَلَى الَّذِينَ آمَنُواْ وَعَمِلُواْ الصَّالِحَاتِ جُنَاحٌ فِيمَا طَعِمُواْ إِذَا مَا اتَّقَواْ وَّآمَنُواْ وَعَمِلُواْ الصَّالِحَاتِ ثُمَّ اتَّقَواْ وَّآمَنُواْ ثُمَّ اتَّقَواْ وَّأَحْسَنُواْ وَاللَّهُ يُحِبُّ الْمُحْسِنِينَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«На тех, которые уверовали и совершают праведные деяния, нет греха за то, чем они питались, если они были богобоязненны, веровали и совершали праведные деяния, если после этого они опять были богобоязненны и веровали, если после этого они опять <u>были богобоязненны и придерживались ″ихсана″</u>. Аллах любит тех, кто придерживается ″ихсана″»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=5&aya=93"><small>[Сура аль-Маида, аят 93]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Иногда слово <em>″ихсан″</em> приходит само по себе, например, в словах Всевышнего:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لِّلَّذِينَ أَحْسَنُواْ الْحُسْنَى وَزِيَادَةٌ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Тем, которые <u>придерживались ″ихсана″</u>, уготовано Наилучшее </strong><em>(Рай)</em><strong> и добавка </strong><em>(возможность взглянуть на Лик Аллаха)</em></span><strong>»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=10&aya=26"><small>[Сура Йунус, аят 26]</small></a></span></span></p>
+	<p style="text-align: left;"><span><strong>«Тем, которые <u>придерживались ″ихсана″</u>…» </strong></span>— то есть: придерживались ″ихсана″ в деяниях.</span></p>
+	<p style="text-align: left;"><span><em>″Ихсан″ в деяниях</em> – это совершение деяний наилучшим образом.</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>«Ихсан»&nbsp; бывает двух видов: </strong></span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #800000;"><em>а) Чувство контроля (муракаба);</em></span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #800000;"><em>б) Видение сердцем (мушахада).</em></span></p>
+	<p style="text-align: left;"><span>Видение Аллаха сердцем <em>(мушахада)</em> выше по уровню, чем чувство контроля <em>(муракаба)</em>. Видение сердцем <em>(мушахада)</em> – это самая высшая степень, которую может достичь верующий раб.</span></p>
+	<p style="text-align: left;"><span><strong><span style="color: #800000;">Чувство контроля </span></strong><em><span style="color: #800000;">(муракаба)</span> — </em>об этом говорится в словах пророка, да благословит его Аллах и приветствует: <strong><em>«…а если ты Его не видишь, тo поклоняйся, помня о том, что Он, поистине, видит тебя».</em></strong></span></p>
+	<p style="text-align: left;"><span>Это – степень большинства верующих людей. Если они достигают этой степени, то начинают поклоняться Аллаху, чувствуя, что Он наблюдает за ними. Приступая к молитве, такой человек чувствует контроль Аллаха, знает, что Аллах наблюдает за ним, знает, что он совершает молитву, стоя пред Аллахом. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَمَا تَكُونُ فِي شَأْنٍ وَمَا تَتْلُو مِنْهُ مِن قُرْآنٍ وَلَا تَعْمَلُونَ مِنْ عَمَلٍ إِلَّا كُنَّا عَلَيْكُمْ شُهُودًا إِذْ تُفِيضُونَ فِيهِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Какой бы поступок ты ни совершал, что бы ты ни читал из Корана и что бы вы ни совершали, Мы наблюдаем за вами с самого начала»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=10&aya=61"><small>[Сура Йунус, аят 61]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Это – такая степень ″ихсана″, когда раб Аллаха чувствует, что Аллах Всевышний наблюдает за ним.</span></p>
+	<p style="text-align: left;"><span>Поистине, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Если встанешь на молитву, то совершай молитву прощающегося </em></strong><em>(с мирской жизнью)<strong>»<strong>. — </strong></strong></em><span style="font-size: small;">[Ибн Маджах, 4171;&nbsp; Ахмад,&nbsp; 5/412. Шейх аль-Альбани назвал хадис достоверным. См. «Сахих аль-Джами‛», 742].</span></span></p>
+	<p style="text-align: left;"><span>Знай, что Аллах Всевышний наблюдает за тобой. Какое бы дело ты не совершал, Он знает об этом и видит тебя. Чем величественнее это ощущение контроля, тем лучше деяние, совершаемое человеком.</span></p>
+	<p style="text-align: left;"><span><strong><span style="color: #800000;">Видение сердцем </span></strong><span style="color: #800000;"><em>(мушахада)</em></span><em> — </em>эта степень выше, чем степень ощущения контроля <em>(муракаба)</em>. Пророк, да благословит его Аллах и приветствует, сказал об этом: <strong><em>«Суть ихсана в том, чтобы ты поклонялся Аллаху так, </em></strong><strong><em><u>будто видишь Его</u>».</em></strong></span></p>
+	<p style="text-align: left;"><span>Имеется в виду видение атрибутов Аллаха сердцем, а не видение самого Аллаха. Суфии и некоторые другие заблудшие использовали этот хадис, чтобы доказать людям будто бы они могут видеть Аллаха. Это утверждение – из самой великой лжи и клеветы.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong>«Мушахада»</strong></span> — это наблюдение за следами атрибутов Аллаха Всевышнего, проявляемыми в Его творениях.</span></p>
+	<p style="text-align: left;"><span>Чем выше знание раба об атрибутах Аллаха и Его именах, тем больше он начинает возвращать все происходящее в бытие к именам Аллаха&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a> и Его атрибутам. Что бы он ни видел на небесах и на земле, он возвращает это к проявлениям имён и атрибутов Аллаха Всевышнего. Поэтому, этой степени достигает только тот, кто обладает большим знанием об именах Аллаха Всевышнего и Его атрибутах.</span></p>
+	<p style="text-align: left;"><span>Некоторые люди достигают такого уровня, что стесняются обнажить «‛аурат»&nbsp;<a href="#_ftn2" name="_ftnref2">[2]</a> даже тогда, когда вокруг никого нет, зная, что Аллах все равно видит их. Как пришло в хадисе: <strong><em>«Аллах больше заслуживает того, чтобы Его стеснялись». — </em></strong><span style="font-size: small;">[Абу Дауд, 4017;&nbsp; ат-Тирмизи, 2769;&nbsp; Ахмад, 5/3, и другие]</span><strong><em>.&nbsp;</em></strong>Это случается с ними по той причине, что они достигли этого великого уровня ″мушахада″.</span></p>
+	<p style="text-align: left;"><span>Приверженцы сунны, говорящие об аскетизме и исправлении деяний сердца, делят ″ихсан″ именно на две степени&nbsp;<a href="#_ftn3" name="_ftnref3">[3]</a>:</span></p>
+	<p style="text-align: left;"><span><em>а) Чувство контроля (муракаба);</em></span></p>
+	<p style="text-align: left;"><span><em>б) Видение сердцем (мушахада).</em></span></p>
+	<p style="text-align: center;"><strong><span style="font-size: 14pt; color: #000080;">ПРИМЕЧАНИЯ:</span></strong></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp; Например, раб Аллаха видит, как Аллах оказал кому-то милость и говорит: «Это потому, что Аллах – Милостивый». Если он видит, что Аллах наказал кого-то, он говорит: «Это потому, что Аллах скор в наказании», и так далее.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a>&nbsp; <strong>’Аурат</strong> — общее название тех частей тела, которые следует скрывать от взглядов других людей. Для мужчин это всё, что находится ниже пупка и выше колен. Это касается и женщин, если среди них нет мужчин. В присутствии постороннего мужчины всё тело свободной женщины, кроме кистей рук и лица, представляет собой ‘аурат, иначе говоря, посторонним мужчинам смотреть на него нельзя.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref3" name="_ftn3">[3]</a>&nbsp; См. «Мадаридж ас-Саликин», 2/217;&nbsp; «Джами‛ аль-‛Улюм уа-ль-Хикам», стр. 37.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

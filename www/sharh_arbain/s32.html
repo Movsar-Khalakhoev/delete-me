@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 32</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 32</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Са‘ида, Са‘да ибн Малика ибн Синана аль-Худри, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«(В Исламе) нет никакого вреда: ни ″дарара″</strong>&nbsp;<a href="#_ftn1" name="_ftnref1"><strong>[1]</strong></a><strong>, ни ″дырара″</strong>&nbsp;<a href="#_ftn2" name="_ftnref2"><strong>[2]</strong></a><strong>».</strong> <em><a href="#_ftn3" name="_ftnref3"><strong>[3]</strong></a></em></em></span></p>
+	<p style="text-align: left;"><span><small>Хадис хороший. Его передал ибн Маджах и ад-Даракутни от пророка, да благословит его Аллах и приветствует. А Малик передал этот хадис в «аль-Муватта», не упомянув Абу Са‘ида аль-Худри, да будет доволен им Аллах. Этот хадис приходит по различным путям передачи, которые усиливают друг друга.</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>Этот хадис содержит в себе множество шари‘атских законоположений. Он является одним из великих правил религии, однако учёные разногласят в его достоверности, на что и указал ан-Науауи, да помилует его Аллах. Более правильное мнение заключается в том, что хадис является хорошим <em>(хасан)</em> из-за многочисленных подкрепляющих цепочек.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«(В Исламе) нет никакого вреда…» </em></strong></span>— эту фразу можно разобрать с двух сторон.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>1 — Поклонение</strong> —</span> поистине, в исламском шари‘ате нет таких обрядов поклонения, которые несли бы человеку вред. Например, человек должен совершать молитву стоя, но если ему тяжело стоять из-за болезни, то он совершает молитву сидя. Также человек должен совершать омовение водой, но если по каким-то причинам вода вредит ему, то он очищается чистой землей <em>(совершает таяммум)</em>. Нет такого вида поклонения, которое приносило бы вред. А если вред все же случается по определенным причинам, то для человека сразу существуют облегчения.&nbsp;<a href="#_ftn4" name="_ftnref4">[4]</a></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>2 — Взаимоотношения</strong></span> — в тех видах взаимоотношений с людьми, которые Аллах узаконил, нет никакого вреда.</span></p>
+	<p style="text-align: left;"><span><strong>Во-первых</strong></span>, сам шари‘ат не узаконил никаких взаимоотношений, несущих в себе вред. Например, Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَلَا تُمْسِكُوهُنَّ ضِرَارًا لَّتَعْتَدُواْ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Но не удерживайте их </strong><em>(своих жён)</em></span><strong>, <span style="color: #008000;">чтобы навредить им</span> и преступить границы дозволенного»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=231"><small>[Сура аль-Бакара, аят 231]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَا تُضَآرَّ وَالِدَةٌ بِوَلَدِهَا وَلَا مَوْلُودٌ لَّهُ بِوَلَدِهِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«<span style="color: #008000;">Нельзя причинять вред</span> матери за ее ребенка, а также отцу за его ребенка»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=233"><small>[Сура аль-Бакара, аят 233]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;مِن بَعْدِ وَصِيَّةٍ يُوصَى بِهَآ أَوْ دَيْنٍ غَيْرَ مُضَآرٍّ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Таков расчет после вычета по завещанию, которое он завещал, или выплаты долга, <span style="color: #008000;">если это не причиняет вреда</span>»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=12"><small>[Сура ан-Ниса, аят 12]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Следовательно, ни одно шари‘атское постановление не несёт в себе вреда.</span></p>
+	<p style="text-align: left;"><span><strong>Во-вторых</strong>,</span> шари‘ат также запретил людям наносить друг другу вред. Если в исламском шари‘ате нет никакого вреда, то и самим людям запрещено наносить друг другу вред.</span></p>
+	<p style="text-align: left;"><span>Значит, в хадисе сказано (буквально):</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	<span style="color: #800000;"><strong>لَا ضَرَرَ وَلَا ضِرَارَ</strong></span>
+	</div><p></p>
+	<p style="text-align: center;"><strong><em>«(В исламе) нет вреда (дарара) и нет ″дырара″».</em></strong></p>
+	<p style="text-align: left;"><span style="color: #008000;"><strong>В чем разница между понятиями «дарар» </strong><strong>(</strong> ضَرَر<strong> )</strong></span><strong> и «дырар» </strong><strong>(</strong> ضِرَار<strong> )</strong></span><strong>?!</strong></span></p>
+	<p style="text-align: left;"><span>Учёные по-разному объясняли разницу между этими понятиями. — <span style="font-size: small;">[См. «ат-Тамхид» (20/158)&nbsp; ибн ‘Абд уль-Барра; «Джами‘ аль-‘Улюм уа-ль-Хикам», стр. 304;&nbsp; «‘Умдату-ль-Къарий», 9/195;&nbsp; «Субулю-с-Салям», 3/84].</span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800080;"><strong>1-ое мнение:</strong></span> <em>«дарар»</em> и <em>«дырар»</em> — это <span style="color: #008000;">синонимы</span>. Оба слова переводятся одинаково – нанесение вреда людям. Пророк, да благословит его Аллах и приветствует, упомянул слова с одним и тем же смыслом два раза, дабы усилить смысл сказанного.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800080;"><strong>2-ое мнение:</strong></span> <em>«дарар»</em> и <em>«дырар»</em> — это <span style="color: #008000;">два разных слова</span>. <em>«Дарар»</em> — это сам вред, а <em>«дырар»</em> — это нанесение вреда. Тогда хадис (можно перевести таким же образом), как пришло в другой его версии:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	<span style="color: #800000;"><strong>لَا ضَرَرَ وَلَا إضْرَارَ</strong></span>
+	</div><p></p>
+	<p style="text-align: center;"><span><strong><em>«(В исламе) нет вреда </em></strong></span><em>(дарара)</span><strong> и (потому нельзя) наносить вред другим (людям)»</span><strong>.</span>&nbsp;— </strong></strong></em><span style="font-size: small;">[Эту версию передал ад-Даракутни в «ас-Сунан», 4/228].</span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800080;"><strong>3-ье мнение:</strong></span> <em>«дарар»</em> – это нанесение кому-то вреда в такой ситуации, когда человек, наносящий этот вред, сам получает определенную пользу. А <em>«дырар»</em> — это нанесение кому-то вреда в такой ситуации, когда человек, наносящий этот вред, сам не получает от этого никакой пользы.</span></p>
+	<p style="text-align: left;"><span>Согласно этому мнению получается, что <em>«дарар»</em> – это нанесение вреда другому, чтобы получить для себя определенную выгоду. Но <em>«дырар»</em> — это нанесение кому-то вреда так, что сам человек, наносящий вред, не получает вообще никакой выгоды. Пусть Аллах обезопасит нас от всего этого!</span></p>
+	<p style="text-align: left;"><span>Данного мнения относительно понимания этого хадиса придерживались многие учёные, среди которых ибн ас-Салях и ибн ‘Абд уль-Барр. Именно это мнение является наиболее правильным.</span></p>
+	<p style="text-align: left;"trong><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;">Следовательно, нанесение вреда бывает двух видов:</span></strong></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>1 —</strong></span> Когда человек наносит вред другим, сам не получая от этого никакой пользы. Это запрещено по единогласному мнению обладателей знания. Это – то, что мы называем словом <strong>«дырар»</strong>. В книгах по фикху приводится много примеров <strong>«дырара»</strong>.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>2 —</strong></span> Когда человек наносит вред другим, сам получая определенную пользу (то есть: <strong>«дарар»</strong>). Относительно этого ученые разошлись на два мнения:</span></p>
+	<p style="text-align: left;"><span><strong>1-ое мнение:</strong> <strong>«дарар»</strong> запрещен.</span> Иначе говоря, данный хадис указывает на то, что запрещено наносить вред людям, даже если ты сам получишь из-за этого определенную пользу. Это – мнение Абу Ханифы, аш-Шафи‘и и других обладателей знания.</span></p>
+	<p style="text-align: left;"><span>Например, ты нуждаешься в том, чтобы открыть окна и проветрить своё жилье, а твои окна смотрят прямо во двор твоего соседа. Если ты откроешь окна, то можешь увидеть его жену или сестру, а в этом вред для соседа. По-мнению Абу Ханифы и аш-Шафи‘и открывать окна в данном случае запрещено, так как <strong>«дарар»</strong> запрещен.</span></p>
+	<p style="text-align: left;"><span>Или же, например, ты нуждаешься в том, чтобы зажечь огонь у себя во дворе по определенным причинам, но это навредит твоему соседу. По-мнению этих ученых, подобный поступок будет <strong>«дараром»</strong>, а <strong>«дарар»</strong> запрещен. А если ты сделаешь это, а сосед обратится к судье, то судья обязан запретить тебе подобные поступки.</span></p>
+	<p style="text-align: left;"><span><strong>2-ое мнение:</strong></span> это мнение имама Ахмада, а также имам Малик согласился с этим мнением в определенных вопросах. <strong>Это мнение гласит, что «дарар» бывает двух видов:</strong></span></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong><em>1-ый вид «дарара»</em></strong></span> — когда вред, доставляемый другому, привычен для людей, а польза для человека явная. В данном случае разрешено совершать дело, даже если в нем есть некоторый вред для других. Ведь, люди не могут прожить жизнь так, что никому вообще не будет от них вреда. Человек в любом случае иногда разводит костёр и делает некоторые другие вещи, от которых соседи испытывают неудобства, например, чувствуя неприятный запах. Но этот вред привычен для людей и без него никак не обойтись.</span></p>
+	<p style="text-align: left;"><span>Например, если человек решил построить дом, то обязательно на стройке будут работать строители с самого утра и до вечера. Они будут стучать молотками так, что соседи будут испытывать неудобства. Соседи, например, не смогут спать до обеда, так как рядом идёт строительство. Но такое строительство является для людей привычным делом и поэтому, согласно мнению имама Ахмада, данные поступки не запрещены.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><em><strong>2-ой вид «дарара»</strong></em></span> — когда вред, доставляемый другому, непривычен для людей, а польза для человека вовсе не явная. Такой вид нанесения вреда запрещен.</span></p>
+	<p style="text-align: left;"><span>Например, человек выкопает колодец рядом с колодцем соседа так, что соседская вода перетечёт к нему. Вода должна в первую очередь поступать к тому, кто выкопал колодец первым. Поэтому тому, кто выкопал колодец позже, приказывается сделать так, чтобы его сосед не получал никакого вреда.</span></p>
+	<p style="text-align: left;"><span>Или, например, человек решил разрушить свой старый дом, чтобы построить новый, купил взрывчатые вещества и взорвал свой дом так, что при взрыве пострадали дома соседей. Это не является привычным для людей вредом. Это – запрещено!</span></p>
+	<p style="text-align: left;"><span>Таково мнение имама Ахмада, да помилует его Аллах. Именно оно является правильным в этом вопросе.</span></p>
+	<p style="text-align: left;"><span>Следовательно, мы поняли, что <em>«дарар»</em> и <em>«дырар»</em> — это два разных слова. В шари’ате нет ни&nbsp; <em>«дарара»</em>, ни <em>«дырара». </em>Также и рабы Аллаха не должны наносить вред друг другу. <em>«Дырар»</em> запрещен по единогласному мнению. Что же касается <em>«дарара»</em>, то и о нём мы написали подробно.</span></p>
+	<p style="text-align: center;"><span style="font-size: 14pt; color: #000080;"><strong>ПРИМЕЧАНИЯ:</strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp; <em>«Дарар»</em> – это нанесение кому-то вреда в такой ситуации, когда человек, наносящий этот вред, сам получает определенную пользу.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a>&nbsp; <em>«Дырар»</em> — это нанесение кому-то вреда в такой ситуации, когда человек, наносящий этот вред, сам не получает от этого никакой пользы.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref3" name="_ftn3">[3]</a>&nbsp; Ибн Маджах, 2341;&nbsp; Ахмад, 1/313;&nbsp; Абу Йа‘ля, 4/397;&nbsp; ат-Табарани в «аль-Кабир», 11806,&nbsp; со слов ибн ‘Аббаса, да будет доволен Аллах им и его отцом.</span></p>
+	<p style="text-align: left;"><span>А также аль-Хаким в «аль-Мустадрак», 2/66;&nbsp; ад-Даракутни в «ас-Сунан», 3/77;&nbsp; аль-Бейхаки в&nbsp; «аль-Кубра», 6/69, со слов Абу Са‘ида аль-Худри, да будет доволен им Аллах.</span></p>
+	<p style="text-align: left;"><span>А также имам Малик в «аль-Муватта», 2/745, со слов ‘Амра ибн Яхъи, который передавал от своего отца, а тот от пророка, да благословит его Аллах и приветствует.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref4" name="_ftn4">[4]</a>&nbsp; Например, человек не может молиться стоя, а молится сидя, а если не может молиться сидя, то молится лежа.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

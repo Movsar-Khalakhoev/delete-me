@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 18</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 18</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Зарра Джундуба ибн Джунады, да будет доволен им Аллах, и со слов Абу ‘Абду-р-Рахмана Му‘аза ибн Джабаля, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Бойся Аллаха, где бы ты ни был! Вслед за дурным делом соверши благое, которое сотрёт собой дурное, и придерживайся в отношениях с людьми наилучших нравов».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл ат-Тирмизи (1987)</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Бойся Аллаха, где бы ты ни был…»</em></strong></span> — это повеление придерживаться богобоязненности во все времена и во всех местах.</span></p>
+	<p style="text-align: left;"><span>Пророк, да благословит его Аллах и приветствует, повелел придерживаться богобоязненности, следовательно, этот приказ указывает на обязательность.</span></p>
+	<p style="text-align: left;"><span>Богобоязненность <em>(такуа)</em> – это великая основа из основ религии. Поистине, Аллах Всевышний повелел держаться богобоязненности даже Своему пророку, да благословит его Аллах и приветствует. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا النَّبِيُّ اتَّقِ اللَّهَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О Пророк! Бойся Аллаха»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=33&aya=1"><small>[Сура аль-Ахзаб, аят 1]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Также Аллах Всевышний повелел верующим бояться Его должным образом. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا الَّذِينَ آمَنُواْ اتَّقُواْ اللَّهَ حَقَّ تُقَاتِهِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О те, которые уверовали! Бойтесь Аллаха должным образом»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=3&aya=102"><small>[Сура али ‘Имран, аят 102]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَقُولُوا قَوْلًا سَدِيدًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О те, которые уверовали! Бойтесь Аллаха и говорите правое слово»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=33&aya=70"><small>[Сура аль-Ахзаб, аят 70]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَلْتَنظُرْ نَفْسٌ مَّا قَدَّمَتْ لِغَدٍ وَاتَّقُوا اللَّهَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О те, которые уверовали! Бойтесь Аллаха, и пусть душа посмотрит, что она приготовила на завтрашний день. Бойтесь Аллаха!»</span><strong></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=59&aya=18"><small>[Сура аль-Хашр, аят 18]</small></a></span></span></p>
+	<p style="text-align: left;"><span>В Коране много раз говорится о богобоязненности. В других аятах Корана также говорится о необходимости бояться наказания Аллаха, бояться Огня, бояться Судного Дня. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَاتَّقُواْ يَوْمًا تُرْجَعُونَ فِيهِ إِلَى اللَّهِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Бойтесь того дня, когда вы будете возвращены к Аллаху»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=281"><small>[Сура аль-Бакара, аят 281]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَاتَّقُواْ النَّارَ الَّتِي أُعِدَّتْ لِلْكَافِرِينَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Бойтесь Огня, который уготован неверующим»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=3&aya=131"><small>[Сура али ‘Имран, аят 131]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Богобоязненность <em>(такуа)</em> перед Аллахом заключается в том, чтобы человек&nbsp; установил между собой и между наказанием Аллаха и Его гневом преграду, которая будет защищать его. Эта преграда устанавливается путем исповедования единобожия и отречения от многобожия. Именно это приказано всем людям.</span></p>
+	<p style="text-align: left;"><span>Смысл слова <em>″богобоязненность″</em> <em>(такуа)</em> становится ясным, если взглянуть на него с точки зрения арабского языка.</span></p>
+	<p style="text-align: left;"><span>Основой слова <span style="font-size: 14pt; color: #800000;">( تقوى )</span> ― <span style="color: #008000;"><em>″такуа″ </em></span>― <span style="color: #800000;"><strong>богобоязненность</strong></span> ― является слово <span style="color: #800000; font-size: 14pt;">( وقوى )</span> ― <em><span style="color: #008000;">″уакуа″</span>, </em>которое происходит от слова <span style="font-size: 14pt; color: #800000;">( وقاية )</span> ― <span style="color: #008000;"><em>″уикая″ </em></span>― <strong>преграда</strong></span>. Арабы знают об этом, поэтому в стихотворении говорится:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	<span style="color: #800000;">سَقَطَ النَّصِيفُ ولم تُرِدْ إسقاطَه … فتناوَلَتْه واتَّقَتْنا باليَدِ</span>
+	</div><p></p>
+	<p style="text-align: center;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #000080;"><em>«Упало покрывало, хотя она не желала этого,<br>
+	Тогда одной рукой она поймала его, а другой рукой закрыла от нас лицо». </em></span></p>
+	<p style="text-align: left;"><span>Покрывало соскользнуло с её лица, а она, по причине своей скромности, не желала этого. Тогда одной рукой она потянулась за покрывалом, а другой рукой <u>сделала преграду</u> между нами и её лицом.</span></p>
+	<p style="text-align: left;"><span>Богобоязненный – это тот, кто устанавливает преграду между собой и между гневом Аллаха и Его наказанием преграду.</span></p>
+	<p style="text-align: left;"><span>Повеление придерживаться богобоязненности перед Аллахом в Коране пришло в трёх видах:</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>1 ― Приказ придерживаться богобоязненности, обращённый ко всем людям. </strong></span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا النَّاسُ اتَّقُواْ رَبَّكُمُ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О люди! Бойтесь вашего Господа»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=1"><small>[Сура ан-Ниса, аят 1]</small></a></span></span></p>
+	<p style="text-align: left;"><span><strong>«Бойтесь» </strong></span>― то есть: примите Ислам, воплотите на делах единобожие и отрекитесь от многобожия.</span></p>
+	<p style="text-align: left;"><span>Человек, пришедший с единобожием и спасшийся от многобожия, считается богобоязненным. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;إِنَّمَا يَتَقَبَّلُ اللَّهُ مِنَ الْمُتَّقِينَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Воистину, Аллах принимает только от богобоязненных»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=5&aya=27"><small>[Сура аль-Маида, аят 27]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Поэтому целая группа из числа толкователей Корана сказали, что фразу <strong>«…только от богобоязненных…» </strong>следует понимать как <em>«…только от единобожников…»<b>.&nbsp;— </b></em><span style="font-size: small;">[См. «Мусаннаф» (7/221) ибн Аби Шейбы; «Тафсир ат-Табари», 6/191;&nbsp; «Тафсир аль-Куртуби», 6/135].</span></span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>2 ― Приказ придерживаться богобоязненности, обращённый к верующим. </strong></span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا الَّذِينَ آمَنُواْ اتَّقُواْ اللَّهَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О те, которые уверовали! Бойтесь Аллаха»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=3&aya=102"><small>[Сура али ‘Имран, аят 102]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Здесь приказ придерживаться богобоязненности обращен к тем людям, которые уже придерживаются единобожия и оставили многобожие.</span></p>
+	<p style="text-align: left;"><span>В данном случае под <span style="color: #008000;"><strong>«богобоязненностью»</strong></span> имеется в виду <span style="color: #008000;"><em>«совершение деяний покорности перед Аллахом на основе света от Аллаха и оставление ослушания Аллаха на основе света от Аллаха»</em>.</span></span></p>
+	<p style="text-align: left;"><span><strong>«Бойтесь Аллаха» </strong></span>― то есть: совершайте обязательные религиозные предписания и оставляйте совершение запретных деяний; отдаляйтесь от того, что может вызвать гнев Аллаха и Его наказание.</span></p>
+	<p style="text-align: left;"><span>Этот вид богобоязненности имеет различные ступени, наивысшая из которых: оставление того, в чём нет греха, из-за боязни попасть в то, в чём есть грех. Пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Рабу Аллаха не достичь такого положения, когда будет он одним из богобоязненных, пока раб этот не откажется от того, в чём нет беды, из опасения перед тем, что (может) принести беду»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[ат-Тирмизи, 2451;&nbsp; ибн Маджах, 4215;&nbsp; аль-Бухари в «ат-Тарих аль-Кабир», 5/158;&nbsp; ат-Табарани в «аль-Кабир», 446;&nbsp; аль-Хаким в «аль-Мустадрак», 4/355;&nbsp; аль-Бейхаки в «аль-Кубра», 5/335].</span></span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>3 ― Приказ придерживаться богобоязненности, обращённый к тем, кто уже придерживается богобоязненности.</strong></span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا النَّبِيُّ اتَّقِ اللَّهَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О Пророк! Бойся Аллаха»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=33&aya=1"><small>[Сура аль-Ахзаб, аят 1]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Если кому-то из людей приказывается делать то, что он уже делает, то смысл приказа в том, чтобы этот человек еще прочнее утвердился в этом деле.</span></p>
+	<p style="text-align: left;"><span>Например, Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا الَّذِينَ آمَنُواْ آمِنُواْ بِاللَّهِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О те, которые уверовали! Веруйте в Аллаха»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=136"><small>[Сура ан-Ниса, аят 136]</small></a></span></span></p>
+	<p style="text-align: left;"><span>То есть: о те, которые уверовали, укрепитесь в своей вере и доводите её до совершенства.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Бойся Аллаха, где бы ты ни был…»</em></strong></span> — это обращение пророка, да благословит его Аллах и приветствует, к верующим людям.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Бойся Аллаха, где бы ты ни был…»</em></strong></span> — бойся Аллаха во всех местах и во все времена. Совершай деяния покорности и сторонись запретных деяний.</span></p>
+	<p style="text-align: left;"><span>Тальк ибн Хабиб&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a>, да помилует его Аллах, сказал: <em><strong><span style="color: #008000;">«Богобоязненность (такуа) – это подчинение Аллаху на основе света от Аллаха, надеясь на награду Аллаха, и оставление ослушания Аллаха на основе света от Аллаха, боясь наказания Аллаха»</span><span style="color: #008000;">.</span>&nbsp;— </strong></em><span style="font-size: small;">[Ибн Аби Шейба в «Мусаннаф», 6/164;&nbsp; ибн Аби Хатим в своём тафсире, 2/446;&nbsp; Абу Ну‘айм в «аль-Хилья», 3/64;&nbsp; аль-Бейхаки в «аз-Зухд аль-Кабир», 2/351].</span></span></p>
+	<p style="text-align: left;"><span>Однажды, один человек спросил Абу Хурейру, да будет доволен им Аллах, о богобоязненности, а Абу Хурейра ответил ему: <span style="color: #008000;"><em>«Ты когда-нибудь ступал по дороге с колючками?» </em></span>Тот ответил: <span style="color: #008000;"><em>«Да», </em></span>на что Абу Хурейра сказал: <span style="color: #008000;"><em>«А как ты шёл по ней?» </em></span>Тот человек ответил: <span style="color: #008000;"><em>«Видя колючку, я обходил её стороной или перешагивал через неё, или сокращал шаг, чтобы не наступить на неё». </em></span>Тогда Абу Хурейра сказал: <em><span style="color: #008000;">«Это и есть богобоязненность!»</span><strong> — </strong></em><span style="font-size: small;">[аль-Бейхаки в «аз-Зухд аль-Кабир», 2/351;&nbsp; ас-Суюты в «ад-Дурр аль-Мансур», 1/61].</span></span></p>
+	<p style="text-align: left;"><span>Похожий ответ передают от Ка‘ба аль-Ахбара, когда он отвечал на вопрос ‘Умара ибн аль-Хаттаба, да будет доволен им Аллах. — <span style="font-size: small;">[См. «Тафсир аль-Багъауи», 1/45;&nbsp; «Тафсир аль-Куртуби», 1/161;&nbsp; «Тафсир ибн Касир», 1/41]</span>. А известный поэт ибн аль-Му‘тазз&nbsp;<a href="#_ftn2" name="_ftnref2">[2]</a> сказал:</span></p>
+	<p style="text-align: left;">
+		<div class="arabic">
+		<small>
+		<span style="color: #800000;">خَلِّ الذُّنُوبَ صَغِيرَها … وكَبِيرَها فَهُوَ التُّقى</span><br>
+		<span style="color: #800000;">واصْنَعْ كَماشٍ فَوْقَ أرْضِ …  لشَّوْكِ يَحْذَرُ ما يَرى</span><br>
+		<span style="color: #800000;">لا تَحْقِرَنَّ صَغِيرَةً … إنَّ الجِبالَ مِنَ الحَصى</span><br>
+		</small>
+		</div>
+	</p>
+	<p style="text-align: center;"><em>«Оставь грехи малые и большие. Это и есть богобоязненность!</em></p>
+	<p style="text-align: center;"><em>Поступай подобно идущему по колючей земле, остерегаясь того, что он видит. </em></p>
+	<p style="text-align: center;"><em>Не относись пренебрежительно к малым грехам, ибо горы состоят из мелких камешков»<strong>. </strong></em></p>
+	<p style="text-align: center;"><span>[См. «Тафсир аль-Куртуби», 1/162;&nbsp; «Тафсир ибн Касир», 1/41;&nbsp; «Джами‘ аль-‘Улюм уа-ль-Хикам», стр. 160].</span></p>
+	<p style="text-align: left;"><span>Следовательно, богобоязненность заключается в том, что человек боится последствий ослушания Аллаха, боится Аллаха, совершая что-то и оставляя что-то.</span></p>
+	<p style="text-align: left;"><span>Богобоязненность связана с временами и местами, ибо пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Бойся Аллаха, где бы ты ни был…».</em></strong> В какое бы время и в каком бы месте не находился раб Аллаха, непременно там возникнет необходимость либо выполнить приказ Аллаха, либо оставить то, что Он запретил.</span></p>
+	<p style="text-align: left;"><span>Завещание о богобоязненности – это самое великое завещание. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَلَقَدْ وَصَّيْنَا الَّذِينَ أُوتُواْ الْكِتَابَ مِن قَبْلِكُمْ وَإِيَّاكُمْ أَنِ اتَّقُواْ اللَّهَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Мы завещали тем, кому было даровано Писание до вас, а также вам, чтобы вы боялись Аллаха»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=131"><small>[Сура ан-Ниса, аят 131]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Сподвижники, да будет доволен ими Аллах, часто завещали друг другу придерживаться богобоязненности, ибо знали смысл этого великого завещания.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Вслед за дурным делом соверши благое, которое сотрёт собой дурное…»</em></strong></span> — ведь, поистине дурные деяния удаляются посредством совершения благих деяний. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَأَقِمِ الصَّلَاةَ طَرَفَيِ النَّهَارِ وَزُلَفًا مِّنَ اللَّيْلِ إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّيِّئَاتِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Совершай молитву в начале и конце дня и в некоторые часы ночи. Воистину, добрые деяния удаляют злодеяния»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=11&aya=114"><small>[Сура Худ, аят 114]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Передают со слов ибн Мас‘уда, да будет доволен им Аллах, что в своё время один человек поцеловал постороннюю женщину, а потом явился к пророку, да благословит его Аллах и приветствует, и обо всём рассказал ему, после чего Аллах ниспослал аят, в котором было сказано:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَأَقِمِ الصَّلَاةَ طَرَفَيِ النَّهَارِ وَزُلَفًا مِّنَ اللَّيْلِ إِنَّ الْحَسَنَاتِ يُذْهِبْنَ السَّيِّئَاتِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Совершай молитву в начале и конце дня и в некоторые часы ночи. Воистину, добрые деяния удаляют злодеяния»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=11&aya=114"><small>[Сура Худ, аят 114]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Тогда этот человек спросил: <strong><em>«О посланник Аллаха, это касается только меня?»</em></strong> Пророк, да благословит его Аллах и приветствует, ответил: <strong><em>«Это — для всех членов моей общины»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 526; Муслим, 2763].</span></span></p>
+	<p style="text-align: left;"><span>Сообщается со слов Анаса, да будет доволен им Аллах, что как-то раз к пророку, да благословит его Аллах и приветствует, пришёл один человек, сказавший ему: <strong><em>«О посланник Аллаха, поистине, я нарушил одно из установлений религии, так подвергни же меня тому, чего требует Книга Аллаха».</em></strong> Пророк, да благословит его Аллах и приветствует, спросил: <strong><em>«Присутствовал ли ты на молитве вместе с нами?»</em></strong> Он сказал: <strong><em>«Да»</em></strong>, — и тогда пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Поистине, Аллах уже простил тебе твой грех»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 6823; Муслим, 2764].</span></span></p>
+	<p style="text-align: left;"><span>Это указывает на то, что верующий обязан просить прощения у Аллаха за свои скверные деяния и стремиться удалить их путём совершения благих деяний. Если человек совершает благие деяния, то Аллах стирает по причине этого его дурные деяния. Однако любое благое деяние не может удалить любое скверное деяние. Если человек совершил великое прегрешение, то стереть его может только великое благодеяние.</span></p>
+	<p style="text-align: left;"><span>В хадисе говорится о том, что человек, случайно или по ошибке произнесший слово многобожия <em>(ширка)</em>, например, поклявшийся Каабой или своими родителями, в качестве искупления должен произнести слова <em>«Ля иляха илля Ллах»</em> <em>(нет божества, достойного поклонения, кроме Аллаха).&nbsp;</em><a href="#_ftn3" name="_ftnref3">[3]</a>&nbsp;Ведь, клятва не Аллахом – это многобожие <em>(ширк)</em>, а искупление многобожия заключается в единобожии <em>(таухиде)</em>. Поистине, произнесение фразы <em>«Ля иляха илля Ллах»</em> <em>(нет божества, достойного поклонения, кроме Аллаха)</em> – это великое благодеяние.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и придерживайся в отношениях с людьми наилучших нравов…»</em></strong></span> — то есть: относись наилучшим образом к верующим людям, и придерживайся справедливости в отношениях с неверующими людьми.</span></p>
+	<p style="text-align: left;"><span>Слово <u>«наилучшие нравы»</u> разъяснялось по-разному. Среди имеющихся разъяснений были следующие:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Наилучшие нравы заключаются в том, что человек отдаёт наилучшее людям и не причиняет им никаких обид;</em></span></li>
+	<li><span><em>Наилучшие нравы заключаются в том, что человек относится к людям наилучшим образом, даже если они причиняют ему обиды. </em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Во многих хадисах говорится о необходимости придерживаться в отношениях с людьми наилучших нравов и о достоинстве этого. Например, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Одними из самых любимых для меня людей и самых близких ко мне в Судный День будут люди, обладающие наилучшими нравами»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[ат-Тирмизи, 2018].</span></span></p>
+	<p style="text-align: left;"><span>А также: <strong><em>«Поистине, к наилучшим из вас относятся обладающие наилучшими нравственными качествами»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 3559;&nbsp; Муслим, 2321].</span></span></p>
+	<p style="text-align: left;"><span>А также: <strong><em>«С помощью своего хорошего нрава верующий человек может достичь степени много постящихся и много совершающих молитвы»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Абу Дауд, 4798;&nbsp; Ахмад, 6/90;&nbsp; аль-Хаким в «аль-Мустадрак», 1/128;&nbsp; аль-Бейхаки в «Шу‘аб аль-Иман», 6/236].</span></span></p>
+	<p style="text-align: left;"><span>Если человек придерживается наилучших нравов, то это является подчинением Аллаху Всевышнему. А если он делает это постоянно, подчиняясь Аллаху, то получается, что он постоянно находится в поклонении.</span></p>
+	<p style="text-align: left;"><span>Иногда благие нравы могут быть присущи человеку с рождения, а иногда – он перевоспитывает себя, приобретая их в знак покорности Аллаху. Второй получает более великую награду чем тот, кто придерживается благих нравов с рождения, ибо второй прилагает более значительные усилия. Ведь, ученые говорят: <em>«Если два человека совершает нечто приказанное шари‘атом, то более великую награду получает тот из них, кому пришлось приложить больше усилий».</em></span></p>
+	<p style="text-align: left;"><span>Передают со слов ‘Аиши, да будет доволен ею Аллах, что пророк, да благословит его Аллах и приветствует, сказал ей: <strong><em>«Что же касается награды за ‘умру&nbsp;</em></strong><a href="#_ftn4" name="_ftnref4">[4]</a><strong><em>, то она будет соответствовать твоим затратам или твоим трудам»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 1787;&nbsp; Муслим, 1211].</span></span></p>
+	<p style="text-align: left;"><span>В данном случае речь идёт об обязательном религиозном предписании, которое приказано выполнить человеку. Награда человека будет зависеть от того, сколько усилий ему пришлось приложить при выполнении этого обязательного предписания.</span></p>
+	<p style="text-align: left;"><span>Что же касается желательных религиозных предписаний, то их это не касается. Поэтому в хадисе сказано: <strong><em>«Читающий Коран и знающий его наизусть будет с благородными и покорными писцами, а тому, кто читает Коран постоянно, испытывая при этом затруднения, полагается двойная награда&nbsp;</em></strong><a href="#_ftn5" name="_ftnref5">[5]</a><strong><em>»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 4937;&nbsp; Муслим, 798].</span></span></p>
+	<p style="text-align: center;"><strong><span>ПРИМЕЧАНИЯ:</span></strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp; Тальк ибн Хабиб аль-Басри. Ученый, аскет из числа праведных предшественников.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a>&nbsp; Абу аль-‘Аббас, ‘Абдуллах ибн аль-Му‘тазз ибн аль-Мутауаккиль ибн аль-Му‘тасым ибн Харун ар-Рашид. Был убит в 296-ом г.х.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref3" name="_ftn3">[3]</a>&nbsp; Передают со слов Абу Хурайры, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong><em>«Если, давая клятву, кто-нибудь (по забывчивости) произнесёт слова “Клянусь аль-Лятом и аль-‘Уззой”, пусть скажет: “Нет божества, достойного поклонения, кроме Аллаха”, тот же, кто предложит своему товарищу: “Давай-ка я сыграю с тобой </em></strong><em>(в азартные игры)<strong>”, пусть подаст милостыню». </strong></em>аль-Бухари, 4860;&nbsp; Муслим, 1647.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref4" name="_ftn4">[4]</a>&nbsp; ’Умра — добровольное малое паломничество в Мекку, которое может совершаться в любое время.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref5" name="_ftn5">[5]</a>&nbsp; Человек, который читает Коран, испытывая при этом затруднения, получит двойную награду: одну награду — за чтение, а другую — за преодоление трудностей. Но первый человек достойнее, чем второй, поэтому он заслужил более великую степень вместе с ангелами, о которых Аллах сказал: <strong>«</strong><em>(Коран) </em><strong>в свитках почтенных </strong><em>(у Аллаха), </em><strong>возвышенных</strong><em> (на небе), </em><strong>чистых</strong><em> (недоступных для искажения кем-либо), </em><strong><u>в руках посланцев благородных и покорных</u>».</strong></span>&nbsp;<a href="sura-activity://list_quran?sura=80&aya=13"><small>[Сура ‘Абаса, аяты 13-16]</small></a></span></p>
+	<p style="text-align: left;"><span>Есть разница между человеком, который обрел такую великую степень, и между человеком, который просто получил двойную награду.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

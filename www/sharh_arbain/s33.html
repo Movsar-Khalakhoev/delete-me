@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 33</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 33</h4>
+	<p style="text-align: left;"><span>Сообщается со слов ибн ’Аббаса, да будет доволен Аллах им и его отцом, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Если бы людям давали то, на что они претендуют, на основании одних лишь их притязаний, то (некоторые) люди (непременно) притязали бы на имущества (других) людей и на их жизнь. Но тот, кто претендует на что-то, должен привести доказательство, а ответчику следует приносить клятву».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл аль-Бейхаки (10/252). А часть этого хадиса приводится у аль-Бухари (4552) и Муслима (1711).</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>Этот хадис является основой в вопросах судопроизводства, доказательств и споров.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Если бы людям давали то, на что они претендуют, на основании одних лишь их притязаний…» </em></strong></span>— если бы судейские решения выносились только на основе притязаний людей, то непременно появились бы люди, притязающие на имущество и жизнь других людей по причине ненависти и злобы. Если бы кто-то умирал в таком случае, то непременно приходил бы человек и заявлял, что его убил такой-то и такой-то. Если бы людям давали то, на что они претендуют, на основании одних лишь притязаний, то жизнь исламской общины пришла бы в негодность. Ведь, сердца некоторых людей переполнены ненавистью и неприязнью. Из-за этой ненависти одни люди начнут претендовать на имущество и жизнь других.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…то (некоторые) люди (непременно) притязали бы на имущества (других) людей и на их жизнь…» </em></strong></span>— притязания, которые не подкрепляются доказательствами, отвергаемы. Поэтому тот, кто претендует на что-то, обязан принести доказательство.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Но тот, кто претендует на что-то, должен привести доказательство </em></strong><em>(беййина)<strong>…» </strong></em></span>— <span style="color: #008000;"><strong>доказательство</strong> <em>(беййина)</em></span> – это всё, посредством чего проясняется истина. Существует много доказательств. Например, приведение в суд свидетелей, явка с повинной, различные косвенные улики, экспертиза (или испытание, проведенное судьей).</span></p>
+	<p style="text-align: left;"><span>Следовательно, доказательством считается всё, что проясняют истину. Со сменой времен появляются всё новые и новые виды доказательств. В каждую эпоху появляются такие доказательства, которых не было раньше.</span></p>
+	<p style="text-align: left;"><span>В арабском языке слово <span style="color: #008000;"><strong>«беййина»</strong></span> <span style="font-size: 14pt;">( بَيِّنَةٌ )</span> — <span style="color: #008000;"><em>″доказательство″</em></span> — это то, посредством чего определенная вещь становится ясной. — <span style="font-size: small;">[См. «Лисан аль-’Араб», 13/62]</span>. Однако существует нечто более высокое, чем <span style="color: #008000;"><strong>«беййина»</strong></span> <span style="font-size: 14pt;">( بَيِّنَةٌ )</span> — а это <span style="color: #008000;"><strong>«бурхан»</strong></span> <span style="font-size: 14pt;">( بُرْهَانٌ )</span> — <em><span style="color: #008000;">″непреложное доказательство″</span>.</em> А выше, чем <span style="color: #008000;"><strong>«бурхан»</strong> <em>(непреложное доказательство)</em></span>, понятие <span style="color: #008000;"><strong>«аят»</strong></span> <span style="font-size: 14pt;">( الآية )</span> — <span style="color: #008000;"><em>″ясное знамение″.</em></span></span></p>
+	<p style="text-align: left;"><span>Например, Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;قَالُواْ يَا هُودُ مَا جِئْتَنَا بِبَيِّنَةٍ وَمَا نَحْنُ بِتَارِكِي آلِهَتِنَا عَن قَوْلِكَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Они </strong><em>(многобожники)</em><strong> сказали: «О Худ! Ты не показал нам доказательств </strong><em>(беййина)</em></span><strong>, и мы не станем отрекаться от наших божеств ради твоих слов»».</span></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=11&aya=53"><small>[Сура Худ, аят 53]</small></a></span></span></p>
+	<p style="text-align: left;"><span><strong><a href="#_ftn3" name="_ftnref3"></a></strong></span><span>То есть: ты не принёс того, что показало бы нам, что ты правдив в своём пророчестве, поэтому мы не станем отрекаться от наших божеств ради твоих слов.</span></p>
+	<p style="text-align: left;"><span>Также Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَمْ يَكُنِ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ مُنفَكِّينَ حَتَّى تَأْتِيَهُمُ الْبَيِّنَةُ ۝ رَسُولٌ مِّنَ اللَّهِ يَتْلُو صُحُفًا مُّطَهَّرَةً&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Неуверовавшие люди Писания и многобожники не расстались с неверием, пока к ним не явилось доказательство </span></strong><em>(беййина)</em><strong> — посланник Аллаха </strong><em>(Мухаммад)</em></span><strong>, который читает очищенные свитки»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=98&aya=1"><small>[Сура аль-Беййина, аяты 1-2]</small></a></span></span></p>
+	<p style="text-align: left;"><span>В данном случае доказательством является посланник Аллаха, да благословит его Аллах и приветствует. Также Писание Аллаха называется доказательством <em>(беййина)</em>. Следовательно, видов доказательств множество.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Но тот, кто претендует на что-то, должен привести доказательство </em></strong><em>(беййина), <strong>а ответчику следует приносить клятву…» </strong></em></span>— основываясь на этом, ученые говорят: <em>«Истец (притязающий) должен привести доказательство, а ответчик должен принести клятву». </em></span></p>
+	<p style="text-align: left;"><span>Обладатели знания единогласны в том, что доказательство должен приводить тот, кто притязает на что-то, а на само по себе притязание не стоит обращать никакого внимания. По более правильному мнению истцом является тот, кого оставляют в покое, если он снимет свои претензии, так как именно он являлся инициатором судебного разбирательства.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Но тот, кто претендует на что-то, должен привести доказательство </em></strong><em>(беййина)<strong>…» </strong></em></span>— например, человек пришел в суд и сказал: <em>«Я заявляю, что такой-то человек отобрал мой земельный участок (или автомобиль, или имущество)». </em>Или же: <em>«Я заявляю, что такой-то человек взял у меня в долг столько-то и столько-то, а теперь отказывается платить». </em>Такому человеку говорят: <em>«Где твоё доказательство, подтверждающее твои претензии?! Есть ли у тебя свидетели?! Если ли у тебя документы, подверждающие твои претензии?!» </em>Этот человек должен принести доказательство, а сами по себе претензии не заслуживают обращения внимания судьи.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…а ответчику следует приносить клятву…» </em></strong></span>— иногда возникают такие ситуации, что у истца нет никаких доказательств, особенно в имущественных вопросах. В таком случае от истца требуют принести клятву. Например, истец говорит: <em>«Этот человек незаконно завладел моим имуществом», </em>а ответчик говорит: <em>«Нет, я никогда ничего у него не брал». </em>В данном случае ответчик отрицает претензии истца, а у истца нет никаких доказательств. В таком случае судья просит ответчика поклясться Аллахом как подтверждение своих слов.</span></p>
+	<p style="text-align: left;"><span>Что же касается истца, то от него не требуют клятвы. Истца обязывают только привести доказательства на свои претензии. Если же у ответчика есть какие-то свои доказательства, то он может привести их, хотя изначально от него не требуют ничего, кроме клятвы.</span></p>
+	<p style="text-align: left;"><span>Этот хадис указывает на то, что шари’атское судопроизводство устанавливает справедливость и истину. Справедливость может быть установлена только путём сбора всех улик и доказательств, устанавливающих право одной из сторон. Судья не должен судить на основе своего мнения и даже на основе своего знания. Судье запрещено судить на основе своего знания. Он должен судить только на основе доказательств. Если к судье придёт самый правдивый и праведный человек из всех жителей государства и скажет: <em>«Такой-то человек должен мне то-то и то-то, однако у меня нет доказательств», </em>— то судье запрещено судить только на основе своего знания о праведности этого человека. Истец непременно должен привести доказательства на свои претензии, а ответчика в некоторых случаях обязывают принести клятву.</span></p>
+	<p style="text-align: left;"><span>Сообщается, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Поистине, я — только человек, а (люди) приходят ко мне (со своими) спорами. И может оказаться так, что кто-нибудь из вас будет более красноречив, чем другой, и я посчитаю, что он сказал правду, и вынесу решение в его пользу на основании этого. Однако если я (по ошибке) решу отдать ему то, что по праву принадлежит (другому) мусульманину, это будет не чем иным, как частью (пламени) ада, так пусть он (сам) возьмёт это или откажется от этого»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 2458, 2680;&nbsp; Муслим, 1713].</span></span></p>
+	<p style="text-align: left;"><span>Это указывает на то, что решение судьи не предоставляет никаких прав тому, кто на самом деле не владеет ими. Некоторые люди думают, что они получают право на определенную вещь, если судья вынес об этом решении, даже если заполучили эту вещь несправедливо. Это – неправильные представления! Ведь, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Однако если я (по ошибке) решу отдать ему то, что по праву принадлежит (другому) мусульманину, это будет не чем иным, как частью (пламени) ада, так пусть он (сам) возьмёт это или откажется от этого».</em></strong></span></p>
+	<p style="text-align: left;"><span>То есть: человек не получает никаких прав только лишь по решению судьи. Прежде чем получить что-то, человек должен точно знать, что получает это по праву. Если же он выиграл дело в суде на основе ложных доказательств, то выигранная им вещь не становится для него дозволенной. Поистине, это всего лишь часть пламени Ада, которую он берет для себя. А что же может быть ужаснее этого?!</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 30</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 30</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Са‘лябы аль-Хушани, Джурсума ибн Нашира, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <strong><em>«Поистине, Аллах Всевышний возложил (на людей определённые) обязанности, так не пренебрегайте же ими. (Также) Он установил (определённые) границы </em><em>(хадды)</em></strong><strong>, <em>так не преступайте же их. (Также) Он запретил (некоторые) вещи, так не нарушайте же (эти запреты), и Он умолчал о (некоторых) вещах из-за милости к вам, а не из-за забывчивости, так не доискивайтесь же их!»</em></strong><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл ад-Даракутни в «Сунан» (4/183-184) и другие (ат-Табарани в «аль-Кабир», 589;&nbsp; Абу Ну‘айм в «аль-Хилья», 9/17;&nbsp; аль-Хаким в «аль-Мустадрак», 4/129;&nbsp; аль-Бейхаки в «аль-Кубра», 10/12).</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>Этот хадис также содержит в себе великие основы.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Поистине, Аллах Всевышний возложил (на людей определённые) обязанности…» </em></strong></span>— речь идёт о том, на обязательность чего указывает Коран.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…так не пренебрегайте же ими…» </em></strong></span>— запрещено пренебрегать тем, на обязательность чего указывает Коран.</span></p>
+	<p style="text-align: left;"><span>Что же касается велений избранного пророка, да благословит его Аллах и приветствует, то их также обязательно исполнять и нельзя пренебрегать ими. А доказательством являются слова Всевышнего:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانتَهُوا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Берите же то, что дал вам Посланник, и сторонитесь того, что он запретил вам»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=59&aya=7"><small>[Сура аль-Хашр, аят 7]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَأَطِيعُواْ اللَّهَ وَالرَّسُولَ لَعَلَّكُمْ تُرْحَمُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Повинуйтесь Аллаху и Посланнику, — быть может, вы будете помилованы»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=3&aya=132"><small>[Сура али ‘Имран, аят 132]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Подобных аятов множество. Также пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Поистине, мне дарован Коран и нечто подобное ему </em></strong><em>(Сунна)<strong>! Я опасаюсь сытого человека, лежащего на своем ложе и говорящего: ″Между нами и вами Книга Аллаха! Что найдете в ней дозволенным, считайте это дозволенным, а что найдете запретным – запретным!″ Но нет! </strong></em><strong><em><span style="color: #008000;">То, что запретил посланник Аллаха подобно тому, что запретил Аллах</span>»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Абу Дауд, 4604;&nbsp; ат-Тирмизи, 2664;&nbsp; ибн Маджах, 12;&nbsp; Ахмад, 4/131;&nbsp; ибн Хиббан, 1/188;&nbsp; ат-Табарани в «аль-Кабир», 20/283;&nbsp; аль-Бейхаки в «аль-Кубра», 9/332].</span></span></p>
+	<p style="text-align: left;"><span>Поистине, Аллах Всевышний вменил определенные вещи в обязанность только для того, чтобы люди их выполняли. Это указывает на то, что человек, пренебрёгший этими обязанностями, является грешником, так как Аллах Всевышний запретил пренебрегать ими. Это касается правила, которое гласит:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	<span style="color: #800000;">ترك الواجب محرم</span>
+	</div><p></p>
+	<p style="text-align: center;"><em>&nbsp;«Оставление обязательного предписания (уаджиба) – это запретный поступок».</em></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«(Также) Он установил (определённые) границы </em></strong><em>(хадды)<strong>…» </strong></em></span>— эту фразу можно разбирать с разных сторон. Но мы сократим этот разбор, приведя общее правило, на которое указывает Коран и Сунна.</span></p>
+	<p style="text-align: left;"><span>Когда в Коране или в Сунне приходит слово <strong>«хадд»</strong> <span style="color: #800000; font-size: 14pt;">( حَد )</span> или его множественное число <strong>«худуд»</strong> <span style="color: #800000; font-size: 14pt;">( حدود )</span>, то бывает одно из трёх:</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>1 — Когда приходит слово «хадд» или «худуд» и после него нет ни приказа, ни запрета. </strong></span></p>
+	<p style="text-align: left;"><span>Например, Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;تِلْكَ حُدُودُ اللَّهِ وَمَن يُطِعِ اللَّهَ وَرَسُولَهُ يُدْخِلْهُ جَنَّاتٍ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Таковы границы </strong><em>(худуд)</em></span><strong> Аллаха. Того, кто повинуется Аллаху и Его Посланнику, Он введет в Райские сады»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=13"><small>[Сура ан-Ниса, аят 13]</small></a></span></span></p>
+	<p style="text-align: left;"><span>В данном случае может иметься в виду либо обязательное предписание <em>(фард)</em>, либо желательное деяние <em>(мустахабб)</em>, либо разрешённое деяние <em>(мубах)</em>.</span></p>
+	<p style="text-align: left;"><span>Например, Аллах Всевышний сказал относительно наследства:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يُوصِيكُمُ اللَّهُ فِي أَوْلَادِكُمْ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Аллах заповедует вам относительно ваших детей»</span><strong>.</span> <a href="#_ftn1" name="_ftnref1">[1]</a></strong></strong></span></p>
+	<p style="text-align: left;"><span>После того, как Аллах Всевышний разъяснил правила деления наследства, Он сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;تِلْكَ حُدُودُ اللَّهِ وَمَن يُطِعِ اللَّهَ وَرَسُولَهُ يُدْخِلْهُ جَنَّاتٍ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Таковы границы </strong><em>(худуд)</em></span><strong> Аллаха. Того, кто повинуется Аллаху и Его Посланнику, Он введет в Райские сады»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=13"><small>[Сура ан-Ниса, аят 13]</small></a></span></span></p>
+	<p style="text-align: left;"><span><strong>«Таковы границы </strong><em>(худуд)</em><strong> Аллаха» </strong></span>— то есть: это – то, что повелел и узаконил Аллах. Под словом <strong>«худуд»</strong> здесь имеются в виду веления Аллаха.</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>2 — Когда приходит слово «хадд» или «худуд», а за ним следует запрет преступать этот «хадд». </strong></span></p>
+	<p style="text-align: left;"><span>Например, Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَتِلْكَ حُدُودُ اللَّهِ وَمَن يَتَعَدَّ حُدُودَ اللَّهِ فَقَدْ ظَلَمَ نَفْسَهُ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Таковы границы </strong><em>(худуд)</em></span><strong> Аллаха. <span style="color: #008000;">Кто преступает ограничения Аллаха</span>, тот поступает несправедливо по отношению к себе»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=65&aya=1"><small>[Сура ат-Таляк, аят 1]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;تِلْكَ حُدُودُ اللَّهِ فَلَا تَعْتَدُوهَا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Таковы границы </strong><em>(худуд)</em></span><strong> Аллаха. <span style="color: #008000;">Не преступайте же их</span>»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=229"><small>[Сура аль-Бакара, аят 229]</small></a></span></span></p>
+	<p style="text-align: left;"><span>В данном случае также может иметься в виду либо обязательное предписание <em>(фард)</em>, либо желательное деяние <em>(мустахабб)</em>, либо разрешённое деяние <em>(мубах)</em>.</span></p>
+	<p style="text-align: left;"><span>Под границами Аллаха здесь не имеется в виду что-то запретное. Здесь <strong>«границы Аллаха»</strong> — это либо обязательное предписание <em>(фард)</em>, либо желательное деяние <em>(мустахабб)</em>, либо разршённое деяние <em>(мубах)</em>.</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>3 — Когда приходит слово «хадд» или «худуд», а за ним следует запрет приближаться к этим «хаддам». </strong></span></p>
+	<p style="text-align: left;"><span>Например, Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;تِلْكَ حُدُودُ اللَّهِ فَلَا تَقْرَبُوهَا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Таковы границы </strong><em>(худуд)</em></span><strong> Аллаха. Не приближайтесь к ним»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=187"><small>[Сура аль-Бакара, аят 187]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Это – три ситуации, связанные со словом <em>«хадд»</em> или <em>«худуд»</em> в Коране.</span></p>
+	<p style="text-align: left;"><span>Под фразой <strong>«границы Аллаха»</strong> могут иметься в виду запретные деяния в двух случаях:</span></p>
+	<p style="text-align: left;"><span><span style="color: #800080;"><strong>Во-первых</strong>,</span> если после фразы <strong>«границы Аллаха»</strong> сказано не приближаться к ним.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800080;"><strong>Во-вторых</strong></span>, если вместе с упоминанием фразы <strong>«границы Аллаха»</strong> упоминается определенное наказание.</span></p>
+	<p style="text-align: left;"><span>Например, Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;تِلْكَ حُدُودُ اللَّهِ فَلَا تَقْرَبُوهَا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Таковы границы </strong><em>(худуд)</em></span><strong> Аллаха. Не приближайтесь к ним».</span> <a href="#_ftn2" name="_ftnref2">[2]</a></strong></span></p>
+	<p style="text-align: left;"><span>К запретным деяниям нельзя приближаться.</span></p>
+	<p style="text-align: left;"><span>Что же касается сунны, то в ней под словом <em>«хадд»</em> или <em>«худуд»</em> могут иметься в виду также и определенные шари‘атские наказания или те грехи, за которые положены эти наказания.&nbsp;<a href="#_ftn3" name="_ftnref3">[3]</a></span></p>
+	<p style="text-align: left;"><span>Здесь <strong><u>«хадд»</u></strong> — это определённое наказание, установленное шари‘атом (или же грех, за который установлено наказание). Например, <strong>«хадд»</strong> <em>(наказание)</em> за воровство, <strong>«хадд»</strong> <em>(наказание)</em> за распитие опьяняющих напитков, и так далее. Например, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Не следует давать человеку свыше десяти ударов </em></strong><em>(в качестве воспитания)<strong>, если только (он не заслуживает) одного из установленных Аллахом наказаний </strong></em><strong><em><u>(хадд)</u>»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 6848-6849;&nbsp; Муслим, 1708].</span></span></p>
+	<p style="text-align: left;"><span>Здесь слово <strong><u>«хадд»</u></strong> означает: грех, за который в шари‘ате полагается определённое наказание. Всё это подробно разбирается в книгах по фикху, но мы разъяснили это вкратце. Это касается слова <em>«хадд»</em> или <em>«худуд»</em> только в Коране и в Сунне.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«(Также) Он установил (определённые) границы </em></strong><em>(хадды)<strong>…» </strong></em></span>— здесь под границами <em>(хаддами)</em> имеются в виду обязательные и желательные установления религии, а так же то, что дозволено. Именно поэтому пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«(Также) Он установил (определённые) границы (хадды), так не преступайте же их».</em></strong></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…так не преступайте же их…» </em></strong></span>— то есть: не преступайте границы того, что вам разрешено. Совершайте постоянно либо обязательное <em>(уаджиб)</em>, либо желательное <em>(мустахабб)</em>, либо дозволенное <em>(мубах)</em>, и ничего более.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«(Также) Он запретил (определённые) вещи, так не нарушайте же (эти запреты)…» </em></strong></span>— этой фразой пророк, да благословит его Аллах и приветствует, запретил нам нарушать запреты Аллаха Всевышнего.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«(Также) Он запретил (некоторые) вещи…» </em></strong></span>— это указывает на то, что запрещённых вещей мало. Например, если посмотреть на все виды еды, то запрещённого среди них очень мало. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;قُل لَّا أَجِدُ فِي مَا أُوْحِيَ إِلَيَّ مُحَرَّمًا عَلَى طَاعِمٍ يَطْعَمُهُ إِلَّا أَن يَكُونَ مَيْتَةً أَوْ دَمًا مَّسْفُوحًا أَوْ لَحْمَ خِنزِيرٍ فَإِنَّهُ رِجْسٌ أَوْ فِسْقًا أُهِلَّ لِغَيْرِ اللَّهِ بِهِ فَمَنِ اضْطُرَّ غَيْرَ بَاغٍ وَلَا عَادٍ فَإِنَّ رَبَّكَ غَفُورٌ رَّحِيمٌ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Скажи: «Из того, что дано мне в откровение </strong><em>(от Аллаха)</em><strong>, я нахожу запрещенным употреблять в пищу <span style="text-decoration: underline;"><span style="color: #008000; text-decoration: underline;">только</span></span> мертвечину, пролитую кровь и мясо свиньи, которое </strong><em>(или которая)</em><strong> является скверной, а также недозволенное мясо животных, заколотых не ради Аллаха». Если же кто-либо вынужден пойти на это </strong><em>(от сильного голода)</em><strong>, не проявляя ослушания и не преступая пределы необходимого </strong><em>(не испытывая наслаждения и не наедаясь)</em></span><strong>, то ведь Аллах — Прощающий, Милосердный»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=6&aya=145"><small>[Сура аль-Ан‘ам, аят 145]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Или если посмотреть в общем на запретные вещи, то Аллах Всевышний говорит:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;قُلْ تَعَالَوْاْ أَتْلُ مَا حَرَّمَ رَبُّكُمْ عَلَيْكُمْ أَلَّا تُشْرِكُواْ بِهِ شَيْئًا وَبِالْوَالِدَيْنِ إِحْسَانًا وَلَا تَقْتُلُواْ أَوْلَادَكُم مِّنْ إمْلَاقٍ نَّحْنُ نَرْزُقُكُمْ وَإِيَّاهُمْ وَلَا تَقْرَبُواْ الْفَوَاحِشَ مَا ظَهَرَ مِنْهَا وَمَا بَطَنَ وَلَا تَقْتُلُواْ النَّفْسَ الَّتِي حَرَّمَ اللَّهُ إِلَّا بِالْحَقِّ ذَلِكُمْ وَصَّاكُمْ بِهِ لَعَلَّكُمْ تَعْقِلُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Скажи: «Придите, и я прочту то, что запретил вам ваш Господь». Никого не приобщайте к Нему в сотоварищи, делайте добро родителям. Не убивайте своих детей, опасаясь нищеты, ведь Мы обеспечиваем пропитанием вас вместе с ними. Не приближайтесь к мерзким поступкам — ни к очевидным, ни к сокрытым. Не убивайте душу, которую Аллах запретил убивать, если только у вас нет на это права. Это заповедал вам Аллах, — быть может, вы уразумеете»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=6&aya=151"><small>[Сура аль-Ан‘ам, аят 151]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Если посмотреть на все виды одежды, то количество запретных видов одежды весьма ограничено. Если посмотреть на все виды напитков, то количество запретных напитков весьма ограничено. Если посмотреть на все виды жилья и транспорта, то количество запретного из них весьма ограничено.</span></p>
+	<p style="text-align: left;"><span>Следовательно, запретных вещей очень мало по сравнению с тем, что дозволил Аллах Всевышний.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«(Также) Он запретил (некоторые) вещи…» </em></strong></span>— этих вещей очень мало и удивительно, когда человек всё равно их совершает. Душа побуждает человека нарушать запреты Аллаха, обольщаясь запрещенными вещами, хотя их очень мало. Шари‘ат не запрещает ничего такого, что приносит пользу человеческой жизни. Человек может легко обойтись без того, что запретил Аллах, и это никак не усложнит его жизнь. Человек ничуть не нуждается в тех вещах, которые запретил Аллах и запретил Его посланник, да благословит его Аллах и приветствует. Он может наслаждаться жизнью и без них. Среди желательных и дозволенных вещей человек может найти то, что украсит его жизнь, и он перестанет нуждаться в запретном.</span></p>
+	<p style="text-align: left;"><span><strong><em><span style="color: #800000;">«…и Он умолчал о (некоторых) вещах…»</span> </em></strong>— то есть: не сообщил нам о них.</span></p>
+	<p style="text-align: left;"><span>Относительно этой фразы некоторые люди ошиблись, сказав: <em>«Эта фраза указывает на то, что у Аллаха Всевышнего есть атрибут ″сукут″ (молчание)». </em>О таком описании Аллаха не говорил никто из праведных предшественников. Этот и ему подобные хадисы не указывают на то, что Аллах описывается молчанием <em>(сукут)</em>. Ведь, слово <strong>«сукут»</strong> <span style="color: #800000; font-size: 14pt;">( سُكُوت )</span> может указывать на два смысла:</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;">1 — <u>«Сукут»</u>, то есть: молчание, отсутствие слов.</span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний <strong><span style="color: #008000;">не описывается</span></strong> тем, что Он молчит. Напротив, Аллах Всевышний говорит так, как пожелает, и тогда, когда пожелает. Ни в Коране, ни в Сунне ни разу не сказано о том, что Аллах Всевышний молчит, посему нам следует остановиться на том, о чём сообщил Аллах, и не переходить границы.</span></p>
+	<p style="text-align: left;"><span>Мы описываем Аллаха Всевышнего только тем, чем Он описал Себя, и тем, чем Его описал посланник, да благословит его Аллах и приветствует. Мы не переступаем границы Корана и Сунны. Мы описываем Аллаха Всевышнего тем, что Он говорит, но не описываем Его тем, что Он молчит.</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;">2 — <u>«Сукут»</u>, то есть: умалчивание. &nbsp;</span></p>
+	<p style="text-align: left;"><span>Именно об этом говорится в данном хадисе.</span></p>
+	<p style="text-align: left;"><span><strong><em><span style="color: #800000;">«…и Он умолчал о (некоторых) вещах…»</span> </em></strong>— то есть: не сообщил нам о том, что знает; не сообщил нам о постановлениях, касающихся этих вещей.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;">&nbsp;</span><strong><em><span style="color: #800000;">«…и Он умолчал о (некоторых) вещах…»</span> </em></strong>— эта фраза указывает на то, что данных вещей мало.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…из-за милости к вам, а не из-за забывчивости…» </em></strong></span>— Аллах Всевышний ни о чём не забывает. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَمَا كَانَ رَبُّكَ نَسِيًّا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Господь твой не забывчив»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=19&aya=64"><small>[Сура Марьям, аят 64]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَّا يَضِلُّ رَبِّي وَلَا يَنسَى&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«</strong><em>(Муса сказал:) — </em></span><strong>Мой Господь не ошибается и не забывает»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=20&aya=52"><small>[Сура Та Ха, аят 52]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний – Хранитель всякой вещи, Обладающий совершенным знанием. Возвышен и пречист Господь наш!</span></p>
+	<p style="text-align: left;"><span>Следовательно, существуют такие вещи, постановления которых нам не разъяснены, и это из-за милости к нам, а не из-за забывчивости.</span></p>
+	<p style="text-align: center;"><span style="color: #008000;"><strong><span>Знай, что вещи, о которых умолчал Аллах Всевышний, бывают нескольких видов:</span></strong></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Первый вид:</strong></span> некоторые вещи, относительно которых нет конкретного шари‘атского текста, но в шари‘ате имеются косвенные указания на них. На самом деле о таких вещах не говорится, что Аллах Всевышний умолчал о них. Ведь, шари‘ат указывает на них различными косвенными указаниями Корана и Сунны. Например, ученые судят о многих вещах, появившихся в наши дни, на основе косвенных доводов, имеющихся в шари‘ате. Таких примеров множество, но мы не будем приводить их здесь из-за того, что книга растянется, а желающий может вернуться к более подробным трудам на эту тему.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Второй вид:</strong> </span>некоторые вещи, о которых ничего не сказано в шари‘ате, однако у нас имеется возможность сравнить их с теми вещами, о которых сказано в шари‘ате. О таких вещах также не говорится, что Аллах Всевышний умолчал о них.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Третий вид:</strong></span> некоторые вещи, о которых вообще ничего не сказано в шари‘ате. Эти вещи существовали в эпоху пророка, да благословит его Аллах и приветствует, но он вообще ничего не сказал о них. В шари‘ате нет никаких косвенных доводов относительно этих вещей, шари‘ат умолчал о них. Это указывает на то, что эти вещи дозволены <em>(мубах)</em>. Если бы эти вещи были обязательны или запрещены, то шари‘ат обязательно сообщил бы нам об этом. Чтобы какая-то вещь стала обязательной или запрещенной необходимо шари‘атское доказательство.</span></p>
+	<p style="text-align: left;"><span>Если шари‘ат умолчал о какой-то вещи и нет никакого довода, ни прямого, ни косвенного, и невозможно ни с чем её сравнить, значит, эта вещь не является обязательной.</span></p>
+	<p style="text-align: left;"><span>Например, сообщается, что Абу Хурейра, да будет доволен им Аллах, сказал: <em>«Однажды посланник Аллаха, да благословит его Аллах и приветствует, обратился к нам с проповедью и сказал: <strong>″О люди, хадж был вменён вам в обязанность, так совершайте же его″. </strong>Один человек спросил: <strong>″Каждый год, о посланник Аллаха?″</strong> — однако пророк, да благословит его Аллах и приветствует, хранил молчание до тех пор, пока тот не задал свой вопрос трижды. Тогда посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong>″Если я скажу: «Да» это непременно станет вашей обязанностью, но вы ведь не сможете выполнять её. Оставьте меня на том, на чём я оставил вас″</strong>»<strong>.&nbsp;— </strong></em><span style="font-size: small;">[Муслим, 1337].</span></span></p>
+	<p style="text-align: left;"><span>Пророк, да благословит его Аллах и приветствует, обратился к этому человеку с порицанием, так как Аллах Всевышний умолчал о том, о чём он спрашивал. Пророк, да благословит его Аллах и приветствует, повелел не доискиваться таких вещей.</span></p>
+	<p style="text-align: left;"><span>Также посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong><em>«Поистине, тягчайшее преступление против мусульман совершит тот мусульманин, который задаст вопрос о том, что прежде мусульманам не запрещалось, но после этого было запрещено из-за его вопроса»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 7289;&nbsp; Муслим, 2358].</span></span></p>
+	<p style="text-align: left;"><span>А Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَا أَيُّهَا الَّذِينَ آمَنُواْ لَا تَسْأَلُواْ عَنْ أَشْيَاءَ إِن تُبْدَ لَكُمْ تَسُؤْكُمْ وَإِن تَسْأَلُواْ عَنْهَا حِينَ يُنَزَّلُ الْقُرْآنُ تُبْدَ لَكُمْ عَفَا اللَّهُ عَنْهَا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«О те, которые уверовали! Не спрашивайте о вещах, которые огорчат вас, если станут вам известны. А ведь они станут вам известны, если вы спросите о них, когда ниспосылается Коран. Аллах простил вам это»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=5&aya=101"><small>[Сура аль-Маида, аят 101]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Если Аллах Всевышний умолчал о чём-то, то нам непозволительно доискиваться этих вещей и пытаться подвести их под доказательства. Например, иногда мы видим, как некоторые обладатели знания пытаются подвести шари‘атские доказательства под некоторые вопросы, которых они вовсе не касаются. Если какая-то вещь не подходит ни под один довод, то нужно следовать хадису: &nbsp;<strong><em>«Он умолчал о (некоторых) вещах из-за милости к вам, а не из-за забывчивости, так не доискивайтесь же их!»</em></strong></span></p>
+	<p style="text-align: left;"><span>Такова милость Аллаха Всевышнего к Своим рабам!</span></p>
+	<p style="text-align: center;"><span style="color: #000080; font-size: 14pt;"><strong>ПРИМЕЧАНИЯ:</strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a> Аллах Всевышний сказал: <strong>«Аллах заповедует вам относительно ваших детей: мужчине достается доля, равная доле двух женщин. Если все дети являются женщинами числом более двух, то им принадлежит две трети того, что он оставил. Если же есть всего одна дочь, то ей принадлежит половина. Каждому из родителей принадлежит одна шестая того, что он оставил, если у него есть ребенок. Если же у него нет ребенка, то ему наследуют родители, и матери достается одна треть. Если же у него есть братья, то матери достается одна шестая. Таков расчет после вычета по завещанию, которое он завещал, или выплаты долга. Ваши родители и ваши дети — вы не знаете, кто из них ближе и приносит вам больше пользы. Таково предписание Аллаха. Воистину, Аллах — Знающий, Мудрый. Вам принадлежит половина того, что оставили ваши жены, если у них нет ребенка. Но если у них есть ребенок, то вам принадлежит четверть того, что они оставили. Таков расчет после вычета по завещанию, которое они завещали, или выплаты долга. Им принадлежит четверть того, что вы оставили, если у вас нет ребенка. Но если у вас есть ребенок, то им принадлежит одна восьмая того, что вы оставили. Таков расчет после вычета по завещанию, которое вы завещали, или выплаты долга. Если мужчина или женщина, которые оставили наследство, не имеют родителей или детей, но имеют брата или сестру, то каждому из них достается одна шестая. Но если их больше, то они имеют равные права на одну треть. Таков расчет после вычета по завещанию, которое он завещал, или выплаты долга, если это не причиняет вреда. Такова заповедь Аллаха, ведь Аллах — Знающий, Выдержанный. Таковы ограничения Аллаха. Того, кто повинуется Аллаху и Его Посланнику, Он введет в Райские сады, в которых текут реки. Он пребудет там вечно. Это и есть великое преуспеяние».</span></strong>&nbsp;<a href="sura-activity://list_quran?sura=4&aya=11"><small>[Сура ан-Ниса, аяты 11-13]</small></a></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a>&nbsp; Аллах Всевышний сказал: <strong>«Не вступайте с ними </strong><em>(с женами)</em><strong> в близость, когда вы пребываете в мечетях. Таковы границы Аллаха. Не приближайтесь к ним».</strong></span>&nbsp;<a href="sura-activity://list_quran?sura=2&aya=187"><small>[Сура аль-Бакара, аят 187]</small></a></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref3" name="_ftn3">[3]</a> Применение таких наказаний, которые не могут отменяться ни при каких обстоятельствах, является прерогативой мусульманского правителя.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

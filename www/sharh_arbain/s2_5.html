@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 2</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+	<script>
+        /*restore last scroll position*/
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        window.addEventListener('scroll', function(e) {
+            try {
+                if ($(window).scrollTop() > 20) {
+                    scrollTop = $(window).scrollTop();
+                    EasyCache.set("sharh_arbain_book_s2_5.scrollTop", $(window).scrollTop());
+                }
+            } catch (error) {}
+        });
+        window.addEventListener('pageshow', function () {
+            try {
+                scrollTop = parseInt(EasyCache.get("sharh_arbain_book_s2_5.scrollTop"));
+                if (scrollTop != 0) {
+                    delay(500).then(() => zenscroll.toY(scrollTop, 800));
+                }
+            } catch (error) {
+                
+            }
+        }), false;
+    </script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<p style="text-align: center;"><span style="font-size: 14pt; color: #000080;"><strong><span>Судный&nbsp;День</span></strong></span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #800000;"><strong><em>(Потом) он сказал. </em></strong><strong><em>«(А теперь) поведай мне об этом Часе».</em></strong><strong><em> Посланник Аллаха, да благословит его Аллах и приветствует, сказал: </em></strong><em>«Тот, кого спрашивают о нём, знает не больше задающего вопрос».</em></span></p>
+	<p style="text-align: left;"><span>Знание о Часе только у Аллаха Всевышнего. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;يَسْأَلُونَكَ عَنِ السَّاعَةِ أَيَّانَ مُرْسَاهَا قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّي لَا يُجَلِّيهَا لِوَقْتِهَا إِلَّا هُوَ ثَقُلَتْ فِي السَّمَاوَاتِ وَالأَرْضِ لَا تَأْتِيكُمْ إِلَّا بَغْتَةً&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Они спрашивают тебя о Часе: «Когда он наступит?» Скажи: «Воистину, знание об этом принадлежит только моему Господу. Никто, кроме Него, не способен открыть время его наступления. Это знание тяжко для небес и земли. Он настанет внезапно»»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=7&aya=187"><small>[Сура аль-А‛раф, аят 187]</small></a></span></span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #800000;"><strong><em>Джибриль сказал: </em></strong><strong><em>«Тогда поведай мне о его признаках».</em></strong><strong><em> Посланник Аллаха, да благословит его Аллах и приветствует, сказал: </em></strong><em>«Признаком приближения этого Часа станет то, что рабыня породит свою госпожу, и то, что ты увидишь, как босые, нагие и неимущие пастухи овец будут стараться превзойти друг друга по высоте своих жилищ».</em></span></p>
+	<p style="text-align: left;"><span>У Судного Часа есть признаки, указывающие на его наступление. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;فَقَدْ جَاءَ أَشْرَاطُهَا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Ведь уже явились его признаки»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=47&aya=18"><small>[Сура Мухаммад, аят 18]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Ученые разделили признаки Судного Дня на две группы:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Малые признаки Судного Дня;</em></span></li>
+	<li><span><em>Большие признаки Судного Дня.</em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Пророк, да благословит его Аллах и приветствует, упомянул в данном хадисе некоторые малые признаки Судного Дня.</span></p>
+	<p style="text-align: left;"><span>Малые признаки – это все признаки, которые случатся до того, как выйдет Даджаль.&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a>&nbsp;А те признаки, которые случатся после его выхода, считаются большими. <strong><span style="color: #008000;">Больших признаков Судного Часа десять</span></strong> и все они последуют друг за другом.</span></p>
+	<p style="text-align: left;"><span>Например, посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong><em>«Не настанет Час этот, пока вы не сразитесь с иудеями»<strong>. — </strong></em></strong><span style="font-size: small;">[аль-Бухари, 2926;&nbsp; Муслим, 2922].</span></span></p>
+	<p style="text-align: left;"><span>Сражение с иудеями – это малый признак Судного Часа.</span></p>
+	<p style="text-align: left;"><span>Также посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong><em>«Не настанет Час этот, пока женщины из племени Даус не станут кружиться вокруг идола Зу-ль-Халяса»<strong>. — </strong></em></strong><span style="font-size: small;">[аль-Бухари, 7116;&nbsp; Муслим, 2906].</span></span></p>
+	<p style="text-align: left;"><span>Также посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong><em>«Не настанет Час этот, пока не выйдет из земли Хиджаза&nbsp;<a href="#_ftn2" name="_ftnref2"><strong>[2]</strong></a> (такой) огонь, который осветит собой шеи верблюдов в Бусре&nbsp;<a href="#_ftn3" name="_ftnref3"><strong>[3]</strong></a>»<strong>. — </strong></em></strong><span style="font-size: small;">[аль-Бухари, 7118;&nbsp; Муслим, 2894].</span></span></p>
+	<p style="text-align: left;"><span>Это – малый признак Судного Часа.</span></p>
+	<p style="text-align: left;"><span>Сообщается, что ‘Ауф бин Малик, да будет доволен им Аллах, сказал: <em>«Во время похода на Табук я пришёл к пророку, да благословит его Аллах и приветствует, находившемуся в кожаном шатре, и он сказал (мне): <strong>“Сочти шесть (предзнаменований приближения) Часа этого: (ими станут) моя кончина; потом завоевание Иерусалима; потом две (большие чумы), которые будут косить вас, как (косит) овец падёж скота; потом увеличение богатства до такой степени, что, если дадут кому-нибудь сто динаров, он останется недовольным; потом смута, которая не обойдёт стороной ни одного дома арабов; а потом перемирие между вами и бану аль-асфар&nbsp;<a href="#_ftn4" name="_ftnref4"><strong>[4]</strong></a>, которые проявят вероломство и явятся к вам с восемьюдесятью знамёнами, под каждым из которых будет находиться двенадцать тысяч (воинов)”</strong>»<strong>. — </strong></em><span style="font-size: small;">[аль-Бухари, 3176].</span></span></p>
+	<p style="text-align: left;"><span>Всё вышеперечисленное – это малые признаки Судного Часа!</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>Следующий важный момент:</strong></span></p>
+	<p style="text-align: left;"><span>Если какая-то вещь названа малым признаком Судного Часа, то это ещё не является ни похвалой для этой вещи, ни порицанием. Также если какая-то вещь названа малым признаком Судного Часа, то это ещё не значит, что она запрещена шари‛атом.</span></p>
+	<p style="text-align: left;"><span>Иногда какая-то вещь упомянута среди малых признаков Судного Часа и эта вещь является похвальной со стороны шари‛ата. А иногда какая-то вещь упомянута среди малых признаков Судного Часа и эта вещь является порицаемой со стороны шари‛ата.</span></p>
+	<p style="text-align: left;"><span>Следовательно, если какая-то вещь названа малым или большим признаком Судного Часа, то это еще не указывает ни на её похвальность, ни на её порицаемость.</span></p>
+	<p style="text-align: left;"trong><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;">Следующий важный момент:</span></strong></p>
+	<p style="text-align: left;"><span>Среди трудов обладателей знания о признаках Судного Дня&nbsp;<a href="#_ftn5" name="_ftnref5">[5]</a> есть удачные и подробные исследования, а есть труды, авторы которых допустили много ошибок. Искатель знания должен оберечь себя от книг, в которых допущены послабления, ибо признаки Судного Часа – это сокровенное знание. Вопросы, связанные с сокровенным знанием, должны приниматься только тогда, когда на них указывает достоверный довод из Книги Аллаха и Сунны Его пророка, да благословит его Аллах и приветствует.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Признаком приближения этого Часа станет то, что рабыня породит свою госпожу…»</em></strong></span> — если рабыня рожает ребенка от своего владельца (мальчика или девочку), то этот ребенок становится её господином, подобно её владельцу. Если, например, она родила девочку, то та становится её госпожой, потому что отец этой девочки является господином рабыни. После смерти господина рабыня, родившая ему ребенка, автоматически становится свободной женщиной. То есть: рабыня, родившая господину ребенка, не становится свободной сразу как родила ребенка, но она становится свободной после того, как умрёт ее господин. Поэтому, в хадисе сказано: <strong><em>«…рабыня породит свою госпожу…».</em></strong></span></p>
+	<p style="text-align: left;"><span>Некоторые обладатели знания сказали, что эти слова являются сообщением о том, что в будущем увеличится количество рабов, после чего рабыни будут часто рожать своих госпож. — <span style="font-size: small;">[См. «Шарх Науауи ‛аля Сахих Муслим», 1/158;&nbsp; «Джами‛ аль-‛Улюм уа-ль-Хикам», стр. 40].&nbsp;</span></span><span>Признаком Судного Часа является именно то, что подобных случаев станет много и об этом узнают люди.</span></p>
+	<p style="text-align: left;"><span>И это действительно произошло тогда, когда увеличились завоевания и стало много рабов. У мужчины появлялось много рабынь, и если кто-то из рабынь рожал, то её дети становились её господами.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и то, что ты увидишь, как босые, нагие и неимущие пастухи овец будут стараться превзойти друг друга по высоте своих жилищ…»</em></strong></span> — то есть: ты увидишь, как бедные люди, которых Аллах Всевышний сделал пастухами овец и верблюдов, вдруг оставят это дело и устремятся к постройке высоких жилищ. Относительно порицания соревнований в постройке высоких жилищ пришло много известных хадисов. Поистине, сподвижники, да будет доволен ими Аллах, не соревновались в постройке высоких жилищ. Их жилища были низкими.</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #800000;"><strong><em>А потом (этот человек) ушёл, когда же прошло некоторое время, посланник Аллаха, да благословит его Аллах и приветствует, спросил: </em></strong><em>«О Умар, известно ли тебе, кто задавал эти вопросы?»</em><strong><em> Я сказал: </em></strong><strong><em>«Аллах и посланник Его знают об этом лучше».</em></strong><strong><em> (Тогда) он сказал: </em></strong><strong><em>«Поистине это — Джибриль, явившийся к вам, чтобы научить вас вашей религии»».</em></strong></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…</em></strong><strong><em>когда же прошло некоторое время…» </em></strong></span>— в одной из версии данного хадиса сказано, что прошло три дня. — <span style="font-size: small;">[Абу Дауд, 4695;&nbsp; ат-Тирмизи, 2610;&nbsp; ибн Маджах, 63;&nbsp; Ахмад, 1/51].</span></span></p>
+	<p style="text-align: center;"><strong><span style="color: #000080;">ПРИМЕЧАНИЯ:</span></strong></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp; <strong>Даджаль</strong> — Лжемессия, который явится в мир в конце времён.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a>&nbsp; Хиджаз — название горной цепи, которая тянется вдоль побережья Красного моря.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref3" name="_ftn3">[3]</a>&nbsp; Бусра — город в южной Сирии.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref4" name="_ftn4">[4]</a>&nbsp; “Бану аль-асфар” — так арабы называли византийцев.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref5" name="_ftn5">[5]</a>&nbsp; Следует упомянуть несколько известных книг на эту тему:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>«Сыфату ашрати-с-са‛а» — ас-Сарахси;</em></span></li>
+	<li><span><em>«аль-Къана‛а фима тамуссу иляйхи аль-хаджа мин ашрати-с-са‛а» — ас-Сахауи;</em></span></li>
+	<li><span><em>«аль-Иза‛а» — Сыддик Хасан Хан;</em></span></li>
+	<li><span><em>«Итхаф аль-Джама‛а фима уарада фи ашрати-с-са‛а» — Хамуд ат-Тувейджири. </em></span></li>
+	</ul>
+	<p style="text-align: left;"><span><a href="#_ftnref12" name="_ftn12"></a></span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

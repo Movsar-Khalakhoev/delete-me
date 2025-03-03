@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 12</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 12</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Хурейры, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Одним из признаков хорошего соблюдения человеком Ислама является оставление им того, что его не касается».</strong></em> <br/><br/>&nbsp&nbsp&nbsp<small>Хадис привёл ат-Тирмизи (2317) и другие (ибн Маджах, 3976; ибн Хиббан, 1/466).</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>Сказал известный ученый ибн Аби Зейд аль-Къайрауани аль-Малики&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a>: <em>«Совокупность всех видов добра проистекает из четырёх хадисов», </em>упомянув среди этих четырех хадисов и этот хадис.</span></p>
+	<p style="text-align: left;"><span>Этот хадис – основа из основ, регулирующих нормы поведения.</span></p>
+	<p style="text-align: left;"><span>Фраза <em>«…хорошее соблюдение Ислама…»</em> приходит во многих хадисах. Например, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Если любой из вас станет </em></strong><strong><em><u>хорошо исповедовать Ислам</u>, то за каждое доброе дело, которое он совершит, ему будет записываться совершение от десяти до семисот и более добрых дел, а за каждое дурное дело — совершение только этого дела»<strong>.&nbsp;— </strong></em></strong>[аль-Бухари, 42;&nbsp; Муслим, 129].</span></p>
+	<p style="text-align: left;"><span>А в другой версии сказано: <strong><em>«Если раб Аллаха примет Ислам </em></strong><strong><em><u>и его Ислам будет хорошим</u>, Аллах простит ему любой грех, совершённый им прежде, и после этого воздаяние для него будет таким: награда за каждое благое дело будет (для него по меньшей мере) десятикратной, возрастая до семисоткратной&nbsp;<a href="#_ftn2" name="_ftnref2"><strong>[2]</strong></a>. Что же касается (каждого) дурного дела, то (воздастся за него только) равным, если Аллах не простит его»<strong>.&nbsp;— </strong></em></strong>[аль-Бухари, 41].</span></p>
+	<p style="text-align: left;"><span>Все эти хадисы указывают на то, что хорошее соблюдение Ислама – это великая степень и великое достоинство.</span></p>
+	<p style="text-align: center;"><span style="color: #008000;"><strong>Что значит «хорошее соблюдение Ислама»?</strong></span></p>
+	<p style="text-align: left;"><span>Обладатели знания разошлись в этом вопросе на несколько мнений. — <span style="font-size: small;">[См. «Джами‘ аль-‘Улюм уа-ль-Хикам», стр. 116].</span></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong><u>Первое мнение:</u></strong></span> хорошее соблюдение Ислама – <u>это выполнение человеком обязательных религиозных предписаний и оставление всего запрещенного</u>.</span></p>
+	<p style="text-align: left;"><span>Человек, совершающий все обязательные предписания и некоторые желательные виды поклонения, а также оставляющий все запрещенное, считается тем, кто хорошо соблюдает Ислам.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong><u>Второе мнение:</u></strong></span> хорошее соблюдение Ислама – <u>это достижение человеком степени ″ихсана″.</u></span></p>
+	<p style="text-align: left;"><span>Сообщается в известном хадисе, что Джибриль спросил пророка, да благословит его Аллах и приветствует: <strong><em>«Поведай мне об ихсане». </em></strong>Посланник Аллаха, да благословит его Аллах и приветствует, сказал: <strong><em>«Суть ихсана в том, чтобы ты поклонялся Аллаху так, будто видишь Его, а если ты Его не видишь, тo, (помня о том, что) Он, поистине, видит тебя»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Муслим, 8].</span></span></p>
+	<p style="text-align: left;"><span>Человек, достигший степени ″ихсана″, считается хорошо соблюдающим свой Ислам.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong><u>Третье мнение:</u></strong></span> хорошее соблюдение Ислама не является чем-то одинаковым, а отличается от человека к человеку. Чем лучше человек соблюдает Ислам, тем больше его достоинство и награда.</span></p>
+	<p style="text-align: left;"><span>Например, пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Если любой из вас станет </em></strong><strong><em><u>хорошо исповедовать Ислам</u>, то за каждое доброе дело, которое он совершит, ему будет записываться совершение от десяти до семисот и более добрых дел, а за каждое дурное дело — совершение только этого дела»<strong>.&nbsp;—</strong></em></strong> <span style="font-size: small;">[аль-Бухари, 42;&nbsp; Муслим, 129].</span></span></p>
+	<p style="text-align: left;"><span>&nbsp;Если человек принял Ислам и хорошо соблюдал его, то за каждое доброе деяние, ему будет записываться награда, как минимум, в десятикратном размере, и она может дойти до семисоткратной, если он будет улучшать свое исповедование Ислама. Чем лучше соблюдение Ислама, тем больше награда. Если соблюдение человеком Ислама будет великим, то ему будет записываться награда в семисоткратном размере.</span></p>
+	<p style="text-align: left;"><span>Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;مَن جَاءَ بِالْحَسَنَةِ فَلَهُ عَشْرُ أَمْثَالِهَا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Кто явится с добрым деянием, тот получит десятикратное воздаяние»</span><strong>.</span>&nbsp;— </strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=6&aya=160"><small>[Сура аль-Ан‘ам, аят 160]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Сказал ибн ‘Умар, да будет доволен Аллах им и его отцом, и другие обладатели знания: <em>«Десятикратную награду за благое деяние получают верующие бедуины. Что же касается людей, хорошо исповедующих Ислам, то им полагается большая награда. Об этом говорится в словах Всевышнего: </em><strong>″Если поступок окажется хорошим, то Он </strong><em>(Аллах)</em><strong> приумножит его и одарит от Себя великой наградой″</strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=40"><small>[Сура ан-Ниса, аят 40]</small></a></span><em>»<strong>.&nbsp;— </strong></em><span style="font-size: small;">[См. «Тафсир ат-Табари», 5/91;&nbsp; «Тафсир ибн Касира», 1/498;&nbsp; «ад-Дурр аль-Мансур», 2/539]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Это мнение является правильным, потому что есть разные степени хорошего соблюдения человеком Ислама.</span></p>
+	<p style="text-align: left;"><span>Следует также указать на то, что люди, совершающие множество грехов, не являются хорошо исповедующими Ислам.</span></p>
+	<p style="text-align: left;"><span>Оставление человеком того, что его не касается, является одним из признаков хорошего соблюдения им Ислама. Человек, совершающий деяния покорности и отдаляющийся от запрещенного, бывает поглощен подчинением своему Господу и ему некогда заниматься тем, что его не касается.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…того, что его не касается…»</em></strong></span> ― речь идёт о том, что не принесёт человеку никакой пользы. Известно, что каждый мусульманин должен заботиться о шари‘атских вопросах. Каждый мусульманин должен заботиться о том, чтобы правильно понимать Коран и Сунну. Именно это указывает на хорошее соблюдение им Ислама.</span></p>
+	<p style="text-align: left;"><span>Признаком хорошего соблюдения человеком Ислама является то, что он оставляет все слова, которые не принесут ему пользы ни в религии, ни в мирской жизни, ни в Последней обители. Это касается также оставления человеком изучения тех наук, которые не принесут ему пользы. Это касается также оставления человеком взаимоотношений и связей с теми людьми, которые не принесут ему пользы.</span></p>
+	<p style="text-align: left;"><span>Оставление человеком того, что не принесет ему пользы, указывает на хорошее соблюдение им Ислама. Это указывает на то, что он стремится к благу. Если же человек начнет произносить слова, которые не приносят пользы, и слушать речи, которые не приносят пользы, то это станет причиной того, что в результате он совершит нечто запретное или допустит упущения в обязательных предписаниях религии.</span></p>
+	<p style="text-align: left;"><span>Оставление человеком слов и речей, которые не приносят пользы, является признаком хорошего соблюдения им Ислама. Ведь, язык и уши – это источник ошибок. Человек будет рассчитан за то, что он произносил языком. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;مَا يَلْفِظُ مِن قَوْلٍ إِلَّا لَدَيْهِ رَقِيبٌ عَتِيدٌ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Стоит ему </strong><em>(человеку)</em></span><strong> произнести слово, как при нём оказывается готовый наблюдатель»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=50&aya=18"><small>[Сура Каф, аят 18]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Ангел записывает всё, что произносит человек, и даже то, что не является ни грехом, ни благой речью. Поистине, некоторые праведные предшественники говорили: <em>«Поистине, ангел записывает даже стоны больного человека». </em><a href="#_ftn3" name="_ftnref3">[3]</a><em>&nbsp;</em>Ангел записывает даже то, за что человек не получит ни награды, ни наказания.</span></p>
+	<p style="text-align: left;"><span>Сказал шейх уль-Ислям ибн Теймия в <em>«Китаб уль-Иман»&nbsp;</em><a href="#_ftn4" name="_ftnref4">[4]</a>, что нет доказательства, которое указывало бы на то, что ангел знает, за какие слова человек получит награду, а за какие – не получит. Ангел всего лишь записывает все слова человека. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;أَمْ يَحْسَبُونَ أَنَّا لَا نَسْمَعُ سِرَّهُمْ وَنَجْوَاهُم بَلَى وَرُسُلُنَا لَدَيْهِمْ يَكْتُبُونَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Неужели они полагают, что Мы не слышим их секретов и тайных переговоров? О нет! При них находятся Наши посланцы, которые записывают»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=43&aya=80"><small>[Сура аз-Зухруф, аят 80]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَإِنَّ عَلَيْكُمْ لَحَافِظِينَ ۝ كِرَامًا كَاتِبِينَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Воистину, над вами есть хранители — благородные писцы»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=82&aya=10"><small>[Сура аль-Инфитар, аяты 10-11]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Подобных аятов множество.</span></p>
+	<p style="text-align: left;"><span>Все это указывает на то, что оставление человеком слов и речей, не приносящих пользы, помогает ему достичь высоких степеней в религии. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَّا خَيْرَ فِي كَثِيرٍ مِّن نَّجْوَاهُمْ إِلَّا مَنْ أَمَرَ بِصَدَقَةٍ أَوْ مَعْرُوفٍ أَوْ إِصْلَاحٍ بَيْنَ النَّاسِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Многие из их тайных бесед не приносят добра, если только они не призывают раздавать милостыню, совершать одобряемое или примирять людей»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=114"><small>[Сура ан-Ниса, аят 114]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Человек также должен оставить изучение состояний людей, которые его не касаются. Человек должен оставить стремление узнать известия об определенном человеке: что он сказал, что он сделал, о чём он говорил с людьми, что ему ответили люди, и так далее. Занятость такими вещами, которые тебя не касаются, противоречит хорошему соблюдению Ислама.</span></p>
+	<p style="text-align: left;"><span>Следовательно, в данном хадисе содержится великая норма поведения. Мы обязаны стремиться к хорошему соблюдению Ислама, ибо в этом заключено великое достоинство. Нам не следует задавать вопросы, в которых нет пользы. Нам не следует изучать известия о людях, которые не приносят нам никакой пользы: этот сделал так, а тот не сделал так, этот пошёл туда, а этот пришёл сюда. Всё это порицаемо.</span></p>
+	<p style="text-align: left;"><span>В этом хадисе великое наставление избранного пророка, да благословит его Аллах и приветствует, относительно данной великой нормы поведения. Поистине, признаком соблюдения человеком хорошего Ислама является оставление им того, что его не касается, того, что не приносит ему пользы ни в религии, ни в делах мирской жизни. Это влияет на праведность человеческого сердца и его деяний.</span></p>
+	<p style="text-align: left;"><span>Некоторые праведные предшественники говорили о людях, которые слишком много говорят с другими людьми: <em>«Эти люди неспособны совершать деяния, поэтому им остается только говорить».</em></span></p>
+	<p style="text-align: left;"><span>Они много говорят, но мало делают, сидят часами, говоря об одном и том же, не приносящем им пользы, а всё это является порицаемым явлением. Если бы раб Аллаха поразмышлял над своими религиозными обязанностями, то нашёл бы, что их очень много. Некоторые люди слишком много говорят о дозволенных вещах, а иногда даже ведут запретные разговоры и совершают запретные деяния, оставляя при этом множество религиозных обязанностей. Искатель знаний не должен быть таким. Искатель знания должен стремиться постоянно совершать только те деяния, которые принесут ему пользу.</span></p>
+	<p style="text-align: left;"><span>В заключении следует сказать, что ан-Науауи, да помилует его Аллах, назвал этот хадис хорошим со стороны цепочки его передатчиков. Этот хадис на самом деле является хорошим, ибо передается многочисленными путями. Более правильно, что этот хадис относится к категории <em>«мурсаль».&nbsp;</em><a href="#_ftn5" name="_ftnref5">[5]</a><strong>&nbsp;</strong>Об этом сказали Ахмад, Яхъя ибн Ма‘ин и еще целая группа ученых.&nbsp;<a href="#_ftn6" name="_ftnref6">[6]</a>&nbsp;Но данный хадис передается многочисленными путями передачи, поэтому ан-Науауи, да помилует его Аллах, назвал его хорошим и был прав.</span></p>
+	<p style="text-align: center;"><span style="color: #000080; font-size: 14pt;"><strong>ПРИМЕЧАНИЯ:</strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp; Абу Мухаммад, ‘Абдуллах ибн Аби Зейд аль-Къайрауани аль-Малики. Скончался в 389-ом г.х.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a> Имеется в виду, что за некоторые благие дела Аллах вознаграждает Своих рабов более чем в десятикратном размере.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref3" name="_ftn3">[3]</a>&nbsp; Передает ад-Дейлями в «аль-Фирдаус», 5/537;&nbsp; Абу Ну‘айм аль-Асбахани в «Тарих Исбахан», 1/330, от ‘Али ибн Аби Талиба от пророка, да благословит его Аллах и приветствует.</span></p>
+	<p style="text-align: left;"><span>Также передали ибн Аби Шейба в «Мусаннаф», 2/443;&nbsp; ибн ‘Абд уль-Барр в «ат-Тамхид», 21/38,&nbsp; что Муджахид сказал нечто подобное.</span></p>
+	<p style="text-align: left;"><span>То же самое передается и со слов Тавуса. См. «Хильяту-ль-Аулия», 4/4;&nbsp; «Тахзиб аль-Камаль», 13/362;&nbsp; «ад-Дурр аль-Мансур», 7/596.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref4" name="_ftn4">[4]</a>&nbsp; См. «Маджму‘ аль-Фатауа», 7/49.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref5" name="_ftn5">[5]</a> В качестве термина это слово служит для обозначения хадиса, в конце иснада (цепочки передатчиков) которого после имени таби‘ина имеется пропуск. Если, последователь сподвижников (таби‘) передает что-то от пророка, да благословит его Аллах и приветствует, хотя он не мог слышать ничего напрямую от пророка, да благословит его Аллах и приветствует, ибо он его никогда не видел, то данный хадис называется «мурсалем».</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref6" name="_ftn6">[6]</a>&nbsp; См. «аль-Камиль» (4/277)&nbsp; ибн ‘Ади;&nbsp; «аль-‘Иляль» (3/108)&nbsp; ад-Даракутни; «ат-Тамхид» (9/195-199)&nbsp; ибн ‘Абд уль-Барра; «Тахзиб аль-Камаль», 4/19;&nbsp; «Джами‘ аль-‘Улюм уа-ль-Хикам», стр. 113.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

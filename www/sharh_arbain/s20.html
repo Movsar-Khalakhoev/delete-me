@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 20</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 20</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Мас‘уда ‘Укбы ибн ‘Амра аль-Ансари аль-Бадри, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Поистине, дошло до людей из слов первого пророчества (следующее): если ты не чувствуешь стыда, делай что хочешь».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл аль-Бухари (6120)</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>Этот хадис содержит в себе повествование об одной из ветвей веры <em>(имана)</em> ― о стыдливости.&nbsp; Здесь приведены слова, которые остались среди людей ещё со времён первого пророчества.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Поистине, дошло до людей из слов первого пророчества…»</em></strong></span> — речь идёт о словах первых посланников и пророков, таких как, например, Нух и Ибрахим, мир им обоим. Некоторые слова Нуха, мир ему, распространились среди его последователей, и некоторые слова Ибрахима, мир ему, также распространились среди его последователей.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…из слов первого пророчества…»</em></strong></span> — следовательно, имеются в виду первые пророчества, которые были уже совсем давно. Что же касается пророческих миссий Мусы, ‘Исы, Дауда, и других пророков среди сынов Исраиля, то эти пророчества были более поздними.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Поистине, дошло до людей из слов первого пророчества…»</em></strong></span> — следовательно, слова, содержащиеся в этом хадисе, являются словами пророков, содержащими великую пользу.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…если ты не чувствуешь стыда…»</em></strong></span> — пророк, да благословит его Аллах и приветствует, сказал о стыдливости: <strong><em>«Вера (включает в себя) более шестидесяти ответвлений, а стыдливость — (одно из) ответвлений веры»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 9;&nbsp; Муслим, 35].</span></span></p>
+	<p style="text-align: left;"><span>Стыдливость иногда бывает врожденным качеством человека, а иногда человек перевоспитывает себя, приобретая стыдливость.</span></p>
+	<p style="text-align: left;"><span>Некоторые люди бывают стеснительными с самого рождения. Например, передают, со слов Ибн ‘Умара, да будет доволен Аллах им и его отцом, что как-то раз, проходя мимо одного из ансаров, который давал своему брату наставления относительно стыдливости&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a>, посланник Аллаха, да благословит его Аллах и приветствует, сказал ему: <em><strong>«Оставь его, ибо, поистине, стыдливость — от веры!»&nbsp;—</strong></em> <span style="font-size: small;">[аль-Бухари, 24;&nbsp; Муслим, 36].</span>&nbsp;А в другом хадисе сказано: <strong><em>«Стыдливость не приносит ничего, кроме блага»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[аль-Бухари, 6117;&nbsp; Муслим, 37].</span></span></p>
+	<p style="text-align: left;"><span>Если же человек не был стыдливым с рождения, то он должен перевоспитывать себя, приобретая стыдливость. Ведь, человек должен стесняться Аллаха, отдаляться от запретных деяний и от того, что очерняет его перед Господом. Аллах Всевышний любит стыдливость и доволен ею. Стыдливость побуждает человека испытывать отвращение перед запретными поступками или перед оставлением обязательных религиозных предписаний.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…если ты не чувствуешь стыда, делай что хочешь…»</em></strong></span> — учёные по-разному объясняли эту фразу.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Первая группа</strong></span> учёных заявила, что в этом хадисе содержится приказ <em>(амр)</em>. А смысл хадиса таков: если ты хочешь совершить такое дело, при совершении которого не нужно стесняться верующих людей, то делай любое из таких дел. Иначе говоря, если деяние не является запретным и не нарушает общепринятые нормы приличия, и не является упущением чего-то обязательного, и шари‘ат не предписывает тебе стесняться этого дела, то совершай его без каких-либо переживаний.</span></p>
+	<p style="text-align: left;"><span>Так разъяснили эту фразу целая группа обладателей знания, в частности, Исхак (ибн Рахауейх) и имам Ахмад.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Вторая группа</strong></span> учёных заявила, что в этом хадисе нет никакого приказа <em>(амра)</em>. И в свою очередь среди тех, кто высказал такое мнение, также возникло разногласие относительно правильного понимания этой фразы.</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #800080;"><strong>а ―</strong> Некоторые сказали, что в хадисе содержится угроза.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…если ты не чувствуешь стыда, делай что хочешь…»</em></strong> </span>— то есть: если у тебя нет стыдливости, которая мешала бы тебе совершать запретное и порицаемое, или упускать нечто обязательное, то делай что хочешь. Поистине, нет блага в том, кто не чувствует стыда. Это подобно словам Всевышнего:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;اعْمَلُوا مَا شِئْتُمْ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Поступайте, как пожелаете!»</span><strong></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=41&aya=40"><small>[Сура Фуссылят, аят 40]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Это – обращение к многобожникам.&nbsp;<a href="#_ftn2" name="_ftnref2">[2]</a>&nbsp;И эти слова не являются велением, а сказаны в качестве угрозы.&nbsp;<a href="#_ftn3" name="_ftnref3">[3]</a></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…если ты не чувствуешь стыда, делай что хочешь…»</em></strong></span> — следовательно, эти слова следует понимать как угрозу. Если у тебя нет стыдливости, мешающей тебе совершать запретное, то делай что хочешь, ибо ты всё равно будешь рассчитан за свои поступки в День Суда и увидишь, какое зло ты приобрёл.</span></p>
+	<p style="text-align: left;"><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #800080;"><strong>б ―</strong> Другие же сказали, что хадис является просто повествованием.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…если ты не чувствуешь стыда, делай что хочешь…»</em></strong></span> — то есть: обычно люди совершают именно то, чего они не стесняются. Это – повествование о людях и о том, что они делают. У людей принято следующее: если ты не стесняешься такого-то поступка, то можешь его совершать.</span></p>
+	<p style="text-align: left;"><span>Следовательно, в хадисе содержится сообщение о людях, хотя внешне оно пришло в форме приказа.</span></p>
+	<p style="text-align: left;"><span>На самом же деле все эти мнения являются близкими к истине. Из хадиса можно понять и то, о чём сказала первая группа учёных, и то, о чём сказала вторая группа учёных.</span></p>
+	<p style="text-align: center;"><span style="font-size: 14pt; color: #000080;"><strong>ПРИМЕЧАНИЯ:</strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp; Имеется в виду, что этот человек порицал своего брата за излишнюю, как ему представлялось, стыдливость.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a> Иначе говоря: поступайте же, как хотите. Если хотите, то ступайте прямым путем, и вы сумеете снискать благоволение вашего Господа и войдете в Рай, а если нет, то блуждайте во тьме заблуждения, и тогда ваш Господь разгневается на вас и ввергнет вас в обитель вечного несчастья.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref3" name="_ftn3">[3]</a>&nbsp; Также в качестве примера можно привести слова Всевышнего: <strong>«Кто хочет, пусть верует, а кто не хочет, пусть не верует».</strong></span>&nbsp;<a href="sura-activity://list_quran?sura=18&aya=29"><small>[Сура аль-Кахф, аят 29]</small></a></span></p>
+	<p style="text-align: left;"><span>Этот аят содержит в себе угрозу тем, кто не уверовал, а не приказ. Поэтому после этих слов Всевышний Аллах сказал: <strong>«Мы приготовили для беззаконников Огонь, стены которого будут окружать их со всех сторон. Если они станут просить о помощи <em>(или о дожде)</em>, то им помогут водой, подобной расплавленному металлу, которая обжигает лицо. Мерзкий напиток и скверная обитель!» </strong></span>&nbsp;<a href="sura-activity://list_quran?sura=18&aya=29"><small>[Сура аль-Кахф, аят 29]</small></a></span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

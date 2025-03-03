@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 16</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 16</h4>
+	<p style="text-align: left;"><span>Сообщается, со слов Абу Хурейры, да будет доволен им Аллах, что один человек попросил пророка, да благословит его Аллах и приветствует: <strong><em>«Дай мне совет».</em> <br><br></strong>Тогда пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Не гневайся». <br><br></em></strong>После этого человек несколько раз повторил (свою просьбу), а пророк, да благословит его Аллах и приветствует, вновь и вновь отвечал: <em><strong>«Не гневайся».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл аль-Бухари (6116)</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>В этом хадисе также содержится указание на великую норму благопристойности <em>(адаба)</em>. Человек попросил пророка, да благословит его Аллах и приветствует, о совете, а пророк, да благословит его Аллах и приветствует, ответил: <strong><em>«Не гневайся».</em></strong></span></p>
+	<p style="text-align: left;"><span>Многие сподвижники, да будет доволен Аллах ими всеми, просили у пророка, да благословит его Аллах и приветствует, совета. Они просили совета у избранного пророка, да благословит его Аллах и приветствует, а он всегда отвечал по-разному. Человеку, о котором говорится в данном хадисе, он сказал: <strong><em>«Не гневайся».</em></strong></span></p>
+	<p style="text-align: left;"><span>Однажды, к нему пришёл другой человек и сказал: <strong><em>«О посланник Аллаха, предписаний Ислама для меня слишком много. Укажи же мне на то, за что мне следует крепко держаться». </em></strong>Тогда пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Пусть твой язык всегда остается влажным от поминания Аллаха Всевышнего»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[ат-Тирмизи, 3375;&nbsp; ибн Маджах, 3793;&nbsp; Ахмад, 4/188, 190;&nbsp; ибн Аби Шейба в «Мусаннаф», 6/58;&nbsp; ибн Хиббан, 3/96;&nbsp; аль-Хаким в «аль-Мустадрак», 1/672;&nbsp; ат-Табарани в «аль-Аусат», 2/118;&nbsp; аль-Бейхаки в «аль-Кубра». 3/371;&nbsp; ибн уль-Мунзир в «аль-Аусат», 1/340].</span></span></p>
+	<p style="text-align: left;"><span>Учёные указали на две причины того, почему ответы в разных случаях были разными.&nbsp;— <span style="font-size: small;">[См. «Фатх уль-Бари», 10/520-521;&nbsp; «‘Умдату-ль-Къари», 22/164;&nbsp; «Тухфату-ль-Ахуази», 6/138].</span></span></p>
+	<p style="text-align: left;"><span><strong>Во-первых</strong>,</span> пророк, да благословит его Аллах и приветствует, давал разные советы, которые зависели от того, что ему было известно о спрашивающем. Если спрашивающий нуждался в поминании Аллаха, то пророк, да благословит его Аллах и приветствует, советовал ему заниматься поминанием Аллаха. Если же спрашивающий нуждался в подавлении гнева, то пророк, да благословит его Аллах и приветствует, советовал ему не гневаться.</span></p>
+	<p style="text-align: left;"><span><strong>Во-вторых</strong>,</span> пророк, да благословит его Аллах и приветствует, давал разные советы, чтобы указать своей общине на различные виды добра. Ведь, в будущем каждый из сподвижников будет передавать именно то завещание, которое пророк, да благословит его Аллах и приветствует, оставил ему.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Дай мне совет»</em></strong></span> — то есть: укажи мне на такое благо, которое поможет мне в мирской жизни и в Последней обители.</span></p>
+	<p style="text-align: left;"><span>Если у кого-то просят совета, то он должен постараться дать наилучший совет ― именно такой совет, в котором нуждается спрашивающий. Не следует оставлять спрашивающего без ответа. Поэтому преподаватель и воспитатель должны постоянно держать в голове заветы пророка, да благословит его Аллах и приветствует, и заветы обладателей знания, чтобы при возникновении нужды завещать людям именно эти заветы.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Не гневайся»</em></strong></span> — и это включает в себя две вещи:</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Во-первых</strong></span>, не гневайся тогда, когда возникнут причины, вызывающие твой гнев. Постарайся сдержать гнев и раздражение. Аллах Всевышний сказал об этом:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«</strong><em>(Рай уготован для богобоязненных, которые делают пожертвования в радости и в горе,) </em></span><strong>сдерживают гнев и прощают людей»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=3&aya=134"><small>[Сура али ‘Имран, аят 134]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Сдерживание гнева – это признак верующих и творящих добро рабов Аллаха. Они сдерживают гнев тогда, когда он вспыхивает. Сообщается, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«В День Воскресения Аллах Всевышний перед Своими творениями обратится к тому, кто сдерживал свой гнев, имея возможность излить его, чтобы предложить ему на выбор ту из гурий, которую он пожелает»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Абу Дауд, 4777;&nbsp; ат-Тирмизи, 2021;&nbsp; ибн Маджах, 4186;&nbsp; Ахмад, 3/440;&nbsp; Абу Йа‘ля, 3/66;&nbsp; ат-Табарани в «аль-Аусат», 9/105;&nbsp; аль-Бейхаки в «аль-Кубра», 8/161].</span></span></p>
+	<p style="text-align: left;"><span>Сдерживание гнева – это похвальное качество, что мы разберем подробнее немного позже.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Во-вторых</strong></span>, не стремись к тому, что может тебя разгневать. Если ты знаешь, что определенная вещь вызывает в тебе гнев, то не приближайся к ней. Поэтому многие праведные предшественники считали похвальным качеством то, что иногда человек старается не замечать те вещи, которые могут его разгневать.</span></p>
+	<p style="text-align: left;"><span>Например, ‘Усман ибн Заида&nbsp;<a href="#_ftn1" name="_ftnref1">[1]</a> говорил: <span style="color: #008000;"><em>«Благополучие состоит из десяти частей, девять из которых содержатся в том, что человек старается не замечать (некоторые вещи)». </em></span>А имам Ахмад, говоря об этих словах, сказал следующее: <span style="color: #008000;"><em>«Благополучие состоит из десяти частей, </em></span><em><span style="color: #008000;"><u>все десять из которых</u> содержатся в том, что человек старается не замечать (некоторые вещи)»</span><strong><span style="color: #008000;">.</span>&nbsp;— </strong></em><span style="font-size: small;">[аль-Бейхаки в «Шу‘аб аль-Иман», 6/330;&nbsp; аль-Миззи в «Тахзиб аль-Камаль», 19/370].</span></span></p>
+	<p style="text-align: left;"><span>Имеется в виду то, что человек старается не замечать то, что вызывает у него гнев и недовольство. Это является великой дверью, ведущей к благу. Также человек старается не замечать, когда ему причиняют обиды. Также человек старается не замечать те разговоры, которые не являются похвальными. Всё это является похвальным деянием.&nbsp;<a href="#_ftn2" name="_ftnref2">[2]</a></span></p>
+	<p style="text-align: left;"><span>Следовательно, слова <strong><em>«не гневайся»</em></strong> указывают на две вещи:</span></p>
+	<ul style="text-align: left;">
+	<li><span><em>Не выявляй свой гнев, наоборот, скрывай его!</em></span></li>
+	<li><span><em>Не приближайся к тому, что может вызвать твой гнев!</em></span></li>
+	</ul>
+	<p style="text-align: left;"><span>Гнев – это порицаемое качество, являющееся орудием Иблиса. Вместе с гневом всегда приходит зло. Множество убийств и преступлений происходят именно по причине гнева. Множество скверных слов, о которых человек в будущем сожалеет, произносятся именно по причине гнева. Большинство разводов происходит именно по причине гнева. Множество ссор между родственниками происходит именно по причине гнева, а после того, как гнев проходит, никто уже не может помирить их. Следовательно, гнев – это порицаемое качество. Гнев – это орудие шайтана, посредством которого он сеет раздор между верующими.</span></p>
+	<p style="text-align: center;"><span style="color: #008000;">Как избавиться от гнева?!</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Во-первых</strong></span>, от гнева можно избавиться путём совершения малого омовения. Гнев – это кипение, а малое омовение – это охлаждение. Гнев появляется от шайтана, а совершение малого омовение – это выражение покорности Аллаху и поклонение Ему. Малое омовение успокаивает гнев, поэтому тот, кто разгневался, пусть совершит омовение.&nbsp;<a href="#_ftn3" name="_ftnref3">[3]</a></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>Во-вторых</strong></span>, если человек разгневался, будучи стоящим, то пусть сядет, и это успокоит его душу.&nbsp;<a href="#_ftn4" name="_ftnref4">[4]</a></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>В-третьих</strong></span>, человек должен постараться подавить гнев, заменив его прекрасными словами, если он способен на это.&nbsp;<a href="#_ftn5" name="_ftnref5">[5]</a></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>В-четвертых</strong></span>, человек должен замолчать и не говорить ничего, о чём он будет сожалеть в будущем.&nbsp;<a href="#_ftn6" name="_ftnref6">[6]</a></span></p>
+	<p style="text-align: left;"><span>Известно, что с человеком иногда случаются испытания, которые при определенных обстоятельствах возвышают его степень и помогают ему достичь награды. Если человек был испытан тем, что его гневит, то пусть подавит свой гнев, выполняя веление пророка, да благословит его Аллах и приветствует, и, претворяя в жизнь то, к чему побудил его Аллах, сказав:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«</strong><em>(Рай уготован для богобоязненных, которые делают пожертвования в радости и в горе,) </em></span><strong>сдерживают гнев и прощают людей»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=3&aya=134"><small>[Сура али ‘Имран, аят 134]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Следовательно, данный хадис указывает на великую норму благопристойности. Искатель знания и каждый человек, придерживающийся велений Аллаха, должен приучать свою душу к подавлению гнева. В этом человеку могут помочь кротость и терпение. Если человек описан кротостью и терпение, он является мудрым. Именно поэтому человек, поддающийся гневу, неспособен решать проблемы.</span></p>
+	<p style="text-align: left;"><span>Из многочисленных историй известно, какими дурными последствиями заканчивается проявление гнева. Поэтому слова пророка, да благословит его Аллах и приветствует: <strong><em>«Не гневайся»</em></strong>, должны быть всегда перед нашими глазами. Мы должны помнить об этих словах, когда находимся с нашими братьями и с нашими семьями, когда находимся в обществе детей и в обществе пожилых людей. Чем больше человек будет проявлять кротость и мудрость в своих речах и делах, тем ближе он будет к Аллаху. Кротость и мудрость – это качества особых рабов Аллаха.</span></p>
+	<p style="text-align: center;"><span style="color: #000080;">ПРИМЕЧАНИЯ:</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a>&nbsp; Абу Мухаммад, ‘Усман ибн Заида аль-Куфи. Скончался в 160 г.х.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref2" name="_ftn2">[2]</a> Естественно, все это не касается тех вопросов, когда нарушаются запреты Аллаха. Например, если супруга человека совершает нечто запрещенное шари‘атом, то в таком случае он не должен закрывать на это глаза. Наоборот, он должен стараться исправить её. Человек должен намеренно закрывать глаза только на те вещи, которые гневят его, но не являются запретными в шари‘ате.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref3" name="_ftn3">[3]</a>&nbsp; Сообщается, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Поистине, гнев от шайтана, а шайтан был сотворён из огня, а огонь можно потушить только водой. Посему, когда кто-либо из вас гневается, пусть совершит малое омовение». </em></strong>Абу Дауд, 4784;&nbsp; Ахмад, 4/226;&nbsp; ат-Табарани в «аль-Кабир», 443;&nbsp; аль-Бейхаки в «Шу‘аб аль-Иман», 6/310.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref4" name="_ftn4">[4]</a> Сообщается со слов Абу Зарра, да будет доволен им Аллах, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Когда кто-нибудь из вас разгневается, и он в это время стоит, то пусть сядет. Если же его гнев не пройдет, то пусть ляжет». </em></strong>Абу Дауд, 4782;&nbsp; Ахмад, 5/152;&nbsp; ибн Хиббан, 12/501;&nbsp; аль-Бейхаки в «Шу‘аб аль-Иман», 6/309.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref5" name="_ftn5">[5]</a>&nbsp; Сообщается, что Сулейман бин Сурад, да будет доволен им Аллах, сказал: <em>― (Однажды, когда) я находился в обществе пророка, да благословит его Аллах и приветствует, двое людей вступили в перебранку друг с другом, (из-за чего) у одного из них покраснело лицо и вздулись вены на шее. Увидев это, пророк, да благословит его Аллах и приветствует, сказал: <strong>«Поистине, я знаю такие слова, произнеся которые он обязательно успокоился бы. Если бы он сказал: “Прибегаю к защите Аллаха от шайтана </strong>/А‘узу би-Лляхи мин аш-шайтан/<strong>”, то перестал бы гневаться».</strong> </em>аль-Бухари, 3282;&nbsp; Муслим, 2610.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref6" name="_ftn6">[6]</a>&nbsp; Сообщается со слов ибн ‘Аббаса, да будет доволен Аллах им и его отцом, что пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Когда кто-нибудь из вас разгневается, пусть замолчит». </em></strong>Ахмад, 1/239;&nbsp; ибн ‘Ади в «аль-Камиль», 6/89.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

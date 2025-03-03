@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх шейха Ибн аль-‘Усаймина - Хадис № 12</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        .center{text-align: center;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 12</h4>
+	<p>Абу Хурайра<font face="Scheheraza" size="5"></font> передал: «Посланник Аллаха ﷺ сказал: “<strong><em>Признак хорошего исповедания ислама человеком — игнорирование им того, что его не касается”</em></strong>». В этой формулировке этот хадис привёл ат-Тирмизи, а также другие знатоки хадисов <span style="font-size: small;">[Тирмизи, № 2318; Ибн Маджа, № 3976. Достоверный (сахих) согласно аль-Албани: Сахих аль-джами‘, № 5911]</span>.</p>
+	<p><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Ибн аль-‘Усаймин, Мухаммад ибн Салих<br>
+		Комментарии к сборнику имама ан-Навави «Сорок хадисов» / Пер. с араб., прим. Д. Хайруддин. — М. : Умма, 2015. — 743, [1] с. — Часть текста парал. рус., ар. ISBN 978-5-94824-271-2
+		<br>
+		<br>
+		со следующими изменениями:<br>
+		добавлены арабские тексты аятов или их частей,<br>
+		исправлены некоторые опечатки и неточности,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p>В этом предложении подлежащее стоит после сказуемого. Иначе говоря, игнорирование того, что человека не касается, является признаком хорошего исповедания им ислама.</p>
+	<p>Слова Пророка ﷺ «<strong><em>что его не касается</em></strong>» означают ‘то, что не составляет предмет его забот и внимания’. С этим схоже другое высказывание Пророка ﷺ: «<strong><em>Тот, кто уверовал в Аллаха и в Последний день, пусть говорит благое либо молчит!</em></strong>» <span style="font-size: small;">[Бухари, № 6018; Муслим, № 47]</span>. Данный хадис частично пересекается по смыслу с вышеприведённым хадисом.</p>
+	<h3>Полезные выводы, извлекаемые из этого хадиса</h3>
+	<p>1.	<strong>Ислам собрал в себе все достоинства и достохвальные качества</strong>. Так, наш шейх ‘Абд-ар-Рахман ас-Са‘ди, да будет милостив к нему Аллах, даже написал на эту тему книгу, которая называется «Достоинства исламской религии». На эту же тему составил свой труд и другой шейх — ‘Абд-аль-‘Азиз ибн Мухаммад ибн Сальман, да будет милостив к нему Аллах.</p>
+	<p>Все достоинства ислама могут быть выражены в двух словах, которые привёл Великий и Всемогущий Аллах:</p>
+		<div class="arabic">
+			﴿&#x202F;إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ&#x202F;﴾
+		</div>
+		<p class="center">«<strong>Поистине, Аллах повелевает справедливость и добро</strong>»<span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=16&aya=90"><small>(сура 16 «Ан-Нахль = Пчёлы», аят 90)</small></a></span>.</p>
+	<p>2.	<strong>Если человек оставляет те вопросы и дела, которые его не касаются и в которых у него нет нужды</strong>, не обращая на них внимания, <strong>это свидетельствует о хорошем исповедании им ислама</strong>.</p>
+	<p>3.	<strong>Если человек занимается тем, что его не касается, то исповедание им ислама не настолько хорошо</strong>. Однако зачастую это происходит с некоторыми людьми. Можно видеть, как они говорят о вещах, которые их не касаются, либо спрашивают о том, что не имеет к ним отношения, встревая не в свои дела. Всё это указывает на слабость исповедания ислама.</p>
+	<p>4.	<strong>Необходимо, чтобы человек стремился обрести нравственные качества, относящиеся к достоинствам исповедания ислама, и оставлял то, что его не касается</strong>, даже если это не даёт ему покоя. Дело в том, что если человек будет заниматься тем, что его не касается и не должно заботить, то он утомит сам себя. Некоторых людей приводит в замешательство такой вопрос.</p>
+	<div style="padding-left: 10%; padding-right: 10%;">
+		<p><span style="font-size: xx-large;">?&nbsp;</span>Разве оставление рабом Аллаха того, что его не касается, не влечёт за собой отказ от принципа веления одобряемого и запрещения порицаемого?</p>
+		<p>Нет, потому что побуждение к одобряемому и запрещение порицаемого касается каждого человека, о чём сказал Всевышний Аллах:</p>
+			<div class="arabic">
+				﴿&#x202F;وَلْتَكُن مِّنكُمْ أُمَّةٌ يَدْعُونَ إِلَى الْخَيْرِ وَيَأْمُرُونَ بِالْمَعْرُوفِ وَيَنْهَوْنَ عَنِ الْمُنكَرِ&#x202F;﴾
+			</div>
+			<p class="center">«<strong>Пусть среди вас будет община, которая будет призывать к добру, повелевать одобряемое и запрещать порицаемое</strong>»<span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=3&aya=104"><small>(сура 3 «Али ‘Имран = Семейство ‘Имрана», аят 104)</small></a></span>.</p>
+			<p>Поэтому если вы увидите, что какой-то человек совершает нечто предосудительное, и скажете ему: «Брат мой, это относится к порицаемому, так делать нельзя», то он не имеет права вам ответить: «Тебя это не касается». Даже если он так ответит, то эти слова у него не принимаются, поскольку принцип повеления одобряемого и запрещения порицаемого касается всей исламской общины.</p>
+		<p>К этому случаю также относится и жизнь внутри семьи. Мужчина — глава семейства и несёт за неё ответственность пред Аллахом, и он должен заботиться обо всём, что касается его жены, сыновей и дочерей. Ему надлежит указывать членам своей семьи на добро, повелевая им совершать его, а также предостерегать их от зла, запрещая им творить его. Так, Великий и Всемогущий Аллах сказал:</p>
+			<div class="arabic">
+				﴿&#x202F;يَا أَيُّهَا الَّذِينَ آمَنُوا قُوا أَنفُسَكُمْ وَأَهْلِيكُمْ نَارًا وَقُودُهَا النَّاسُ وَالْحِجَارَةُ&#x202F;﴾
+			</div>
+			<p class="center">«<strong>О те, которые уверовали! Оберегайте себя и свои семьи от Огня, растопкой которого будут люди и камни!</strong>»<span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=66&aya=6"><small>(сура 66 «Ат-Тахрим = Запрещение», аят 6)</small></a></span>.</p>
+			<p>Наставляет же на истину и помогает ей следовать лишь Аллах!</p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

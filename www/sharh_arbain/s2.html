@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейх - Хадис № 2</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+	<script>
+        /*restore last scroll position*/
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        window.addEventListener('scroll', function(e) {
+            try {
+                if ($(window).scrollTop() > 20) {
+                    scrollTop = $(window).scrollTop();
+                    EasyCache.set("sharh_arbain_book_s2.scrollTop", $(window).scrollTop());
+                }
+            } catch (error) {}
+        });
+        window.addEventListener('pageshow', function () {
+            try {
+                scrollTop = parseInt(EasyCache.get("sharh_arbain_book_s2.scrollTop"));
+                if (scrollTop != 0) {
+                    delay(500).then(() => zenscroll.toY(scrollTop, 800));
+                }
+            } catch (error) {
+                
+            }
+        }), false;
+    </script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 2</h4>
+	<p style="text-align: left;"><span>Сообщается, что ‘Умар, да будет доволен им Аллах, также сказал: <em>«(Однажды), когда мы находились в обществе посланника Аллаха, да благословит его Аллах и приветствует, к нам неожиданно подошёл какой-то человек в ослепительно белых одеждах с сильно чёрными волосами, по виду которого нельзя было сказать, что он находится в пути, и которого никто из нас не знал. Он сел напротив пророка, да благословит его Аллах и приветствует, так, что колени их соприкоснулись, положил руки (себе) на ноги и сказал:</em> <strong><em>«О Мухаммад, сообщи мне об исламе».</em></strong></span></span></p>
+	<p style="text-align: left;"><em>Посланник Аллаха, да благословит его Аллах и приветствует, сказал: </em><strong><em>«(Суть) ислама заключается в том, чтобы ты засвидетельствовал, что нет божества, достойного поклонения, кроме Аллаха, и что Мухаммад — посланник Аллаха, выстаивал молитвы, давал закят, соблюдал пост во время рамадана и совершил хадж к Дому, если сумеешь сделать это».</em></strong><em> (Этот человек) сказал: </em><strong><em>«Ты сказал правду»</em></strong><em>, — а мы подивились тому, что он задаёт пророку, да благословит его Аллах и приветствует, вопросы и подтверждает правдивость его слов.</em></p>
+	<p style="text-align: left;"><em>(Потом) он сказал: </em><strong><em>«А теперь поведай мне о вере (имане)».</em></strong><em> Посланник Аллаха, да благословит его Аллах и приветствует, сказал: </em><strong><em>«Суть веры заключается в том, чтобы ты уверовал в Аллаха, и в Его ангелов, и в Его Писания, и в Его посланников и в Последний день, а (также в том, чтобы) уверовал ты в предопределённость как хорошего, так и дурного»</em></strong><em>, — (и этот человек снова) сказал: </em><strong><em>«Ты сказал правду».</em></strong></p>
+	<p style="text-align: left;"><em>(Потом) он сказал: </em><strong><em>«Поведай мне об ихсане».</em></strong><em> Посланник Аллаха, да благословит его Аллах и приветствует, сказал: </em><strong><em>«Суть ихсана в том, чтобы ты поклонялся Аллаху так, будто видишь Его, а если ты Его не видишь, тo, (помня о том, что) Он, поистине, видит тебя». </em></strong></p>
+	<p style="text-align: left;"><em>(Потом) он сказал. </em><strong><em>«(А теперь) поведай мне об этом Часе».</em></strong><em> Посланник Аллаха, да благословит его Аллах и приветствует, сказал: </em><strong><em>«Тот, кого спрашивают о нём, знает не больше задающего вопрос». </em></strong><em>Он сказал: </em><strong><em>«Тогда поведай мне о его признаках».</em></strong><em> Посланник Аллаха, да благословит его Аллах и приветствует, сказал: </em><strong><em>«Признаком приближения этого Часа станет то, что рабыня породит свою госпожу, и то, что ты увидишь, как босые, нагие и неимущие пастухи овец будут стараться превзойти друг друга по высоте своих жилищ».</em></strong></p>
+	<p style="text-align: left;"><span><em>А потом (этот человек) ушёл, когда же прошло некоторое время, посланник Аллаха, да благословит его Аллах и приветствует, спросил: </em><strong><em>«О ‘Умар, известно ли тебе, кто задавал эти вопросы?»</em></strong><em> Я сказал: </em><strong><em>«Аллах и посланник Его знают об этом лучше».</em></strong><em> (Тогда) он сказал: </em></span><em><strong>«Поистине это — Джибриль, явившийся к вам, чтобы научить вас вашей религии»</strong>»</span><b>.</span></b></em><br><br><small>Хадис привёл Муслим (8)</small></span></p>
+	<p style="text-align: center;"><strong><hr></hr></strong></p>
+	<ul>
+	<li><span><a href="./s2_1.html">ВСТУПЛЕНИЕ</a></span></li><br>
+	<li><span><a href="./s2_2.html">СТОЛПЫ ИСЛАМА</a></span></li><br>
+	<li><span><a href="./s2_3.html">СТОЛПЫ ВЕРЫ (ИМАНА)</a></span></li><br>
+	<li><span><a href="./s2_4.html">ЧТО ТАКОЕ ИХСАН?!</a></span></li><br>
+	<li><span><a href="./s2_5.html">О СУДНОМ ДНЕ</a>&nbsp;</span></li><br>
+	</ul>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

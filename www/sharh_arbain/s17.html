@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 17</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 17</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Йа‘ли Шаддада ибн Ауса, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Поистине, Аллах предписал всё делать наилучшим образом: если вам придётся убивать, делайте это наилучшим способом, и если будете приносить жертву, тоже делайте это наилучшим способом, и пусть каждый из вас как следует наточит свой нож и избавит животное от мучений».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл Муслим (1955)</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>Этот хадис повествует о необходимости выполнения каждого дела наилучшим образом.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Поистине, Аллах предписал…»</em></strong></span> — эта фраза указывает на обязательность. Например, Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;">&nbsp;</span><strong style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; line-height: 1.5;">«Воистину, молитва <span style="color: #008000;">предписана</span> верующим в определенное время»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=103"><small>[Сура ан-Ниса, аят 103]</small></a></span></p>
+	<p style="text-align: left;"><span>Слово <em>″предписана″</em> указывает на обязательность выполнения молитвы в определенное время.</span></p>
+	<p style="text-align: left;"><span>Также Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;كُتِبَ عَلَيْكُمُ الصِّيَامُ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Вам <span style="color: #008000;">предписан</span> пост»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=183"><small>[Сура аль-Бакара, аят 183]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ خَيْرًا الْوَصِيَّةُ لِلْوَالِدَيْنِ وَالأقْرَبِينَ بِالْمَعْرُوفِ حَقًّا عَلَى الْمُتَّقِينَ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Когда смерть приближается к кому-либо из вас и он оставляет после себя добро, то ему <span style="color: #008000;">предписано</span> оставить завещание родителям и ближайшим родственникам на разумных условиях. Такова обязанность богобоязненных»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=2&aya=180"><small>[Сура аль-Бакара, аят 180]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;كِتَابَ اللَّهِ عَلَيْكُمْ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Таково <span style="color: #008000;">предписание</span> Аллаха для вас»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=24"><small>[Сура ан-Ниса, аят 24]</small></a></span></span></p>
+	<p style="text-align: left;"><span>А также:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَكَتَبْنَا عَلَيْهِمْ فِيهَا أَنَّ النَّفْسَ بِالنَّفْسِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Мы <span style="color: #008000;">предписали</span> им </strong><em>(сынам Исраиля) </em><strong>в ней </strong><em>(в Торе)</em></span><strong>: душа — за душу»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=5&aya=45"><small>[Сура аль-Маида, аят 45]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Слово <span style="color: #008000;"><em>«…предписал…»</em></span> указывает на то, что предписанное является обязательным <em>(уаджиб)</em>. А в данном хадисе как раз сказано: <strong><em>«Поистине, Аллах предписал </em></strong><em>(то есть: вменил в обязанность)<strong> всё делать наилучшим образом».</strong></em></span></p>
+	<p style="text-align: left;"><span>Когда речь идёт о поклонении, то необходимо выполнять его наилучшим образом, ничего не пропуская, так, чтобы поклонение было действительным и принесло человеку награду. Необходимо выполнять все столпы и условия поклонения, все его обязательные предписания.</span></p>
+	<p style="text-align: left;"><span>Необходимо выполнять наилучшим образом всякое дело, встречающееся в течение твоей жизни. В частности, ты должен наилучшим образом относиться к своей душе, выполняя все обязательные предписания религии и оставляя всё запретное. А кто не поступает таким образом, тот несправедливо относится к своей душе. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَى&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Воистину, Аллах повелевает блюсти справедливость, <span style="color: #008000;">совершать всё наилучшим образом</span> и одаривать родственников»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=16&aya=90"><small>[Сура ан-Нахль, аят 90]</small></a></span></span></p>
+	<p style="text-align: left;"><span>Также ты должен относиться наилучшим образом к творениям Аллаха. Ты должен выполнять все их права и не допускать несправедливости в отношении них. Каждое из творений Аллаха имеет определенные права.</span></p>
+	<p style="text-align: left;"><span>Наилучшее отношение к творениям бывает следующих видов:</span></p>
+	<p style="text-align: left;"trong><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;">1 ― Наилучшее отношение к пророку, да благословит его Аллах и приветствует.</span></strong></p>
+	<p style="text-align: left;"><span>Мусульманин среди всех творений больше всего обязан именно ему. Необходимо, чтобы ты свидетельствовал о том, что он является посланником Аллаха, наилучшим образом. Иначе говоря, следует подтверждать правдивость того, о чём он сообщил, и поклоняться Аллаху именно так, как узаконил пророк, да благословит его Аллах и приветствует. Ты должен следовать его религиозным велениям, а не предпочитать им свои страсти и нововведения.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>2 ― Наилучшее отношение к родителям. </strong></span>Аллах повелел это, сказав:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;وَقَضَى رَبُّكَ أَلَّا تَعْبُدُواْ إِلَّا إِيَّاهُ وَبِالْوَالِدَيْنِ إِحْسَانًا&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Твой Господь предписал вам не поклоняться никому, кроме Него, и относиться наилучшим образом к родителям»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=17&aya=23"><small>[Сура аль-Исра, аят 23]</small></a></span></span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>3 ―</strong></span> Наилучшее отношение ко всем верующим в общем.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>4 ―</strong> </span>Необходимо соответствующее шари‘ату отношение к грешникам.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>5 ―</strong></span> Наилучшее отношение к учёным.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>6 ―</strong></span> Наилучшее отношение к правителям мусульман.</span></p>
+	<p style="text-align: left;"><span><span style="color: #008000;"><strong>7 ―</strong></span> Наилучшее соблюдение прав неверующих.</span></p>
+	<p style="text-align: left;"><span>Наилучшее отношение к каждому творению подробно разъяснено в шари‘ате. Необходимо относиться наилучшим образом даже к животным. Поэтому избранный пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Если вам придётся убивать, делайте это наилучшим способом, и если будете приносить жертву, тоже делайте это наилучшим способом, и пусть каждый из вас как следует наточит свой нож и избавит животное от мучений».</em></strong></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Если вам придётся убивать, делайте это наилучшим способом…»</em></strong></span> — это касается как убийств тех людей, которые этого заслуживают, так и убийств животных. Нужно убивать так, чтобы человек или животное сразу умерли и не мучились.</span></p>
+	<p style="text-align: left;"><span>Пророк, да благословит его Аллах и приветствует, повелел не уродовать трупы неверующих, не убивать ни стариков, ни женщин, ни детей. Пророк, да благословит его Аллах и приветствует, завещал мусульманам перед сражением следующее: <strong><em>«Выступайте в поход с именем Аллаха и на пути Аллаха и сражайтесь с теми, кто не верует в Аллаха. Выступайте в поход и не воруйте трофеи, не поступайте вероломно, не обезображивайте тела убитых врагов и не убивайте детей»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Муслим, 1731].</span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…если будете приносить жертву, тоже делайте это наилучшим способом, и пусть каждый из вас как следует наточит свой нож и избавит животное от мучений…»</em></strong></span> — это указывает на то, что человек обязан подготовить должным образом инструменты для жертвоприношения.</span></p>
+	<p style="text-align: left;"><span>Некоторые люди противоречат этому принципу и не режут животное наилучшим образом. Они учатся на животном, как именно его резать, и иногда режут животное по десять минуть. Иногда животное убегает от них, вскакивает с земли, а кровь хлещет. Так происходит с теми, кто не режет животное наилучшим образом.</span></p>
+	<p style="text-align: left;"><span>Необходимо убивать животное острым ножом, чтобы его дух быстро вышел. Нужно наилучшим образом пользоваться ножом во время жертвоприношения. Это и есть наилучшее отношение к животным, приказанное нам. Также запрещено резать одно животное на глазах другого животного. Животное не должно испытывать неприятные ощущения, видя, как режут другое животное.</span></p>
+	<p style="text-align: left;"><span>Следовательно, в этом хадисе содержится повеление совершать наилучшим образом всякую вещь: поклонение, отношение к своей душе, отношение к творениям Аллаха, отношение к животным, отношение к растениям, отношение к джиннам и ангелам.</span></p>
+	<p style="text-align: left;"><span>Искатели знания должны говорить только наилучшие слова и совершать только наилучшие деяния. Искатели знания должны наилучшим образом относиться к своему Господу. Искатели знания должны наилучшим образом относиться к творениям Аллаха: к людям, к животным, к насекомым, к окружающей природе, и так далее, ибо Аллах предписал всё делать наилучшим образом.</span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1"></a></span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

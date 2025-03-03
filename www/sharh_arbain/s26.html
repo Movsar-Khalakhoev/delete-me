@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх Салиха Али Шейха - Хадис № 26</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 26</h4>
+	<p style="text-align: left;"><span>Сообщается со слов Абу Хурейры, да будет доволен им Аллах, что посланник Аллаха, да благословит его Аллах и приветствует, сказал:<br><br> <em><strong>«Каждый день когда восходит солнце, следует давать милостыню столько раз, сколько суставов (или: костей) имеется в телах людей: (если) ты справедливо рассудишь двоих — это будет милостыней, и (если) ты подсадишь человека на его верховое животное, повезёшь его на нём или погрузишь на (животное) его поклажу — это будет милостыней, и благое слово — милостыня, и делая каждый шаг на пути к молитве, (ты даёшь) милостыню и когда убираешь с пути причиняющее людям вред, (ты тоже даёшь) милостыню».</strong></em><br><br>&nbsp&nbsp&nbsp<small>Хадис привёл аль-Бухари (2989) и Муслим (1009)</small></span></p>
+	<p style="text-align: center;"><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Сорок хадисов имама ан-Науауи (шарх шейха Салиха али-Шейха)<br>
+		1-ое изд., 315 стр., 1436 год.
+		<br>
+		<br>
+		плюс исправлены некоторые опечатки и разметка,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p style="text-align: left;"><span>Этот хадис также повествует о милостыне, а мы говорили о ней подробно при разборе предыдущего хадиса.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…сколько суставов (или: костей) имеется в телах людей…»</em></strong> </span>— в хадисе используется слово <span style="color: #008000;"><strong>«суляма»</strong></span> <span style="color: #800000; font-size: 14pt;">( السلامى )</span>.</span></p>
+	<p style="text-align: left;"><span>Некоторые обладатели сказали, что <span style="color: #008000;"><strong>«суляма» </strong></span>— это кости, а другие обладатели знания сказали, что <span style="color: #008000;"><strong>«суляма» </strong></span>— это суставы, соединяющие кости. В теле человека много костей. Аллах Всевышний даровал тебе их, сотворив тебя в наилучшем облике. Ты обязан благодарить Аллаха Всевышнего за то, что Он даровал тебе кости, которыми ты пользуешься.</span></p>
+	<p style="text-align: left;"><span>Человек должен давать милостыню за каждую кость, которая имеется в его теле, или же, согласно другому мнению, за каждый сустав, который имеется в его теле. Человек обязан благодарить Аллаха за дарованные Им милости. Человек обязан благодарить Аллаха за то, что Аллах даровал ему тело, кости и суставы.</span></p>
+	<p style="text-align: left;"><span>Человек не должен использовать свои кости и суставы в ослушании Аллаха. Если прошёл день и человек не совершил костьми и суставами ничего запретного, не пропустил никакого обязательного предписания, то он считается благодарящим Аллаха за этот день и считается выполнившим свою обязанность. Если человек совершает все обязательные предписания и не совершает ничего запретного в течение дня, то он считается выполнившим свою обязанность, касающуюся благодарности.</span></p>
+	<p style="text-align: left;"><span>Что же касается желательных видов благодарности <em>(шукра)</em>, то они заключаются в том, что человек <strong><span style="color: #008000;">раздает милостыню словами, делами и имуществом</span></strong>. Следовательно, милостыня бывает двух видов:</span></p>
+	<ul style="text-align: left;">
+	<li><span><span style="color: #008000;"><strong>Обязательная милостыня </strong></span><em>(заключается в том, что человек использует своё тело в подчинении Аллаху и удаляется от запретных вещей. Если человек делает так, то он считается благодарящим Аллаха)</em><strong>. </strong></span></li>
+	<li><span style="font-family: 'book antiqua', palatino, serif; font-size: 12pt; color: #008000;"><strong>Желательная милостыня.</strong></span></li>
+	</ul>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«Каждый день когда восходит солнце…»</em></strong></span> — имеется в виду: каждые сутки (двадцать четыре часа). Каждые сутки человек обязан благодарить Аллаха за то, что Аллах даровал ему тело, кости и суставы.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…(если) ты справедливо рассудишь двоих — это будет милостыней…»</em></strong></span> — то же самое касается и примирения двух людей, если оно будет уместным. Аллах Всевышний сказал:</span></p>
+	<p style="text-align: left;"><div class="arabic">
+	﴿&#x202F;لَّا خَيْرَ فِي كَثِيرٍ مِّن نَّجْوَاهُمْ إِلَّا مَنْ أَمَرَ بِصَدَقَةٍ أَوْ مَعْرُوفٍ أَوْ إِصْلَاحٍ بَيْنَ النَّاسِ&#x202F;﴾
+	</div><p></p>
+	<p style="text-align: center;"><span><strong>«Многие из их тайных бесед не приносят добра, если только они не призывают раздавать милостыню, совершать одобряемое <span style="color: #008000;">или примирять людей</span>»</span><strong>.</span></strong></strong><span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=4&aya=114"><small>[Сура ан-Ниса, аят 114]</small></a></span></span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и (если) ты подсадишь человека на его верховое животное, повезёшь его на нём или погрузишь на (животное) его поклажу — это будет милостыней…»</em></strong></span> — помощь тому, кто нуждается в помощи, также является милостыней. Например, если ты поможешь человеку починить автомобиль, или поможешь пожилому человеку в чем-либо, или поможешь нуждающемуся, то всё это будет являться милостыней, посредством которой ты благодаришь Аллаха.</span></p>
+	<p style="text-align: left;"><span><span style="color: #800000;"><strong><em>«…и благое слово — милостыня, и делая каждый шаг на пути к молитве, (ты даёшь) милостыню и когда убираешь с пути причиняющее людям вред, (ты тоже даёшь) милостыню…»</em></strong></span> — всё это ясные примеры различных видов милостыни.</span></p>
+	<p style="text-align: left;"><span>А в достоверной версии этого хадиса сказано: <strong><em>«Но всё это заменяет собой добровольная молитва ″ад-духа″ в два рака‘ата&nbsp;</em></strong><a href="#_ftn1" name="_ftnref1">[1]</a><strong><em>»<strong>.&nbsp;— </strong></em></strong><span style="font-size: small;">[Муслим, 720].</span></span></p>
+	<p style="text-align: left;"><span>Если ты использовал свои кости и суставы, совершая два рака‘ата молитвы «духа» ( الضحى ), то ты считаешься совершившим все эти желательные виды благодарности пред Аллахом.</span></p>
+	<p style="text-align: center;"><span style="font-size: 14pt; color: #000080;"><strong>ПРИМЕЧАНИЯ:</strong></span></p>
+	<p style="text-align: left;"><span><a href="#_ftnref1" name="_ftn1">[1]</a> В этом хадисе также указание на то, что молитва ″ад-Духа″ является сунной, совершаемой каждый день. Поистине, она является милостыней за все кости и суставы человека. Ученые говорят, что время молитвы ″ад-Духа″ наступает с того момента, когда солнце поднимется на высоту копья, а это примерно через 15-20 минут после восхода солнца. А заканчивается время этой молитвы примерно за десять минут до того, как солнце дойдет до зенита.</span></p>
+	<p style="text-align: left;"><span>В течение всего этого времени человек может совершить эту молитву. Но лучше всего совершать эту молитву в конце ее времени, ибо пророк, да благословит его Аллах и приветствует, сказал: <strong><em>«Время молитвы кающихся </em></strong><em>(имеется в виду молитва ад-духа)<strong> наступает тогда, когда земля начинает обжигать лапы верблюжат».</strong></em> Муслим, 748. Поэтому ученые говорят: <em>«Лучше откладывать два рака‘ата молитвы ″ад-Духа″ к концу ее времени, чем совершать в начале времени».</em></span></p>
+	<p style="text-align: left;"><span>См. «Шарх Рияд ас-Салихин» шейха Мухаммада ибн Салиха аль-‘Усеймина, том 2, стр. 156-157.</span></p>
+	</div>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>

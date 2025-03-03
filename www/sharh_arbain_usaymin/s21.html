@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Арбаун ан-Науауи - шарх шейха Ибн аль-‘Усаймина - Хадис № 21</title>
+	<style>
+		@font-face {font-family: 'Scheheraza';src: local('none'), url('file:///android_asset/fonts/Quran_10.ttf') format('truetype');}
+        @font-face {font-family: 'ZekrQuran';src: local('none'), url('file:///android_asset/fonts/Quran_11.ttf') format('truetype');}
+        body {background-color: #f9f7f4; scroll-behavior: smooth; margin: 5%;}
+        a:link {text-decoration: none;}
+        a:visited {text-decoration: none;}
+        a:hover {text-decoration: none;}
+        a:active {text-decoration: none;}
+        .center{text-align: center;}
+        p {font-size: large; text-align: left; text-indent: 1em;}
+		.arabic {direction: rtl; text-align: center; font-family: ZekrQuran; font-size: 1.9em; text-shadow: #bbbbbb 0px 0.02em 0, #eee 0 -0.05em 0; color: #111;}
+		#upbutton {
+			cursor: pointer;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+            border-radius: 12%;
+            font-size: 2.1em;
+            padding-left: 0.6em;
+            padding-right: 0.6em;
+            opacity: 0;
+            z-index: 10;
+			bottom: 2%;
+			left: 98%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+		[data-toggletip] {
+			display: inline-block;
+			position: relative;
+			user-select: none;
+		}
+		[data-toggletip] dl {
+			--triangle-size: 12px;
+			--triangle-offset: calc(50% - var(--triangle-size));
+			background-color: #fff;
+			border-radius: 0.5rem;
+			box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+			box-sizing: border-box;
+			margin: 0;
+			min-width: 10em;
+			padding: 1em;
+			position: absolute;
+			top: calc(100% + var(--triangle-size));
+			z-index: 1;
+		}
+		[data-toggletip] dl::before {
+			background-color: inherit;
+			border: inherit;
+			border-radius: 0 0 0 0.25rem;
+			content: "";
+			display: block;
+			height: calc(var(--triangle-size) * 2);
+			position: absolute;
+			top: calc(0px - var(--triangle-size));
+			transform: rotate(135deg);
+			width: calc(var(--triangle-size) * 2);
+			z-index: -1;
+		}
+		[data-toggletip] dl * {
+			margin: inherit;
+		}
+		[data-toggletip] summary {
+			color: #d9117b;
+			cursor: help;
+			display: inline-flex;
+			list-style: none;
+			/* text-decoration:1px red wavy underline; */
+			/* text-underline-offset:.5em */
+		}
+		[data-toggletip-close] {
+			background-color: #778899;
+			border: 0;
+			border-radius: 50%;
+			color: #fff;
+			float: right;
+			font-size: 1rem;
+			height: 2em;
+			width: 2em;
+		}
+		[data-toggletip] summary:focus,
+		[data-toggletip][open] summary {
+			background-color: #11d97c;
+			color: #fef5fa;
+			outline: 0;
+		}
+		[data-toggletip][open] dl {
+			animation: scale-in 0.5s ease-in-out both;
+			position: relative;
+			bottom: calc(0px - var(--triangle-size));
+		}
+		[data-toggletip] summary::-webkit-details-marker {
+			display: none;
+		}
+		@media (hover:hover) {
+			[data-toggletip] summary:hover {
+				background-color: #d9117b;
+				color: #fef5fa;
+			}
+		}
+		@keyframes scale-in {
+			0% {
+				transform: scale(0);
+				transform-origin: 0 0;
+				opacity: 0.25;
+			}
+			100% {
+				transform: scale(1);
+				transform-origin: 0 0;
+				opacity: 1;
+			}
+		}
+		.mode {
+            float:right;
+            display: block;
+			position: -webkit-sticky;
+            position: sticky;
+			top: 96%;
+			margin-right: 7em;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+	</style>
+	<script src="../scripts/easycache.min.js"></script>
+	<script src="../scripts/jquery-3.6.3.min.js"></script>
+	<script src="../scripts/zenscroll.min.js"></script>
+</head>
+<body>
+	<div class="mode" style="font-size: x-small;">
+		ночной режим:<span class="change">ВЫКЛ.</span>
+	</div>
+	<script src="../scripts/common.min.js"></script>
+	<h4 style="text-align: center; font-weight: normal;">Хадис № 21</h4>
+	<p>Абу ‘Амр (или Абу ‘Амра) Суфьян ибн ‘Абдаллах [ас-Сакафи]<font face="Scheheraza" size="5"></font> передал: «[Однажды] я попросил: “О Посланник Аллаха! Скажи мне об исламе такие слова, чтобы затем я уже не спрашивал об этом никого”. Он сказал: “<strong><em>Говори: ‹Я уверовал в Аллаха› — а потом придерживайся прямоты!”</em></strong>» <span style="font-size: small;">[Муслим, № 38]</span>.</p>
+	<p><hr></hr></p>
+	<div style="text-align: center;"><details data-toggletip=""><summary>&nbsp;[#]&nbsp;</summary><dl><dt>
+		Ибн аль-‘Усаймин, Мухаммад ибн Салих<br>
+		Комментарии к сборнику имама ан-Навави «Сорок хадисов» / Пер. с араб., прим. Д. Хайруддин. — М. : Умма, 2015. — 743, [1] с. — Часть текста парал. рус., ар. ISBN 978-5-94824-271-2
+		<br>
+		<br>
+		со следующими изменениями:<br>
+		добавлены арабские тексты аятов или их частей,<br>
+		исправлены некоторые опечатки и неточности,<br>
+		ссылки на аяты открываются в приложении.<br></dt></dl></details><span style="color: #800000;">Разъяснение хадиса</span>
+	</div>
+	<p>«<strong><em>Скажи мне об исламе</em></strong>» — то есть о Шариате. «<strong><em>…такие слова, чтобы затем я уже не спрашивал об этом никого</em></strong>» — то есть ясные, чёткие, всеобъемлющие и конкретные слова.</p>
+	<p>Он сказал ему: «<strong><em>Говори: “Я уверовал в Аллаха” — а потом придерживайся прямоты!</em></strong>» Слова — это для сердца, а прямота в повиновении Аллаху — это уже для органов тела.</p>
+	<p>Данный хадис краток, но охватывает многое. Заповедь «<strong><em>Говори: “Я уверовал в Аллаха”</em></strong>» включает в себя слова языка и слова сердца. Как сказали учёные, «слова сердца — это утверждение и признание». Высказывание «Я уверовал в Аллаха» означает, что я утверждаю это в соответствии с иманом, который обязывает меня веровать в то, что лишь Аллаху принадлежит истинное господство, только Он заслуживает поклонения и никто иной не обладает совершенными именами и качествами.</p>
+	<p>После того как Пророк ﷺ упомянул об имане, он дал вторую заповедь: «<strong><em>Придерживайся прямоты!</em></strong>» — то есть иди по прямому пути и не отклоняйся от Шариата ни влево, ни вправо.</p>
+	<p>Эти две заповеди охватили всю религию целиком. Давайте посмотрим: вера в Аллаха содержит искренность в поклонении, то есть необходимость совершать поклонение только ради Него, а приверженность прямому пути включает в себя следование Шариату Великого и Всемогущего Аллаха. В совокупности же обе эти заповеди представляют собой два условия принятия поклонения: искренность и соответствие Шариату.</p>
+	<h3>Полезные выводы, извлекаемые из этого хадиса</h3>
+	<p>1.	<strong>Сподвижники, да будет доволен ими Аллах, стремились к шариатскому знанию</strong>. В частности, это проявлялось в том, что они задавали Пророку ﷺ соответствующие вопросы.</p>
+	<p>2.	<strong>Хадис показывает мудрость Абу Амра</strong><font face="Scheheraza" size="5"></font>, ибо он задал этот великий вопрос, в котором речь идёт о предельном. После получения ответа на данный вопрос отпадает необходимость задавать его кому-то другому.</p>
+	<p>3.	<strong>Необходимо, чтобы для получения знания человек задавал вопросы всеохватывающие и конкретные</strong>, ибо в противном случае знания для него станут неясными и перемешаются.</p>
+	<div style="padding-left: 10%; padding-right: 10%;">
+		<p><span style="font-size: xx-large;">?&nbsp;</span>Как понять слова: «…чтобы  затем я уже не спрашивал об этом никого»? Разве возможно, чтобы сподвижники, да будет доволен ими Аллах, задавали вопросы о религии ещё кому-то, кроме Посланника Аллаха?</p>
+		<p>Да, вполне возможно, чтобы какой-нибудь сподвижник спрашивал о религии другого сподвижника, который обладал бóльшими знаниями о Шариате. Об этом передаётся в преданиях. Кроме того, цель этих слов состояла не в том, чтобы просто никого не спрашивать об этом в будущем, а в том, чтобы отвечающий обратил внимание на важность вопроса.</p>
+	</div>
+	<p>4.	<strong>Пророк ﷺ обладал даром говорить краткие слова, которые содержали в себе большой смысл</strong>. Так и в данном случае: суть всей религии уместилась в предложении из двух частей: «<strong><em>Говори: “Я уверовал в Аллаха” — а потом придерживайся прямоты!</em></strong>» Слова Пророка ﷺ подтверждаются словами Всевышнего:</p>
+		<div class="arabic">
+			﴿&#x202F;إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ&#x202F;﴾
+		</div>
+		<p class="center">«<strong>Воистину, те, которые сказали: “Наш Господь — Аллах”, — и последовали прямым путём, не познают страха и не будут опечалены</strong>»<span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=46&aya=13"><small>(сура 46 «Аль-Ахкаф = Барханы», аят 13)</small></a></span>,</p>
+		<p>а также:</p>
+		<div class="arabic">
+			﴿&#x202F;إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا تَتَنَزَّلُ عَلَيْهِمُ الْمَلَائِكَةُ أَلَّا تَخَافُوا وَلَا تَحْزَنُوا وَأَبْشِرُوا بِالْجَنَّةِ الَّتِي كُنتُمْ تُوعَدُونَ&#x202F;﴾
+		</div>
+		<p class="center">«<strong>Воистину, к тем, которые сказали: “Наш Господь — Аллах”, — а потом были стойки, нисходят ангелы: “Не бойтесь и не печальтесь, а возрадуйтесь Раю, который был обещан вам”</strong>»<span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=41&aya=30"><small>(сура 41 «Фуссылят = Разъяснены», аят 30)</small></a></span>,</p>
+		<p>а также:</p>
+		<div class="arabic">
+			﴿&#x202F;فَاسْتَقِمْ كَمَا أُمِرْتَ وَمَن تَابَ مَعَكَ وَلَا تَطْغَوْا&#x202F;﴾
+		</div>
+		<p class="center">«<strong>Будь же твёрд на прямом пути, как тебе велено, вместе с теми, кто покаялся наряду с тобой. И не преступайте</strong> [границ дозволенного]<strong>!</strong>»<span style="font-size: small;">&nbsp;<a href="sura-activity://list_quran?sura=11&aya=112"><small>(сура 11 «Худ = Худ», аят 112)</small></a></span>.</p>
+		<p>Существует еще немало аятов на эту тему.</p>
+	<p>5.	<strong>Пророк ﷺ использовал для выражения приверженности религии слово истикама, а не ильтизам</strong>, как повсеместно говорят люди в наше время. Когда сегодня люди хотят похвалить кого-то за строгую приверженность религии, они говорят: «Такой-то — соблюдающий (мультазим)», хотя правильнее говорить: «Такой-то — придерживающийся прямоты (мустаким)», как пришло в Коране и Сунне.</p>
+	<p>6.	<strong>Тот, кто допускает упущения в обязательных предписаниях религии, не придерживается прямоты</strong>. Всякое упущение — это отклонение от прямого пути, и чем больше религиозных обязанностей человек оставляет, чем больше запретного он совершает, тем сильнее он отклоняется от прямоты.</p>
+	<p>7.	<strong>Человек должен постоянно производить осмотр своей души, задавая себе единственный вопрос: «Я иду по прямому пути или нет?</strong>» Если он идёт по прямому пути, то ему следует возблагодарить Аллаха, восхвалить Его и обратиться к Нему с мольбой об укреплении на этом пути. Если же нет, то ему следует вернуться на прямой путь и выровнять своё шествие к Великому и Всемогущему Аллаху.</p>
+	<p>Тот, кто совершил намаз позже установленного времени, не идёт по прямому пути, потому что он погубил намаз.</p>
+	<p>Тот, кто не выплачивает закят, не идёт по прямому пути, потому что он погубил закят.</p>
+	<p>Тот, кто словами либо делами покушается на честь других людей, не идёт по прямому пути, потому что он совершил запретное.</p>
+	<p>Тот, кто занимается надувательством и обманом людей при купле-продаже, сдаче в аренду и торговых сделках в целом, не идёт по прямому пути.</p>
+	<p>Приверженность прямому пути — это общее понятие, которое охватывает все деяния.</p>
+	<p>Наставляет же на истину и помогает ей следовать лишь Аллах!</p>
+	<button id='upbutton'>⇧</button>
+</body>
+</html>
